@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>VANTOR – Websites die Kunden bringen | Webdesign für Handwerk & Medizin</title>
+<meta name="description" content="VANTOR baut Websites die Anfragen generieren. Spezialisiert auf Handwerk, Zahnärzte & Arztpraxen. Kein Template – maßgeschneidert. Ab 850 €."/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:title" content="VANTOR – Websites die Kunden bringen"/>
+<meta property="og:description" content="Maßgeschneiderte Websites für Handwerksbetriebe und Arztpraxen. Kein Template. Kein Blabla. Ergebnisse."/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="de_DE"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+
+<style>
+/* ══════════════════════════════
+   CSS RESET & VARIABLES
+══════════════════════════════ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --void:#050507;
+  --base:#0a0a0f;
+  --layer:#111118;
+  --layer-2:#16161f;
+  --primary:#c8ff0a;
+  --primary-hover:#d4ff3a;
+  --primary-glow:rgba(200,255,10,.15);
+  --primary-dim:rgba(200,255,10,.06);
+  --secondary:#3a3aff;
+  --secondary-glow:rgba(58,58,255,.12);
+  --accent:#ff3a6e;
+  --text-main:#eeeef0;
+  --text-muted:#7a7a8e;
+  --text-dim:#4a4a5e;
+  --border:rgba(255,255,255,.07);
+  --border-m:rgba(255,255,255,.13);
+  --font-display:'Syne',sans-serif;
+  --font-body:'Space Grotesk',sans-serif;
+  --font-mono:'DM Mono',monospace;
+  --ease:cubic-bezier(.19,1,.22,1);
+  --ease-s:cubic-bezier(.33,1,.68,1);
+  --t-fast:.25s;
+  --t-mid:.5s;
+  --t-slow:.85s;
+  --radius:14px;
+  --radius-s:8px;
+  --radius-xs:5px;
+}
+
+html{scroll-behavior:smooth;background:var(--void);color:var(--text-main);font-family:var(--font-body);font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{background:var(--void);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{cursor:pointer;border:none;background:none;font-family:inherit;color:inherit}
+ul,ol{list-style:none}
+
+::selection{background:var(--primary);color:var(--void)}
+
+/* ══════════════════════════════
+   UTILITY
+══════════════════════════════ */
+.container{width:100%;max-width:1280px;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)}
+.section{padding:clamp(4rem,10vw,9rem) 0}
+.eyebrow{font-family:var(--font-mono);font-size:clamp(.7rem,.8vw,.82rem);letter-spacing:.18em;text-transform:uppercase;color:var(--primary);margin-bottom:1rem;display:flex;align-items:center;gap:.75rem}
+.eyebrow::before{content:'';width:2rem;height:1px;background:var(--primary)}
+.section-title{font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.6rem);font-weight:800;line-height:1.08;letter-spacing:-.03em;margin-bottom:1.5rem}
+.section-sub{font-size:clamp(.95rem,1.1vw,1.12rem);color:var(--text-muted);line-height:1.7;max-width:560px}
+.glow-line{width:60px;height:2px;background:var(--primary);border-radius:2px;margin-bottom:2rem}
+
+/* ══════════════════════════════
+   CUSTOM CURSOR (desktop only)
+══════════════════════════════ */
+@media(hover:hover){
+  .cursor-dot,.cursor-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:99999;border-radius:50%;mix-blend-mode:difference}
+  .cursor-dot{width:8px;height:8px;background:var(--primary);transform:translate(-50%,-50%)}
+  .cursor-ring{width:40px;height:40px;border:1.5px solid rgba(200,255,10,.45);transform:translate(-50%,-50%);transition:width .35s var(--ease),height .35s var(--ease),border-color .35s}
+  .cursor-ring.hover{width:60px;height:60px;border-color:var(--primary)}
+  body{cursor:none}
+  a,button,[data-hover]{cursor:none}
+}
+
+/* ══════════════════════════════
+   NAVIGATION
+══════════════════════════════ */
+.nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:1.5rem 0;transition:all .5s var(--ease)}
+.nav.stuck{padding:.75rem 0;background:rgba(5,5,7,.85);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--font-display);font-weight:800;font-size:1.5rem;letter-spacing:.08em;color:var(--text-main)}
+.nav-logo span{color:var(--primary)}
+.nav-links{display:flex;gap:2.5rem;align-items:center}
+.nav-links a{font-size:.85rem;font-weight:500;letter-spacing:.04em;color:var(--text-muted);transition:color var(--t-fast);position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1.5px;background:var(--primary);transition:width .35s var(--ease)}
+.nav-links a:hover{color:var(--text-main)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.5rem;background:var(--primary);color:var(--void);font-weight:600;font-size:.82rem;letter-spacing:.04em;border-radius:100px;transition:all var(--t-fast);position:relative;overflow:hidden}
+.nav-cta:hover{background:var(--primary-hover);transform:translateY(-1px);box-shadow:0 8px 30px var(--primary-glow)}
+.nav-cta::after{display:none}
+.burger{display:none;flex-direction:column;gap:5px;width:28px}
+.burger span{height:2px;background:var(--text-main);border-radius:2px;transition:all .35s var(--ease)}
+
+/* Mobile Nav */
+.mobile-drawer{position:fixed;top:0;left:0;width:100%;height:100dvh;background:var(--void);z-index:999;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2rem;opacity:0;pointer-events:none;transition:opacity .4s var(--ease)}
+.mobile-drawer.open{opacity:1;pointer-events:all}
+.mobile-drawer a{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.5rem);font-weight:700;color:var(--text-main);letter-spacing:-.01em}
+.mobile-drawer .nav-cta{font-size:1rem;padding:.85rem 2rem;margin-top:1rem}
+.mobile-close{position:absolute;top:1.5rem;right:clamp(1.25rem,4vw,3rem);font-size:2rem;color:var(--text-muted)}
+
+@media(max-width:860px){
+  .nav-links{display:none}
+  .burger{display:flex}
+}
+
+/* ══════════════════════════════
+   HERO
+══════════════════════════════ */
+.hero{min-height:100dvh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:8rem;padding-bottom:4rem}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 70% 30%,rgba(200,255,10,.04) 0%,transparent 60%),radial-gradient(ellipse 50% 50% at 20% 80%,rgba(58,58,255,.04) 0%,transparent 50%)}
+.hero-grid-lines{position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:80px 80px;opacity:.3}
+.hero-content{position:relative;z-index:2;max-width:800px}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem 1rem;border:1px solid var(--border-m);border-radius:100px;font-size:.75rem;font-family:var(--font-mono);color:var(--text-muted);margin-bottom:2rem;animation:heroFadeUp .8s var(--ease) .2s both}
+.hero-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--primary);animation:pulse 2s ease-in-out infinite}
+.hero h1{font-family:var(--font-display);font-size:clamp(2.6rem,6.5vw,5.2rem);font-weight:800;line-height:1.02;letter-spacing:-.04em;margin-bottom:1.5rem;animation:heroFadeUp .8s var(--ease) .4s both}
+.hero h1 .highlight{color:var(--primary);position:relative;display:inline-block}
+.hero h1 .line-2{display:block;color:var(--text-muted);font-weight:600;font-size:.55em;letter-spacing:-.02em;margin-top:.3em}
+.hero-sub{font-size:clamp(1rem,1.2vw,1.15rem);color:var(--text-muted);line-height:1.75;max-width:540px;margin-bottom:2.5rem;animation:heroFadeUp .8s var(--ease) .6s both}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;animation:heroFadeUp .8s var(--ease) .8s both}
+.btn-primary{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 2rem;background:var(--primary);color:var(--void);font-weight:700;font-size:.9rem;letter-spacing:.02em;border-radius:100px;transition:all var(--t-fast);position:relative;overflow:hidden}
+.btn-primary:hover{background:var(--primary-hover);transform:translateY(-2px);box-shadow:0 12px 40px var(--primary-glow)}
+.btn-primary .arrow{transition:transform .3s var(--ease)}.btn-primary:hover .arrow{transform:translateX(3px)}
+.btn-secondary{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 2rem;border:1px solid var(--border-m);color:var(--text-main);font-weight:500;font-size:.9rem;border-radius:100px;transition:all var(--t-fast)}
+.btn-secondary:hover{border-color:var(--text-muted);background:rgba(255,255,255,.03)}
+
+.hero-stats{display:flex;gap:3rem;margin-top:4rem;padding-top:2.5rem;border-top:1px solid var(--border);animation:heroFadeUp .8s var(--ease) 1s both}
+.hero-stat .num{font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;color:var(--primary)}
+.hero-stat .label{font-size:.78rem;color:var(--text-dim);margin-top:.25rem;letter-spacing:.04em}
+
+@keyframes heroFadeUp{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:none}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* ══════════════════════════════
+   TICKER / URGENCY STRIP
+══════════════════════════════ */
+.ticker{background:var(--primary);padding:.7rem 0;overflow:hidden;white-space:nowrap}
+.ticker-track{display:inline-flex;animation:tickerScroll 30s linear infinite}
+.ticker-item{display:inline-flex;align-items:center;gap:.5rem;padding:0 2rem;font-family:var(--font-display);font-size:.82rem;font-weight:700;color:var(--void);letter-spacing:.06em;text-transform:uppercase}
+.ticker-item .sep{width:5px;height:5px;background:var(--void);border-radius:50%;opacity:.3}
+@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ══════════════════════════════
+   PROBLEM SECTION
+══════════════════════════════ */
+.problems{background:var(--base)}
+.problems-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.problem-card{padding:2rem;background:var(--layer);border:1px solid var(--border);border-radius:var(--radius);transition:all .4s var(--ease);position:relative;overflow:hidden}
+.problem-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.problem-card:hover::before{transform:scaleX(1)}
+.problem-card:hover{border-color:var(--border-m);background:var(--layer-2)}
+.problem-num{font-family:var(--font-mono);font-size:.72rem;color:var(--accent);margin-bottom:1rem;letter-spacing:.15em}
+.problem-card h4{font-family:var(--font-display);font-size:1.15rem;font-weight:700;margin-bottom:.75rem}
+.problem-card p{font-size:.88rem;color:var(--text-muted);line-height:1.65}
+
+/* ══════════════════════════════
+   SERVICES
+══════════════════════════════ */
+.services{background:var(--void)}
+.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem}
+.service-card{padding:2.5rem;background:var(--layer);border:1px solid var(--border);border-radius:var(--radius);transition:all .45s var(--ease);position:relative;overflow:hidden;display:flex;flex-direction:column}
+.service-card.featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:3rem;background:linear-gradient(135deg,var(--layer) 0%,rgba(200,255,10,.03) 100%);border-color:rgba(200,255,10,.12)}
+.service-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:var(--primary);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.service-card:hover::before{transform:scaleX(1)}
+.service-card:hover{border-color:var(--border-m);transform:translateY(-3px)}
+.service-num{font-family:var(--font-mono);font-size:.7rem;color:var(--text-dim);letter-spacing:.15em;margin-bottom:1.5rem}
+.service-card h3{font-family:var(--font-display);font-size:clamp(1.2rem,1.5vw,1.45rem);font-weight:700;margin-bottom:.75rem}
+.service-card p{font-size:.9rem;color:var(--text-muted);line-height:1.7;flex:1}
+.service-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.25rem}
+.service-tags span{padding:.3rem .8rem;background:var(--primary-dim);color:var(--primary);font-size:.72rem;font-weight:500;border-radius:100px;letter-spacing:.03em}
+.service-price{margin-top:1.5rem;font-family:var(--font-display);font-weight:700;font-size:1.1rem;color:var(--primary)}
+.service-price small{font-weight:400;color:var(--text-muted);font-size:.78rem;font-family:var(--font-body)}
+
+/* ══════════════════════════════
+   RESULTS / SOCIAL PROOF
+══════════════════════════════ */
+.results{background:var(--base)}
+.results-split{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-top:3rem}
+.results-visual{position:relative}
+.results-mockup{width:100%;aspect-ratio:4/3;background:var(--layer);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;position:relative}
+.results-mockup::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(200,255,10,.05),rgba(58,58,255,.03));z-index:1}
+.mockup-dots{display:flex;gap:6px;padding:1rem 1.25rem;border-bottom:1px solid var(--border)}
+.mockup-dots span{width:10px;height:10px;border-radius:50%;border:1.5px solid var(--text-dim)}
+.mockup-body{padding:2rem;display:flex;flex-direction:column;gap:1rem}
+.mockup-line{height:8px;background:var(--border-m);border-radius:4px}
+.mockup-line:nth-child(1){width:60%}
+.mockup-line:nth-child(2){width:85%;height:40px;background:linear-gradient(90deg,rgba(200,255,10,.08),rgba(200,255,10,.02))}
+.mockup-line:nth-child(3){width:40%}
+.mockup-line:nth-child(4){width:70%}
+.results-float{position:absolute;bottom:-1.5rem;right:-1.5rem;background:var(--layer-2);border:1px solid var(--primary);border-radius:var(--radius-s);padding:1.25rem 1.75rem;z-index:2;animation:float 5s ease-in-out infinite}
+.results-float .big{font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--primary)}
+.results-float .small{font-size:.78rem;color:var(--text-muted)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+.results-content .result-item{display:flex;gap:1rem;align-items:flex-start;padding:1.25rem 0;border-bottom:1px solid var(--border)}
+.result-item:last-child{border:none}
+.result-check{width:28px;height:28px;min-width:28px;border-radius:50%;background:var(--primary-dim);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:.85rem;margin-top:.15rem}
+.result-item h4{font-size:1rem;font-weight:600;margin-bottom:.25rem}
+.result-item p{font-size:.85rem;color:var(--text-muted);line-height:1.6}
+
+/* ══════════════════════════════
+   PROCESS
+══════════════════════════════ */
+.process{background:var(--void)}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem}
+.step{padding:2rem;background:var(--layer);border:1px solid var(--border);border-radius:var(--radius);text-align:center;position:relative;transition:all .4s var(--ease)}
+.step:hover{border-color:var(--primary);background:var(--layer-2)}
+.step-num{font-family:var(--font-display);font-size:4rem;font-weight:800;color:var(--primary);opacity:.08;position:absolute;top:.5rem;right:1rem;line-height:1}
+.step-icon{width:48px;height:48px;border-radius:12px;background:var(--primary-dim);display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;font-size:1.2rem}
+.step h4{font-family:var(--font-display);font-size:1rem;font-weight:700;margin-bottom:.6rem}
+.step p{font-size:.82rem;color:var(--text-muted);line-height:1.6}
+.step-connector{display:none}
+
+/* ══════════════════════════════
+   TESTIMONIALS
+══════════════════════════════ */
+.testimonials{background:var(--base)}
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.testimonial{padding:2rem;background:var(--layer);border:1px solid var(--border);border-radius:var(--radius);transition:all .4s var(--ease)}
+.testimonial:hover{border-color:var(--border-m)}
+.testimonial-stars{color:var(--primary);font-size:.9rem;letter-spacing:2px;margin-bottom:1rem}
+.testimonial p{font-size:.92rem;color:var(--text-muted);line-height:1.7;font-style:italic;margin-bottom:1.25rem}
+.testimonial-author{display:flex;align-items:center;gap:.75rem}
+.testimonial-avatar{width:36px;height:36px;border-radius:50%;background:var(--primary-dim);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.75rem;color:var(--primary)}
+.testimonial-name{font-weight:600;font-size:.85rem}
+.testimonial-role{font-size:.75rem;color:var(--text-dim)}
+
+/* ══════════════════════════════
+   FAQ
+══════════════════════════════ */
+.faq{background:var(--void)}
+.faq-list{max-width:720px;margin:3rem auto 0}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{width:100%;text-align:left;padding:1.5rem 0;display:flex;justify-content:space-between;align-items:center;font-size:1rem;font-weight:600;color:var(--text-main);transition:color var(--t-fast)}
+.faq-q:hover{color:var(--primary)}
+.faq-icon{font-size:1.3rem;color:var(--text-dim);transition:transform .35s var(--ease),color .35s}
+.faq-item.open .faq-icon{transform:rotate(45deg);color:var(--primary)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+.faq-item.open .faq-a{max-height:300px}
+.faq-a p{padding:0 0 1.5rem;font-size:.9rem;color:var(--text-muted);line-height:1.7}
+
+/* ══════════════════════════════
+   CTA BAND
+══════════════════════════════ */
+.cta-band{background:var(--primary);padding:clamp(4rem,8vw,7rem) 0;text-align:center;position:relative;overflow:hidden}
+.cta-band::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(5,5,7,.05) 0%,transparent 70%)}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.5rem);font-weight:800;color:var(--void);line-height:1.08;letter-spacing:-.03em;margin-bottom:1rem;position:relative;z-index:1}
+.cta-band p{font-size:1.05rem;color:rgba(5,5,7,.6);margin-bottom:2.5rem;position:relative;z-index:1}
+.cta-band-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+.btn-dark{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 2.2rem;background:var(--void);color:var(--primary);font-weight:700;font-size:.9rem;border-radius:100px;transition:all var(--t-fast)}
+.btn-dark:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,.3)}
+.btn-outline-dark{display:inline-flex;align-items:center;gap:.5rem;padding:.95rem 2.2rem;border:2px solid var(--void);color:var(--void);font-weight:600;font-size:.9rem;border-radius:100px;transition:all var(--t-fast)}
+.btn-outline-dark:hover{background:var(--void);color:var(--primary)}
+
+/* ══════════════════════════════
+   CONTACT
+══════════════════════════════ */
+.contact{background:var(--base)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:3rem}
+.contact-info h3{font-family:var(--font-display);font-size:clamp(1.5rem,2.5vw,2rem);font-weight:800;margin-bottom:1.5rem}
+.contact-detail{display:flex;gap:1rem;align-items:flex-start;margin-bottom:1.5rem}
+.contact-detail-icon{width:40px;height:40px;min-width:40px;border-radius:10px;background:var(--layer);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1rem}
+.contact-detail h4{font-weight:600;font-size:.9rem;margin-bottom:.15rem}
+.contact-detail p{font-size:.85rem;color:var(--text-muted)}
+.contact-form-wrap{background:var(--layer);border:1px solid var(--border);border-radius:var(--radius);padding:2.5rem}
+.form-group{margin-bottom:1.25rem}
+.form-group label{display:block;font-size:.8rem;font-weight:500;color:var(--text-muted);margin-bottom:.5rem;letter-spacing:.03em}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:.85rem 1rem;background:var(--base);border:1px solid var(--border);border-radius:var(--radius-s);color:var(--text-main);font-family:var(--font-body);font-size:.9rem;transition:border-color var(--t-fast);outline:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--primary)}
+.form-group textarea{resize:vertical;min-height:100px}
+.form-group select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 8L1 3h10z' fill='%237a7a8e'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.btn-submit{width:100%;padding:1rem;background:var(--primary);color:var(--void);font-weight:700;font-size:.95rem;border-radius:var(--radius-s);transition:all var(--t-fast);border:none;margin-top:.5rem}
+.btn-submit:hover{background:var(--primary-hover);box-shadow:0 8px 30px var(--primary-glow)}
+.btn-submit:disabled{opacity:.5;cursor:not-allowed}
+.form-note{text-align:center;font-size:.75rem;color:var(--text-dim);margin-top:1rem}
+
+/* ══════════════════════════════
+   FOOTER
+══════════════════════════════ */
+.footer{background:var(--void);border-top:1px solid var(--border);padding:4rem 0 0}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.footer-brand p{font-size:.85rem;color:var(--text-muted);line-height:1.7;margin-top:1rem;max-width:280px}
+.footer h5{font-family:var(--font-display);font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.25rem;color:var(--text-main)}
+.footer ul li{margin-bottom:.6rem}
+.footer ul li a{font-size:.85rem;color:var(--text-muted);transition:color var(--t-fast)}
+.footer ul li a:hover{color:var(--primary)}
+.footer-bottom{border-top:1px solid var(--border);padding:1.5rem 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-bottom p{font-size:.78rem;color:var(--text-dim)}
+.footer-legal{display:flex;gap:1.5rem}
+.footer-legal a{font-size:.78rem;color:var(--text-dim);transition:color var(--t-fast)}
+.footer-legal a:hover{color:var(--text-muted)}
+
+/* ══════════════════════════════
+   FLOATING CTA (mobile)
+══════════════════════════════ */
+.floating-cta{position:fixed;bottom:1.5rem;right:1.5rem;z-index:900;width:56px;height:56px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px var(--primary-glow);animation:pulseFloat 3s ease-in-out infinite;transition:transform .3s}
+.floating-cta:hover{transform:scale(1.08)}
+.floating-cta svg{width:24px;height:24px;fill:var(--void)}
+@keyframes pulseFloat{0%,100%{box-shadow:0 6px 24px var(--primary-glow)}50%{box-shadow:0 6px 40px rgba(200,255,10,.3)}}
+
+/* ══════════════════════════════
+   SCROLL REVEAL
+══════════════════════════════ */
+[data-reveal]{opacity:0;transform:translateY(30px);transition:opacity var(--t-slow) var(--ease),transform var(--t-slow) var(--ease)}
+[data-reveal="left"]{transform:translateX(-30px)}
+[data-reveal="right"]{transform:translateX(30px)}
+[data-reveal="scale"]{transform:scale(.95)}
+[data-reveal].revealed{opacity:1;transform:none}
+[data-delay="1"]{transition-delay:.1s}
+[data-delay="2"]{transition-delay:.2s}
+[data-delay="3"]{transition-delay:.3s}
+[data-delay="4"]{transition-delay:.4s}
+[data-delay="5"]{transition-delay:.5s}
+
+/* ══════════════════════════════
+   SCROLL INDICATOR
+══════════════════════════════ */
+.scroll-indicator{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem}
+.scroll-line{width:1px;height:40px;background:var(--border-m);position:relative;overflow:hidden}
+.scroll-line::after{content:'';position:absolute;top:-100%;left:0;width:100%;height:100%;background:var(--primary);animation:scrollLine 2.4s ease-in-out infinite}
+@keyframes scrollLine{0%{top:-100%;opacity:0}30%{opacity:1}70%{opacity:1}100%{top:100%;opacity:0}}
+.scroll-text{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text-dim);writing-mode:vertical-rl;font-family:var(--font-mono)}
+
+/* ══════════════════════════════
+   RESPONSIVE
+══════════════════════════════ */
+@media(max-width:1100px){
+  .hero-stats{gap:2rem}
+  .results-split{grid-template-columns:1fr;gap:3rem}
+  .service-card.featured{grid-template-columns:1fr}
+}
+@media(max-width:860px){
+  .problems-grid{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+  .process-steps{grid-template-columns:1fr 1fr}
+  .testimonial-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .hero-stats{flex-wrap:wrap;gap:1.5rem}
+}
+@media(max-width:600px){
+  .process-steps{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .hero h1{font-size:clamp(2.2rem,8vw,3rem)}
+  .hero-actions{flex-direction:column;align-items:flex-start}
+  .scroll-indicator{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════
+     CUSTOM CURSOR
+══════════════════════════════ -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ══════════════════════════════
+     NAVIGATION
+══════════════════════════════ -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo">VANTOR<span>.</span></a>
+    <div class="nav-links">
+      <a href="#problem">Warum wir</a>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#ergebnisse">Ergebnisse</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt" class="nav-cta" data-hover>Projekt starten <span class="arrow">→</span></a>
+    </div>
+    <button class="burger" id="burgerBtn" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="mobile-drawer" id="mobileDrawer">
+  <button class="mobile-close" id="mobileClose" aria-label="Menü schließen">✕</button>
+  <a href="#problem" onclick="closeDrawer()">Warum wir</a>
+  <a href="#leistungen" onclick="closeDrawer()">Leistungen</a>
+  <a href="#ergebnisse" onclick="closeDrawer()">Ergebnisse</a>
+  <a href="#ablauf" onclick="closeDrawer()">Ablauf</a>
+  <a href="#faq" onclick="closeDrawer()">FAQ</a>
+  <a href="#kontakt" class="nav-cta" onclick="closeDrawer()">Projekt starten →</a>
+</div>
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="hero-grid-lines"></div>
+  </div>
+  <div class="container hero-content">
+    <div class="hero-badge"><span class="dot"></span> Webdesign-Agentur · Sachsenheim & DACH</div>
+    <h1>
+      Deine Website<br/>soll <span class="highlight">Kunden bringen.</span>
+      <span class="line-2">Nicht nur gut aussehen.</span>
+    </h1>
+    <p class="hero-sub">
+      Wir bauen Websites für Handwerksbetriebe und Arztpraxen, die in 5 Sekunden Vertrauen aufbauen – und aus Besuchern zahlende Kunden machen. Kein Template. Kein Blabla. Ergebnisse.
+    </p>
+    <div class="hero-actions">
+      <a href="#kontakt" class="btn-primary" data-hover>Kostenlos beraten lassen <span class="arrow">→</span></a>
+      <a href="#leistungen" class="btn-secondary" data-hover>Was wir machen</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="num">25+</div>
+        <div class="label">Termine pro Woche</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">48h</div>
+        <div class="label">Erstkonzept ready</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">100%</div>
+        <div class="label">Maßgeschneidert</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">ab 850€</div>
+        <div class="label">Faire Einstiegspreise</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span class="scroll-text">Scroll</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     TICKER
+══════════════════════════════ -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item">Webdesign für Handwerk <span class="sep"></span></span>
+    <span class="ticker-item">Websites für Zahnärzte <span class="sep"></span></span>
+    <span class="ticker-item">Conversion-optimiert <span class="sep"></span></span>
+    <span class="ticker-item">SEO inklusive <span class="sep"></span></span>
+    <span class="ticker-item">Keine Templates <span class="sep"></span></span>
+    <span class="ticker-item">Maßgeschneidert <span class="sep"></span></span>
+    <span class="ticker-item">Ab 850 € <span class="sep"></span></span>
+    <span class="ticker-item">Ergebnisse statt Versprechen <span class="sep"></span></span>
+    <!-- Duplicate for seamless loop -->
+    <span class="ticker-item">Webdesign für Handwerk <span class="sep"></span></span>
+    <span class="ticker-item">Websites für Zahnärzte <span class="sep"></span></span>
+    <span class="ticker-item">Conversion-optimiert <span class="sep"></span></span>
+    <span class="ticker-item">SEO inklusive <span class="sep"></span></span>
+    <span class="ticker-item">Keine Templates <span class="sep"></span></span>
+    <span class="ticker-item">Maßgeschneidert <span class="sep"></span></span>
+    <span class="ticker-item">Ab 850 € <span class="sep"></span></span>
+    <span class="ticker-item">Ergebnisse statt Versprechen <span class="sep"></span></span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     PROBLEM SECTION
+══════════════════════════════ -->
+<section class="problems section" id="problem">
+  <div class="container">
+    <div class="eyebrow">Das Problem</div>
+    <h2 class="section-title" data-reveal>Die meisten Firmen-Websites<br/>kosten Geld statt welches zu bringen.</h2>
+    <p class="section-sub" data-reveal data-delay="1">Du erkennst dich hier wieder? Dann wird es Zeit, das zu ändern.</p>
+    <div class="problems-grid">
+      <div class="problem-card" data-reveal data-delay="1">
+        <div class="problem-num">01</div>
+        <h4>Hübsch – aber kein Anruf</h4>
+        <p>Deine Website wurde mal „schön gemacht". Aber seit dem Launch? Keine Anfragen. Kein Return. Nur eine digitale Visitenkarte die niemand liest.</p>
+      </div>
+      <div class="problem-card" data-reveal data-delay="2">
+        <div class="problem-num">02</div>
+        <h4>Billig-Template aus dem Baukasten</h4>
+        <p>Sieht aus wie 500 andere Betriebe. Kein Vertrauen, keine Persönlichkeit. Kunden klicken auf deine Seite – und landen beim Wettbewerber.</p>
+      </div>
+      <div class="problem-card" data-reveal data-delay="3">
+        <div class="problem-num">03</div>
+        <h4>Die „Irgendwann mach ich das"-Falle</h4>
+        <p>Jeden Tag den deine Website nicht konvertiert, verlierst du Kunden an Betriebe mit besserer Online-Präsenz. Das Geld liegt bereits auf dem Tisch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SERVICES
+══════════════════════════════ -->
+<section class="services section" id="leistungen">
+  <div class="container">
+    <div class="eyebrow">Leistungen</div>
+    <h2 class="section-title" data-reveal>Wir bauen keine Websites.<br/>Wir bauen <span style="color:var(--primary)">Kundenmaschinen.</span></h2>
+    <p class="section-sub" data-reveal data-delay="1">Jedes Projekt wird individuell konzipiert – exakt für deine Branche, deine Stadt, deine Zielkunden.</p>
+    <div class="services-grid">
+
+      <div class="service-card featured" data-reveal>
+        <div>
+          <div class="service-num">// CORE</div>
+          <h3>Conversion-Website – maßgeschneidert</h3>
+          <p>Eine einzige Seite, die in 5 Sekunden kommuniziert: Wer du bist, was du machst, warum man bei dir anfragen sollte. Verkaufspsychologie, SEO, mobile-first – alles drin. Kein Template, kein Baukasten. Handgeschriebener Code.</p>
+          <div class="service-tags">
+            <span>Webdesign Handwerk</span>
+            <span>Zahnarzt Website</span>
+            <span>Conversion-optimiert</span>
+            <span>Local SEO</span>
+          </div>
+          <div class="service-price">ab 850 € <small>· individuell nach Umfang</small></div>
+        </div>
+        <div>
+          <!-- 📸 Mockup der Website auf verschiedenen Geräten -->
+          <div class="results-mockup" style="aspect-ratio:1/1">
+            <div class="mockup-dots"><span></span><span></span><span></span></div>
+            <div class="mockup-body">
+              <div class="mockup-line"></div>
+              <div class="mockup-line"></div>
+              <div class="mockup-line"></div>
+              <div class="mockup-line"></div>
+              <div class="mockup-line" style="width:50%;height:30px;margin-top:1rem;background:var(--primary);opacity:.15;border-radius:100px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-card" data-reveal data-delay="1">
+        <div class="service-num">// 01</div>
+        <h3>Handwerk & Bau</h3>
+        <p>Dachdecker, SHK, Elektro, Maler, Schreiner – wir wissen was Handwerkskunden googeln und was sie überzeugt. Vertrauen ab Sekunde eins.</p>
+        <div class="service-tags">
+          <span>SHK Webdesign</span>
+          <span>Dachdecker Website</span>
+          <span>Elektro Online</span>
+        </div>
+      </div>
+
+      <div class="service-card" data-reveal data-delay="2">
+        <div class="service-num">// 02</div>
+        <h3>Zahnärzte & Praxen</h3>
+        <p>Patienten entscheiden online, zu wem sie gehen. Deine Website muss Kompetenz, Modernität und Menschlichkeit zeigen – in unter 3 Sekunden.</p>
+        <div class="service-tags">
+          <span>Zahnarzt Website</span>
+          <span>Praxis Webdesign</span>
+          <span>Ärzte Online</span>
+        </div>
+      </div>
+
+      <div class="service-card" data-reveal data-delay="3">
+        <div class="service-num">// 03</div>
+        <h3>SEO & Sichtbarkeit</h3>
+        <p>Gefunden werden in deiner Stadt – ohne monatlich Tausende in Google Ads zu verbrennen. Lokales SEO, das langfristig organische Anfragen bringt.</p>
+        <div class="service-tags">
+          <span>Local SEO</span>
+          <span>Google Ranking</span>
+          <span>Sichtbarkeit</span>
+        </div>
+      </div>
+
+      <div class="service-card" data-reveal data-delay="4">
+        <div class="service-num">// 04</div>
+        <h3>Komplett-Pakete</h3>
+        <p>Website + SEO + Texte + Fotos-Beratung + Google Business Optimierung. Ein Ansprechpartner, alles aus einer Hand. Du machst dein Ding – wir machen deins online sichtbar.</p>
+        <div class="service-tags">
+          <span>All-inclusive</span>
+          <span>Rundum-sorglos</span>
+        </div>
+        <div class="service-price">auf Anfrage <small>· ab 3.000 €</small></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     RESULTS
+══════════════════════════════ -->
+<section class="results section" id="ergebnisse">
+  <div class="container">
+    <div class="eyebrow">Ergebnisse</div>
+    <h2 class="section-title" data-reveal>Was passiert, wenn deine<br/>Website endlich <span style="color:var(--primary)">arbeitet.</span></h2>
+    <div class="results-split">
+      <div class="results-visual" data-reveal="left">
+        <div class="results-mockup">
+          <div class="mockup-dots"><span></span><span></span><span></span></div>
+          <div class="mockup-body">
+            <div class="mockup-line"></div>
+            <div class="mockup-line"></div>
+            <div class="mockup-line"></div>
+            <div class="mockup-line"></div>
+          </div>
+        </div>
+        <div class="results-float">
+          <div class="big">+340%</div>
+          <div class="small">mehr Anfragen im Schnitt</div>
+        </div>
+      </div>
+      <div class="results-content" data-reveal="right">
+        <div class="result-item">
+          <div class="result-check">✓</div>
+          <div>
+            <h4>Sofort erkennbar professionell</h4>
+            <p>Dein erster Eindruck entscheidet. Eine VANTOR-Website kommuniziert Qualität – bevor ein Wort gelesen wird.</p>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="result-check">✓</div>
+          <div>
+            <h4>Anfragen statt Stille</h4>
+            <p>Jede Sektion ist darauf ausgelegt, den Besucher Schritt für Schritt zur Kontaktaufnahme zu führen. Psychologie, nicht Zufall.</p>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="result-check">✓</div>
+          <div>
+            <h4>Gefunden werden – lokal</h4>
+            <p>SEO ist bei uns kein Add-on. Jede Website wird von Grund auf für Google optimiert. Deine Stadt, deine Keywords, dein Ranking.</p>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="result-check">✓</div>
+          <div>
+            <h4>Bessere Kunden anziehen</h4>
+            <p>Eine hochwertige Website zieht hochwertige Kunden an. Schluss mit Preisvergleichern – stattdessen Aufträge die sich lohnen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     PROCESS
+══════════════════════════════ -->
+<section class="process section" id="ablauf">
+  <div class="container">
+    <div class="eyebrow">So läuft's ab</div>
+    <h2 class="section-title" data-reveal>Von Null zur fertigen Website.<br/><span style="color:var(--primary)">In 4 klaren Schritten.</span></h2>
+    <p class="section-sub" data-reveal data-delay="1">Kein Bullshit-Prozess mit 47 Meetings. Wir machen's schnell, sauber und ohne Zeitverschwendung.</p>
+    <div class="process-steps">
+      <div class="step" data-reveal data-delay="1">
+        <div class="step-num">01</div>
+        <div class="step-icon">📞</div>
+        <h4>Gespräch</h4>
+        <p>15 Minuten. Du sagst was du brauchst, wir sagen ob und wie wir helfen können. Kein Verkaufsgespräch – Klartext.</p>
+      </div>
+      <div class="step" data-reveal data-delay="2">
+        <div class="step-num">02</div>
+        <div class="step-icon">🎯</div>
+        <h4>Strategie & Konzept</h4>
+        <p>Wir analysieren deine Branche, deine Stadt, deine Konkurrenz. Dann bauen wir das Konzept – Texte, Struktur, Design.</p>
+      </div>
+      <div class="step" data-reveal data-delay="3">
+        <div class="step-num">03</div>
+        <div class="step-icon">⚡</div>
+        <h4>Build & Feedback</h4>
+        <p>Du siehst deine Website wachsen. Feedback-Runden sind drin. Änderungen? Kein Problem. Bis es sitzt.</p>
+      </div>
+      <div class="step" data-reveal data-delay="4">
+        <div class="step-num">04</div>
+        <div class="step-icon">🚀</div>
+        <h4>Launch & Anfragen</h4>
+        <p>Website geht live. SEO greift. Google indexiert. Und dann klingelt dein Telefon öfter als vorher.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     TESTIMONIALS
+══════════════════════════════ -->
+<section class="testimonials section">
+  <div class="container">
+    <div class="eyebrow">Stimmen</div>
+    <h2 class="section-title" data-reveal>Was unsere Kunden sagen.</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial" data-reveal data-delay="1">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>„Endlich eine Agentur die versteht was Handwerker brauchen. Seit dem Relaunch bekomme ich Anfragen über die Website – vorher nicht eine einzige."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MK</div>
+          <div>
+            <div class="testimonial-name">Markus K.</div>
+            <div class="testimonial-role">SHK-Meisterbetrieb</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial" data-reveal data-delay="2">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>„Professionell, schnell, unkompliziert. Die Website sieht aus wie 10.000 Euro – hat aber einen Bruchteil gekostet. Patienten sagen mir regelmäßig: Ihre Website hat mich überzeugt."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SB</div>
+          <div>
+            <div class="testimonial-name">Dr. Sarah B.</div>
+            <div class="testimonial-role">Zahnarztpraxis</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial" data-reveal data-delay="3">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>„Ich hab vorher 3 Agenturen durch. Alle teuer, alle mittelmäßig. VANTOR hat in 2 Wochen mehr geliefert als die anderen in Monaten."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">TW</div>
+          <div>
+            <div class="testimonial-name">Thomas W.</div>
+            <div class="testimonial-role">Dachdecker-Meister</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     FAQ
+══════════════════════════════ -->
+<section class="faq section" id="faq">
+  <div class="container">
+    <div class="eyebrow">Häufige Fragen</div>
+    <h2 class="section-title" data-reveal style="text-align:center">Bevor du fragst –<br/>hier die Antworten.</h2>
+    <div class="faq-list">
+
+      <div class="faq-item" data-reveal>
+        <button class="faq-q">Was kostet eine Website bei VANTOR? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Unsere Projekte starten ab 850 €. Der Preis hängt vom Umfang ab – eine einfache Landingpage kostet weniger als eine umfangreiche Multi-Page Website mit SEO-Paket. Nach unserem Erstgespräch bekommst du ein verbindliches Angebot. Keine versteckten Kosten.</p></div>
+      </div>
+
+      <div class="faq-item" data-reveal data-delay="1">
+        <button class="faq-q">Wie lange dauert es bis meine Website fertig ist? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>In der Regel 1–3 Wochen. Das Erstkonzept steht innerhalb von 48 Stunden. Wir arbeiten schnell – ohne an Qualität zu sparen. Du bekommst regelmäßig Updates und kannst jederzeit Feedback geben.</p></div>
+      </div>
+
+      <div class="faq-item" data-reveal data-delay="2">
+        <button class="faq-q">Bekomme ich wirklich eine individuelle Website – kein Template? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Ja. Jede VANTOR-Website wird von Grund auf neu konzipiert und gebaut. Wir analysieren deine Branche, deine Stadt und deine Zielkunden – und bauen exakt dafür. Kein WordPress-Theme, kein Baukastensystem.</p></div>
+      </div>
+
+      <div class="faq-item" data-reveal data-delay="3">
+        <button class="faq-q">Ist SEO wirklich inklusive? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Jede Website wird mit lokaler SEO-Grundlage gebaut: Keyword-Strategie, Meta-Tags, Schema.org, schnelle Ladezeiten, mobile Optimierung. Für intensiveres SEO-Marketing bieten wir zusätzliche Pakete an.</p></div>
+      </div>
+
+      <div class="faq-item" data-reveal data-delay="4">
+        <button class="faq-q">Ich kenne mich mit Technik nicht aus – ist das ein Problem? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Überhaupt nicht. Das ist sogar der Normalfall. Du sagst uns was du brauchst, wir kümmern uns um alles Technische. Domain, Hosting, Einrichtung – wir erklären dir alles so, dass du es verstehst.</p></div>
+      </div>
+
+      <div class="faq-item" data-reveal data-delay="5">
+        <button class="faq-q">Kann ich die Website danach selbst bearbeiten? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Ja, wenn du möchtest. Wir können ein einfaches System einrichten, mit dem du Texte und Bilder selbst ändern kannst. Oder wir übernehmen das für dich – je nachdem was du willst.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     CTA BAND
+══════════════════════════════ -->
+<section class="cta-band">
+  <div class="container">
+    <h2 data-reveal>Dein nächster Kunde<br/>sucht dich gerade online.</h2>
+    <p data-reveal data-delay="1">Die Frage ist nur: Findet er dich – oder deinen Wettbewerber?</p>
+    <div class="cta-band-actions" data-reveal data-delay="2">
+      <a href="#kontakt" class="btn-dark" data-hover>Jetzt Projekt starten <span>→</span></a>
+      <a href="tel:+4900000000" class="btn-outline-dark" data-hover>Direkt anrufen</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     CONTACT
+══════════════════════════════ -->
+<section class="contact section" id="kontakt">
+  <div class="container">
+    <div class="eyebrow">Kontakt</div>
+    <h2 class="section-title" data-reveal>Lass uns reden.<br/><span style="color:var(--primary)">Kostenlos. Unverbindlich.</span></h2>
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal="left">
+        <h3>Der erste Schritt ist immer<br/>ein Gespräch.</h3>
+        <p style="color:var(--text-muted);line-height:1.7;margin-bottom:2.5rem;font-size:.95rem">Ruf an, schreib eine Nachricht, oder füll das Formular aus. Wir melden uns innerhalb von 24 Stunden bei dir – meistens deutlich schneller.</p>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div>
+            <h4>Standort</h4>
+            <p>Sachsenheim, Baden-Württemberg<br/>Projekte deutschlandweit</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">⏰</div>
+          <div>
+            <h4>Erreichbar</h4>
+            <p>Mo – Fr: 9:00 – 18:00 Uhr<br/>Termine auch abends nach Absprache</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">⚡</div>
+          <div>
+            <h4>Reaktionszeit</h4>
+            <p>In der Regel unter 4 Stunden<br/>Erstkonzept in 48h</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap" data-reveal="right">
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Dein Name"/>
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="Für Rückruf"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="Deine E-Mail-Adresse"/>
+          </div>
+          <div class="form-group">
+            <label for="branche">Branche *</label>
+            <select id="branche" name="branche" required>
+              <option value="" disabled selected>Wähle deine Branche</option>
+              <option value="shk">SHK / Heizung / Sanitär</option>
+              <option value="dachdecker">Dachdecker</option>
+              <option value="elektro">Elektrobetrieb</option>
+              <option value="maler">Maler & Lackierer</option>
+              <option value="schreiner">Schreiner / Tischler</option>
+              <option value="bau">Bau / Bauunternehmen</option>
+              <option value="zahnarzt">Zahnarzt / Zahnklinik</option>
+              <option value="arzt">Arztpraxis</option>
+              <option value="physio">Physiotherapie</option>
+              <option value="andere">Andere Branche</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Budget-Rahmen</label>
+            <select id="budget" name="budget">
+              <option value="" disabled selected>Ungefähres Budget</option>
+              <option value="850-2000">850 – 2.000 €</option>
+              <option value="2000-4000">2.000 – 4.000 €</option>
+              <option value="4000-6000">4.000 – 6.000 €</option>
+              <option value="6000+">6.000 € +</option>
+              <option value="unsicher">Noch unsicher</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Erzähl uns kurz von deinem Projekt</label>
+            <textarea id="message" name="message" placeholder="Was brauchst du? Was ist das Ziel?"></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">Kostenlose Beratung anfragen →</button>
+          <p class="form-note">Kostenlos · Unverbindlich · Antwort in unter 24h</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:1.3rem">VANTOR<span>.</span></div>
+        <p>Websites die Kunden bringen. Spezialisiert auf Handwerk und Medizin. Aus Sachsenheim – für den gesamten DACH-Raum.</p>
+      </div>
+      <div>
+        <h5>Leistungen</h5>
+        <ul>
+          <li><a href="#leistungen">Conversion-Websites</a></li>
+          <li><a href="#leistungen">Handwerk Webdesign</a></li>
+          <li><a href="#leistungen">Zahnarzt Websites</a></li>
+          <li><a href="#leistungen">Local SEO</a></li>
+          <li><a href="#leistungen">Komplett-Pakete</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="#problem">Warum wir</a></li>
+          <li><a href="#ergebnisse">Ergebnisse</a></li>
+          <li><a href="#ablauf">Ablauf</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Kontakt</h5>
+        <ul>
+          <li><a href="#kontakt">Sachsenheim, BW</a></li>
+          <li><a href="#kontakt">Mo–Fr 9–18 Uhr</a></li>
+          <li><a href="#kontakt">Anfrage senden</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 VANTOR. Alle Rechte vorbehalten.</p>
+      <div class="footer-legal">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+        <a href="#">AGB</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════
+     FLOATING CTA
+══════════════════════════════ -->
+<a href="#kontakt" class="floating-cta" aria-label="Kontakt aufnehmen" data-hover>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+</a>
+
+<!-- ══════════════════════════════
+     JAVASCRIPT
+══════════════════════════════ -->
+<script>
+/* ── Navigation Scroll ── */
+const nav = document.getElementById('nav');
+let lastScroll = 0;
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('stuck', window.scrollY > 60);
+}, { passive: true });
+
+/* ── Mobile Drawer ── */
+const burgerBtn = document.getElementById('burgerBtn');
+const mobileDrawer = document.getElementById('mobileDrawer');
+const mobileClose = document.getElementById('mobileClose');
+burgerBtn.addEventListener('click', () => mobileDrawer.classList.add('open'));
+mobileClose.addEventListener('click', () => mobileDrawer.classList.remove('open'));
+function closeDrawer() { mobileDrawer.classList.remove('open'); }
+
+/* ── Scroll Reveal ── */
+const revealEls = document.querySelectorAll('[data-reveal]');
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); revealObs.unobserve(e.target); } });
+}, { threshold: 0.08 });
+revealEls.forEach(el => revealObs.observe(el));
+
+/* ── FAQ Accordion ── */
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
+/* ── Custom Cursor ── */
+if (window.matchMedia('(hover:hover)').matches) {
+  const dot = document.getElementById('cursorDot');
+  const ring = document.getElementById('cursorRing');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; dot.style.left = mx + 'px'; dot.style.top = my + 'px'; });
+  (function loop() {
+    rx += (mx - rx) * .12; ry += (my - ry) * .12;
+    ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+    requestAnimationFrame(loop);
+  })();
+  document.querySelectorAll('a,button,[data-hover]').forEach(el => {
+    el.addEventListener('mouseenter', () => ring.classList.add('hover'));
+    el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
+  });
+}
+
+/* ── Form Submit ── */
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.textContent = '✓ Anfrage gesendet!';
+  btn.style.background = '#2A5C46';
+  btn.style.color = '#fff';
+  setTimeout(() => {
+    btn.disabled = false;
+    btn.textContent = 'Kostenlose Beratung anfragen →';
+    btn.style.background = '';
+    btn.style.color = '';
+    document.getElementById('contactForm').reset();
+  }, 3000);
+}
+
+/* ── Smooth Scroll ── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+</script>
+</body>
+</html>

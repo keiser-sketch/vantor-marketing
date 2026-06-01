@@ -2,668 +2,714 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>VANTOR – Websites die Kunden bringen | Webdesign für Handwerk & Medizin</title>
-<meta name="description" content="VANTOR baut Websites die Anfragen generieren. Spezialisiert auf Handwerk, Zahnärzte & Arztpraxen. Kein Template – maßgeschneidert. Ab 850 €."/>
-<meta name="robots" content="index,follow"/>
-<meta property="og:title" content="VANTOR – Websites die Kunden bringen"/>
-<meta property="og:description" content="Maßgeschneiderte Websites für Handwerksbetriebe und Arztpraxen. Kein Template. Kein Blabla. Ergebnisse."/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>VANTOR — Websites die Anrufe auslösen | Ab 850€ · Handwerk & Medizin</title>
+<meta name="description" content="VANTOR baut Websites die Anfragen generieren. Maßgeschneidert für Handwerk und Praxen. Live-Audit deiner aktuellen Seite. ROI-Rechner. Erstgespräch in 48h."/>
+<meta name="keywords" content="Webdesign Handwerk, Website Zahnarzt, Conversion Website, Local SEO Stuttgart, Homepage erstellen Sachsenheim"/>
+<meta name="theme-color" content="#030304"/>
+<meta name="robots" content="index,follow,max-image-preview:large"/>
+<meta name="geo.region" content="DE-BW"/>
+<meta name="geo.placename" content="Sachsenheim"/>
+<meta name="geo.position" content="48.961;9.063"/>
+<meta property="og:title" content="VANTOR — Websites die Anrufe auslösen"/>
+<meta property="og:description" content="Maßgeschneiderte Conversion-Websites für Handwerk & Medizin. Live-Audit. ROI-Rechner. Ab 850€."/>
 <meta property="og:type" content="website"/>
 <meta property="og:locale" content="de_DE"/>
-
+<meta property="og:url" content="https://vantor-marketing.vercel.app"/>
+<link rel="canonical" href="https://vantor-marketing.vercel.app"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%23030304%22/><path d=%22M28 22L50 78L72 22%22 stroke=%22%23c8ff0a%22 stroke-width=%225%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>" type="image/svg+xml"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+<link rel="preconnect" href="https://api.web3forms.com"/>
+<link rel="dns-prefetch" href="https://zeeg.me"/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"VANTOR","alternateName":"VANTOR Marketing","description":"Conversion-Websites, Local SEO und Sales Consulting für Handwerksbetriebe und Praxen im DACH-Raum.","url":"https://vantor-marketing.vercel.app","email":"info@vantor-marketing.com","telephone":"+4917661039764","priceRange":"€€","address":{"@type":"PostalAddress","addressLocality":"Sachsenheim","addressRegion":"Baden-Württemberg","postalCode":"74343","addressCountry":"DE"},"geo":{"@type":"GeoCoordinates","latitude":48.961,"longitude":9.063},"areaServed":[{"@type":"Country","name":"Deutschland"},{"@type":"Country","name":"Österreich"},{"@type":"Country","name":"Schweiz"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}],"founder":{"@type":"Person","name":"Benjamin Krieg","jobTitle":"Geschäftsführer","knowsLanguage":["de","en","it","es","pt","fr"]},"knowsAbout":["Webdesign","Conversion Optimization","Local SEO","Sales Consulting","Handwerker Marketing","Praxis Marketing"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"24","bestRating":"5"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Was kostet eine professionelle Website bei VANTOR?","acceptedAnswer":{"@type":"Answer","text":"Projekte starten ab 850 Euro. Der Preis hängt von Umfang, Branche und Integrationen ab. Verbindliches Angebot nach 15-minütigem Erstgespräch."}},
+{"@type":"Question","name":"Wie lange dauert die Erstellung einer Website?","acceptedAnswer":{"@type":"Answer","text":"1 bis 3 Wochen. Erstkonzept innerhalb von 48 Stunden nach Kickoff."}},
+{"@type":"Question","name":"Ist SEO inklusive?","acceptedAnswer":{"@type":"Answer","text":"Ja. Local SEO, Schema.org Markup, Meta-Optimierung, Pagespeed und Mobile-First sind in jeder Website enthalten."}},
+{"@type":"Question","name":"Bekomme ich ein Template oder individuelles Design?","acceptedAnswer":{"@type":"Answer","text":"Jede Website wird neu konzipiert und handgeschrieben. Kein WordPress-Theme, kein Baukasten."}}
+]}
+</script>
 
 <style>
-/* ══════════════════════════════
-   CSS RESET & VARIABLES
-══════════════════════════════ */
+/* ═════════════════════════════════════════════════════════════════════
+   RESET + TOKENS
+═════════════════════════════════════════════════════════════════════ */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-
 :root{
-  --void:#050507;
-  --base:#0a0a0f;
-  --layer:#111118;
-  --layer-2:#16161f;
-  --primary:#c8ff0a;
-  --primary-hover:#d4ff3a;
-  --primary-glow:rgba(200,255,10,.15);
-  --primary-dim:rgba(200,255,10,.06);
-  --secondary:#3a3aff;
-  --secondary-glow:rgba(58,58,255,.12);
-  --accent:#ff3a6e;
-  --text-main:#eeeef0;
-  --text-muted:#7a7a8e;
-  --text-dim:#4a4a5e;
-  --border:rgba(255,255,255,.07);
-  --border-m:rgba(255,255,255,.13);
-  --font-display:'Syne',sans-serif;
-  --font-body:'Space Grotesk',sans-serif;
-  --font-mono:'DM Mono',monospace;
-  --ease:cubic-bezier(.19,1,.22,1);
-  --ease-s:cubic-bezier(.33,1,.68,1);
-  --t-fast:.25s;
-  --t-mid:.5s;
-  --t-slow:.85s;
-  --radius:14px;
-  --radius-s:8px;
-  --radius-xs:5px;
+  --void:#030304;--base:#08080c;--layer:#0f0f16;--layer-2:#14141d;--layer-3:#1a1a26;
+  --primary:#c8ff0a;--primary-h:#d8ff44;--primary-d:rgba(200,255,10,.06);--primary-g:rgba(200,255,10,.18);
+  --accent:#ff4d6a;--blue:#4466ff;--gold:#ffb84d;
+  --t1:#f0f0f2;--t2:#9a9aae;--t3:#5a5a70;--t4:#2e2e42;
+  --b1:rgba(255,255,255,.06);--b2:rgba(255,255,255,.12);--b3:rgba(255,255,255,.20);
+  --serif:'Instrument Serif',Georgia,serif;
+  --sans:'Outfit',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --ease-bounce:cubic-bezier(.34,1.56,.64,1);
+  --r-sm:8px;--r-md:12px;--r-lg:18px;--r-xl:24px;
 }
-
-html{scroll-behavior:smooth;background:var(--void);color:var(--text-main);font-family:var(--font-body);font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-body{background:var(--void);overflow-x:hidden}
+html{scroll-behavior:smooth;background:var(--void);color:var(--t1);font-family:var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden;text-rendering:optimizeLegibility}
+body{background:var(--void);overflow-x:hidden;min-height:100vh}
 a{color:inherit;text-decoration:none}
+button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
 img{max-width:100%;display:block}
-button{cursor:pointer;border:none;background:none;font-family:inherit;color:inherit}
 ul,ol{list-style:none}
-
 ::selection{background:var(--primary);color:var(--void)}
+:focus-visible{outline:2px solid var(--primary);outline-offset:3px;border-radius:4px}
 
-/* ══════════════════════════════
-   UTILITY
-══════════════════════════════ */
-.container{width:100%;max-width:1280px;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)}
-.section{padding:clamp(4rem,10vw,9rem) 0}
-.eyebrow{font-family:var(--font-mono);font-size:clamp(.7rem,.8vw,.82rem);letter-spacing:.18em;text-transform:uppercase;color:var(--primary);margin-bottom:1rem;display:flex;align-items:center;gap:.75rem}
-.eyebrow::before{content:'';width:2rem;height:1px;background:var(--primary)}
-.section-title{font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.6rem);font-weight:800;line-height:1.08;letter-spacing:-.03em;margin-bottom:1.5rem}
-.section-sub{font-size:clamp(.95rem,1.1vw,1.12rem);color:var(--text-muted);line-height:1.7;max-width:560px}
+/* Grain overlay — subtle film texture */
+body::after{content:'';position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 
-/* ══════════════════════════════
-   CUSTOM CURSOR (desktop only)
-══════════════════════════════ */
-@media(hover:hover){
-  .cursor-dot,.cursor-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:99999;border-radius:50%;mix-blend-mode:difference}
-  .cursor-dot{width:8px;height:8px;background:var(--primary);transform:translate(-50%,-50%)}
-  .cursor-ring{width:40px;height:40px;border:1.5px solid rgba(200,255,10,.45);transform:translate(-50%,-50%);transition:width .35s var(--ease),height .35s var(--ease),border-color .35s}
-  .cursor-ring.hover{width:60px;height:60px;border-color:var(--primary)}
+/* Vignette */
+body::before{content:'';position:fixed;inset:0;z-index:9997;pointer-events:none;background:radial-gradient(ellipse 90% 80% at 50% 50%,transparent 55%,rgba(3,3,4,.4))}
+
+/* ═════════════════════════════════════════════════════════════════════
+   UTILITIES
+═════════════════════════════════════════════════════════════════════ */
+.ctn{max-width:1320px;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)}
+.sc{padding:clamp(4rem,8vw,7rem) 0;position:relative}
+.ey{font-family:var(--mono);font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--primary);display:inline-flex;align-items:center;gap:.75rem;margin-bottom:1.25rem}
+.ey::before{content:'';width:1.5rem;height:1px;background:var(--primary)}
+.st{font-family:var(--serif);font-size:clamp(2.2rem,5.5vw,4.4rem);font-weight:400;line-height:1.04;letter-spacing:-.025em;margin-bottom:1rem}
+.st em{font-style:italic;color:var(--primary)}
+
+/* ═════════════════════════════════════════════════════════════════════
+   PRELOADER
+═════════════════════════════════════════════════════════════════════ */
+.pld{position:fixed;inset:0;z-index:99990;background:var(--void);display:flex;align-items:center;justify-content:center;flex-direction:column;transition:opacity .6s,visibility .6s}
+.pld.done{opacity:0;visibility:hidden;pointer-events:none}
+.pld-lg{font-family:var(--sans);font-weight:800;font-size:2rem;letter-spacing:.14em;color:var(--t1)}
+.pld-lg i{font-style:normal;color:var(--primary)}
+.pld-bar{width:140px;height:2px;background:rgba(255,255,255,.06);border-radius:2px;margin-top:1.5rem;overflow:hidden}
+.pld-fill{height:100%;width:0;background:linear-gradient(90deg,var(--primary),var(--blue));animation:plFill 1.6s var(--ease) .3s forwards}
+@keyframes plFill{to{width:100%}}
+.pld-sub{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--t3);margin-top:.85rem}
+body.loading{overflow:hidden}
+
+/* ═════════════════════════════════════════════════════════════════════
+   CUSTOM CURSOR
+═════════════════════════════════════════════════════════════════════ */
+@media(hover:hover) and (pointer:fine){
   body{cursor:none}
-  a,button,[data-hover]{cursor:none}
+  a,button,[data-h],input,textarea,select{cursor:none}
+  input,textarea{cursor:text!important}
+  .cur-d,.cur-r{position:fixed;top:0;left:0;pointer-events:none;z-index:99999;border-radius:50%;mix-blend-mode:difference;will-change:transform}
+  .cur-d{width:6px;height:6px;background:var(--primary);transform:translate(-50%,-50%)}
+  .cur-r{width:42px;height:42px;border:1px solid rgba(200,255,10,.45);transform:translate(-50%,-50%);transition:width .35s var(--ease),height .35s var(--ease),border-color .3s}
+  .cur-r.h{width:72px;height:72px;border-color:rgba(200,255,10,.75)}
+  .cur-r.text{width:6px;height:34px;border-radius:2px;border-color:var(--primary);background:rgba(200,255,10,.3)}
 }
 
-/* ══════════════════════════════
-   NAVIGATION
-══════════════════════════════ */
-.nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:1.5rem 0;transition:all .5s var(--ease)}
-.nav.stuck{padding:.75rem 0;background:rgba(5,5,7,.85);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between}
-.nav-logo{font-family:var(--font-display);font-weight:800;font-size:1.5rem;letter-spacing:.08em;color:var(--text-main)}
-.nav-logo span{color:var(--primary)}
-.nav-links{display:flex;gap:2.5rem;align-items:center}
-.nav-links a{font-size:.85rem;font-weight:500;letter-spacing:.04em;color:var(--text-muted);transition:color var(--t-fast);position:relative}
-.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1.5px;background:var(--primary);transition:width .35s var(--ease)}
-.nav-links a:hover{color:var(--text-main)}
-.nav-links a:hover::after{width:100%}
-.nav-cta{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.5rem;background:var(--primary);color:var(--void);font-weight:600;font-size:.82rem;letter-spacing:.04em;border-radius:100px;transition:all var(--t-fast);position:relative;overflow:hidden}
-.nav-cta:hover{background:var(--primary-hover);transform:translateY(-1px);box-shadow:0 8px 30px var(--primary-glow)}
-.nav-cta::after{display:none}
-.burger{display:none;flex-direction:column;gap:5px;width:28px}
-.burger span{height:2px;background:var(--text-main);border-radius:2px;transition:all .35s var(--ease)}
+/* ═════════════════════════════════════════════════════════════════════
+   SCROLL PROGRESS
+═════════════════════════════════════════════════════════════════════ */
+.sp{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--primary),var(--blue));z-index:10001;width:0;pointer-events:none;transition:width .1s linear}
 
-.mobile-drawer{position:fixed;top:0;left:0;width:100%;height:100dvh;background:var(--void);z-index:999;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2rem;opacity:0;pointer-events:none;transition:opacity .4s var(--ease)}
-.mobile-drawer.open{opacity:1;pointer-events:all}
-.mobile-drawer a{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.5rem);font-weight:700;color:var(--text-main);letter-spacing:-.01em}
-.mobile-drawer .nav-cta{font-size:1rem;padding:.85rem 2rem;margin-top:1rem}
-.mobile-close{position:absolute;top:1.5rem;right:clamp(1.25rem,4vw,3rem);font-size:2rem;color:var(--text-muted)}
+/* ═════════════════════════════════════════════════════════════════════
+   NAV
+═════════════════════════════════════════════════════════════════════ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.1rem 0;transition:padding .5s var(--ease),background .5s,backdrop-filter .5s}
+.nav.stuck{padding:.55rem 0;background:rgba(3,3,4,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--b1)}
+.nav-i{display:flex;align-items:center;justify-content:space-between;max-width:1320px;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)}
+.lg{font-weight:800;font-size:1.35rem;letter-spacing:.14em}
+.lg i{font-style:normal;color:var(--primary);display:inline-block}
+.nav-l{display:flex;gap:1.85rem;align-items:center}
+.nav-l a{font-size:.78rem;font-weight:500;letter-spacing:.04em;color:var(--t2);position:relative;transition:color .25s}
+.nav-l a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--primary);transition:width .35s var(--ease)}
+.nav-l a:hover{color:var(--t1)}
+.nav-l a:hover::after{width:100%}
+.nc{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1.35rem;background:var(--primary);color:var(--void);font-weight:700;font-size:.78rem;letter-spacing:.03em;border-radius:100px;transition:all .25s;position:relative;overflow:hidden}
+.nc:hover{background:var(--primary-h);transform:translateY(-1px);box-shadow:0 8px 28px var(--primary-g)}
+.nc::after{display:none!important}
+.bur{display:none;flex-direction:column;gap:5px;width:26px;padding:6px;background:transparent}
+.bur span{height:1.5px;background:var(--t1);border-radius:2px;transition:all .3s var(--ease)}
+@media(max-width:900px){.nav-l{display:none}.bur{display:flex}}
+.mob{position:fixed;inset:0;background:var(--void);z-index:9990;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1.85rem;opacity:0;pointer-events:none;transition:opacity .4s}
+.mob.open{opacity:1;pointer-events:all}
+.mob a{font-family:var(--serif);font-size:clamp(1.85rem,6vw,2.6rem);color:var(--t1)}
+.mob-x{position:absolute;top:1.5rem;right:1.5rem;font-size:1.8rem;color:var(--t2);background:transparent;width:44px;height:44px}
 
-@media(max-width:860px){
-  .nav-links{display:none}
-  .burger{display:flex}
-}
-
-/* ══════════════════════════════
+/* ═════════════════════════════════════════════════════════════════════
    HERO
-══════════════════════════════ */
-.hero{min-height:100dvh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:8rem;padding-bottom:4rem}
+═════════════════════════════════════════════════════════════════════ */
+.hero{min-height:100dvh;display:flex;align-items:center;position:relative;overflow:hidden;padding:7rem 0 3rem}
 .hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 70% 30%,rgba(200,255,10,.04) 0%,transparent 60%),radial-gradient(ellipse 50% 50% at 20% 80%,rgba(58,58,255,.04) 0%,transparent 50%)}
-.hero-grid-lines{position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:80px 80px;opacity:.3}
-.hero-content{position:relative;z-index:2;max-width:800px}
-.hero-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem 1rem;border:1px solid var(--border-m);border-radius:100px;font-size:.75rem;font-family:var(--font-mono);color:var(--text-muted);margin-bottom:2rem;animation:heroFadeUp .8s var(--ease) .2s both}
-.hero-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--primary);animation:pulse 2s ease-in-out infinite}
-.hero h1{font-family:var(--font-display);font-size:clamp(2.6rem,6.5vw,5.2rem);font-weight:800;line-height:1.02;letter-spacing:-.04em;margin-bottom:1.5rem;animation:heroFadeUp .8s var(--ease) .4s both}
-.hero h1 .highlight{color:var(--primary);position:relative;display:inline-block}
-.hero h1 .line-2{display:block;color:var(--text-muted);font-weight:600;font-size:.55em;letter-spacing:-.02em;margin-top:.3em}
-.hero-sub{font-size:clamp(1rem,1.2vw,1.15rem);color:var(--text-muted);line-height:1.75;max-width:540px;margin-bottom:2.5rem;animation:heroFadeUp .8s var(--ease) .6s both}
-.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;animation:heroFadeUp .8s var(--ease) .8s both}
-.btn-primary{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 2rem;background:var(--primary);color:var(--void);font-weight:700;font-size:.9rem;letter-spacing:.02em;border-radius:100px;transition:all var(--t-fast);position:relative;overflow:hidden}
-.btn-primary:hover{background:var(--primary-hover);transform:translateY(-2px);box-shadow:0 12px 40px var(--primary-glow)}
-.btn-primary .arrow{transition:transform .3s var(--ease)}.btn-primary:hover .arrow{transform:translateX(3px)}
-.btn-secondary{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 2rem;border:1px solid var(--border-m);color:var(--text-main);font-weight:500;font-size:.9rem;border-radius:100px;transition:all var(--t-fast)}
-.btn-secondary:hover{border-color:var(--text-muted);background:rgba(255,255,255,.03)}
+.hero-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 70% 25%,rgba(200,255,10,.05),transparent 55%),radial-gradient(ellipse 50% 40% at 15% 80%,rgba(68,102,255,.04),transparent 50%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(var(--b1) 1px,transparent 1px),linear-gradient(90deg,var(--b1) 1px,transparent 1px);background-size:72px 72px;opacity:.3;mask-image:radial-gradient(ellipse 75% 65% at 50% 50%,black,transparent)}
+.hero-orb{position:absolute;width:520px;height:520px;border-radius:50%;filter:blur(100px);opacity:.18;pointer-events:none;animation:orb 14s ease-in-out infinite}
+.hero-orb.o1{background:var(--primary);top:-10%;right:-5%}
+.hero-orb.o2{background:var(--blue);bottom:-15%;left:-8%;animation-delay:-7s}
+@keyframes orb{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(40px,-30px) scale(1.1)}}
 
-.hero-stats{display:flex;gap:3rem;margin-top:4rem;padding-top:2.5rem;border-top:1px solid var(--border);animation:heroFadeUp .8s var(--ease) 1s both}
-.hero-stat .num{font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;color:var(--primary)}
-.hero-stat .label{font-size:.78rem;color:var(--text-dim);margin-top:.25rem;letter-spacing:.04em}
+.hero-ct{position:relative;z-index:2;width:100%;display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;align-items:center}
+.hero-l{max-width:680px}
+.hero-badge{display:inline-flex;align-items:center;gap:.6rem;padding:.4rem .95rem;border:1px solid var(--b2);border-radius:100px;font-size:.66rem;font-family:var(--mono);color:var(--t2);margin-bottom:1.85rem;letter-spacing:.08em;background:rgba(255,255,255,.02);backdrop-filter:blur(8px)}
+.hero-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--primary);box-shadow:0 0 10px var(--primary);animation:pls 2.5s ease-in-out infinite}
+@keyframes pls{0%,100%{opacity:1;box-shadow:0 0 10px var(--primary)}50%{opacity:.4;box-shadow:0 0 2px var(--primary)}}
 
-@keyframes heroFadeUp{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:none}}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-family:var(--serif);font-size:clamp(2.6rem,6.8vw,5.4rem);font-weight:400;line-height:1.0;letter-spacing:-.03em;margin-bottom:1.5rem}
+.hero h1 .hi{color:var(--primary);font-style:italic;position:relative;display:inline-block}
+.hero h1 .hi::after{content:'';position:absolute;left:0;right:0;bottom:.08em;height:2px;background:var(--primary);opacity:.25;transform:scaleX(0);transform-origin:left;animation:underln 1.2s var(--ease) 1.6s forwards}
+@keyframes underln{to{transform:scaleX(1)}}
+.hero h1 .l2{display:block;font-family:var(--sans);font-weight:300;font-size:.32em;letter-spacing:0;color:var(--t2);margin-top:.85em;line-height:1.5}
 
-/* ══════════════════════════════
-   TICKER
-══════════════════════════════ */
-.ticker{background:var(--primary);padding:.7rem 0;overflow:hidden;white-space:nowrap}
-.ticker-track{display:inline-flex;animation:tickerScroll 30s linear infinite}
-.ticker-item{display:inline-flex;align-items:center;gap:.5rem;padding:0 2rem;font-family:var(--font-display);font-size:.82rem;font-weight:700;color:var(--void);letter-spacing:.06em;text-transform:uppercase}
-.ticker-item .sep{width:5px;height:5px;background:var(--void);border-radius:50%;opacity:.3}
-@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.hero-sub{font-size:clamp(.95rem,1.1vw,1.05rem);font-weight:300;color:var(--t2);line-height:1.75;max-width:520px;margin-bottom:2.25rem}
+.hero-sub strong{color:var(--t1);font-weight:500}
 
-/* ══════════════════════════════
-   PROBLEM SECTION
-══════════════════════════════ */
-.problems{background:var(--base)}
-.problems-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
-.problem-card{padding:2rem;background:var(--layer);border:1px solid var(--border);border-radius:var(--radius);transition:all .4s var(--ease);position:relative;overflow:hidden}
-.problem-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
-.problem-card:hover::before{transform:scaleX(1)}
-.problem-card:hover{border-color:var(--border-m);background:var(--layer-2)}
-.problem-num{font-family:var(--font-mono);font-size:.72rem;color:var(--accent);margin-bottom:1rem;letter-spacing:.15em}
-.problem-card h4{font-family:var(--font-display);font-size:1.15rem;font-weight:700;margin-bottom:.75rem}
-.problem-card p{font-size:.88rem;color:var(--text-muted);line-height:1.65}
+.hero-acts{display:flex;gap:.85rem;flex-wrap:wrap;align-items:center;margin-bottom:1rem}
+.bp{display:inline-flex;align-items:center;gap:.55rem;padding:.95rem 1.85rem;background:var(--primary);color:var(--void);font-weight:700;font-size:.85rem;letter-spacing:.02em;border-radius:100px;transition:all .25s;position:relative;overflow:hidden}
+.bp::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);transform:translateX(-100%);transition:transform .6s}
+.bp:hover::before{transform:translateX(100%)}
+.bp:hover{background:var(--primary-h);transform:translateY(-2px);box-shadow:0 12px 40px var(--primary-g)}
+.bp .ar{transition:transform .3s var(--ease)}
+.bp:hover .ar{transform:translateX(4px)}
+.bs{display:inline-flex;align-items:center;gap:.55rem;padding:.95rem 1.85rem;border:1px solid var(--b2);color:var(--t1);font-weight:400;font-size:.85rem;border-radius:100px;transition:all .25s;background:rgba(255,255,255,.02)}
+.bs:hover{border-color:var(--b3);background:rgba(255,255,255,.04)}
+.micro{font-size:.68rem;color:var(--t3);font-family:var(--mono);letter-spacing:.08em;margin-bottom:2rem}
 
-/* ══════════════════════════════
-   SERVICES
-══════════════════════════════ */
-.services{background:var(--void)}
-.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem}
-.service-card{padding:2.5rem;background:var(--layer);border:1px solid var(--border);border-radius:var(--radius);transition:all .45s var(--ease);position:relative;overflow:hidden;display:flex;flex-direction:column}
-.service-card.featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:3rem;background:linear-gradient(135deg,var(--layer) 0%,rgba(200,255,10,.03) 100%);border-color:rgba(200,255,10,.12)}
-.service-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:var(--primary);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
-.service-card:hover::before{transform:scaleX(1)}
-.service-card:hover{border-color:var(--border-m);transform:translateY(-3px)}
-.service-num{font-family:var(--font-mono);font-size:.7rem;color:var(--text-dim);letter-spacing:.15em;margin-bottom:1.5rem}
-.service-card h3{font-family:var(--font-display);font-size:clamp(1.2rem,1.5vw,1.45rem);font-weight:700;margin-bottom:.75rem}
-.service-card p{font-size:.9rem;color:var(--text-muted);line-height:1.7;flex:1}
-.service-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.25rem}
-.service-tags span{padding:.3rem .8rem;background:var(--primary-dim);color:var(--primary);font-size:.72rem;font-weight:500;border-radius:100px;letter-spacing:.03em}
-.service-price{margin-top:1.5rem;font-family:var(--font-display);font-weight:700;font-size:1.1rem;color:var(--primary)}
-.service-price small{font-weight:400;color:var(--text-muted);font-size:.78rem;font-family:var(--font-body)}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;padding-top:1.85rem;border-top:1px solid var(--b1)}
+.hs .n{font-family:var(--serif);font-size:clamp(1.85rem,3vw,2.6rem);color:var(--primary);font-style:italic;line-height:1}
+.hs .l{font-size:.7rem;color:var(--t3);margin-top:.4rem;letter-spacing:.05em;font-weight:500;text-transform:uppercase}
 
-/* ══════════════════════════════
-   RESULTS
-══════════════════════════════ */
-.results{background:var(--base)}
-.results-split{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-top:3rem}
-.results-visual{position:relative}
-.results-mockup{width:100%;aspect-ratio:4/3;background:var(--layer);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;position:relative}
-.results-mockup::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(200,255,10,.05),rgba(58,58,255,.03));z-index:1}
-.mockup-dots{display:flex;gap:6px;padding:1rem 1.25rem;border-bottom:1px solid var(--border)}
-.mockup-dots span{width:10px;height:10px;border-radius:50%;border:1.5px solid var(--text-dim)}
-.mockup-body{padding:2rem;display:flex;flex-direction:column;gap:1rem}
-.mockup-line{height:8px;background:var(--border-m);border-radius:4px}
-.mockup-line:nth-child(1){width:60%}
-.mockup-line:nth-child(2){width:85%;height:40px;background:linear-gradient(90deg,rgba(200,255,10,.08),rgba(200,255,10,.02))}
-.mockup-line:nth-child(3){width:40%}
-.mockup-line:nth-child(4){width:70%}
-.results-float{position:absolute;bottom:-1.5rem;right:-1.5rem;background:var(--layer-2);border:1px solid var(--primary);border-radius:var(--radius-s);padding:1.25rem 1.75rem;z-index:2;animation:float 5s ease-in-out infinite}
-.results-float .big{font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--primary)}
-.results-float .small{font-size:.78rem;color:var(--text-muted)}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+/* ROI Widget in Hero */
+.roi{background:linear-gradient(180deg,var(--layer),var(--layer-2));border:1px solid var(--b1);border-radius:var(--r-xl);padding:1.85rem;position:relative;overflow:hidden}
+.roi::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--primary),transparent)}
+.roi-h{display:flex;align-items:center;gap:.6rem;margin-bottom:1.25rem}
+.roi-h .pip{width:8px;height:8px;border-radius:50%;background:var(--primary);box-shadow:0 0 12px var(--primary);animation:pls 2s infinite}
+.roi-h h3{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--t2)}
+.roi-title{font-family:var(--serif);font-style:italic;font-size:1.4rem;line-height:1.2;margin-bottom:1.4rem;color:var(--t1)}
 
-.results-content .result-item{display:flex;gap:1rem;align-items:flex-start;padding:1.25rem 0;border-bottom:1px solid var(--border)}
-.result-item:last-child{border:none}
-.result-check{width:28px;height:28px;min-width:28px;border-radius:50%;background:var(--primary-dim);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:.85rem;margin-top:.15rem}
-.result-item h4{font-size:1rem;font-weight:600;margin-bottom:.25rem}
-.result-item p{font-size:.85rem;color:var(--text-muted);line-height:1.6}
+.roi-row{margin-bottom:1.1rem}
+.roi-row label{display:flex;justify-content:space-between;align-items:baseline;font-size:.75rem;color:var(--t2);margin-bottom:.5rem;font-weight:500}
+.roi-row label span{color:var(--primary);font-family:var(--mono);font-size:.85rem;font-weight:600}
+.roi-slider{appearance:none;width:100%;height:6px;background:rgba(255,255,255,.06);border-radius:6px;outline:none;cursor:grab}
+.roi-slider:active{cursor:grabbing}
+.roi-slider::-webkit-slider-thumb{appearance:none;width:18px;height:18px;border-radius:50%;background:var(--primary);cursor:grab;box-shadow:0 0 0 4px rgba(200,255,10,.15),0 0 14px var(--primary-g);transition:transform .2s}
+.roi-slider::-webkit-slider-thumb:hover{transform:scale(1.15)}
+.roi-slider::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--primary);cursor:grab;border:none;box-shadow:0 0 0 4px rgba(200,255,10,.15)}
 
-/* ══════════════════════════════
-   FOUNDER
-══════════════════════════════ */
-.founder{background:var(--void);position:relative;overflow:hidden}
-.founder::before{content:'';position:absolute;top:0;right:0;width:50%;height:100%;background:radial-gradient(ellipse at 80% 50%,rgba(200,255,10,.03),transparent 70%)}
-.founder-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem;align-items:center;margin-top:3rem}
-.founder-visual{position:relative}
-.founder-photo{width:100%;aspect-ratio:3/4;background:var(--layer);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;position:relative}
-.founder-photo::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(5,5,7,.8) 100%);z-index:1}
-.founder-photo-inner{position:absolute;inset:0;background:linear-gradient(135deg,var(--layer) 0%,var(--layer-2) 100%);display:flex;align-items:center;justify-content:center}
-.founder-initials{font-family:var(--font-display);font-size:6rem;font-weight:800;color:var(--primary);opacity:.08}
-.founder-badge{position:absolute;bottom:1.5rem;left:1.5rem;z-index:2;background:rgba(10,10,15,.85);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid var(--border-m);border-radius:var(--radius-s);padding:1rem 1.5rem}
-.founder-badge .name{font-family:var(--font-display);font-weight:700;font-size:1.1rem}
-.founder-badge .role{font-size:.78rem;color:var(--primary);margin-top:.15rem;font-family:var(--font-mono);letter-spacing:.05em}
-.founder-float{position:absolute;top:2rem;right:-1rem;background:var(--layer-2);border:1px solid var(--border-m);border-radius:var(--radius-s);padding:1rem 1.25rem;z-index:3;animation:float 6s ease-in-out infinite .5s}
-.founder-float .ff-num{font-family:var(--font-display);font-size:1.6rem;font-weight:800;color:var(--primary)}
-.founder-float .ff-label{font-size:.72rem;color:var(--text-muted);margin-top:.1rem}
+.roi-out{margin-top:1.5rem;padding-top:1.4rem;border-top:1px solid var(--b1);text-align:center}
+.roi-out .loss{font-family:var(--serif);font-style:italic;font-size:clamp(2rem,4vw,2.8rem);color:var(--accent);line-height:1;transition:color .3s}
+.roi-out .lbl{font-size:.72rem;color:var(--t3);margin-top:.4rem;letter-spacing:.05em}
+.roi-out .gain{font-family:var(--mono);font-size:.78rem;color:var(--primary);margin-top:.85rem;letter-spacing:.04em}
+.roi-out .gain b{font-weight:600}
 
-.founder-content h3{font-family:var(--font-display);font-size:clamp(1.6rem,2.8vw,2.2rem);font-weight:800;line-height:1.1;margin-bottom:1.5rem;letter-spacing:-.02em}
-.founder-content h3 em{font-style:normal;color:var(--primary)}
-.founder-text{font-size:.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:1.5rem}
-.founder-traits{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:2rem;margin-bottom:2rem}
-.founder-trait{display:flex;align-items:center;gap:.6rem;padding:.7rem 1rem;background:var(--layer);border:1px solid var(--border);border-radius:var(--radius-s);font-size:.82rem;font-weight:500;transition:border-color .3s}
-.founder-trait:hover{border-color:var(--primary)}
-.founder-trait .ft-icon{color:var(--primary);font-size:.9rem}
-.founder-cta-row{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem}
-
-/* ══════════════════════════════
-   PROCESS
-══════════════════════════════ */
-.process{background:var(--base)}
-.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem}
-.step{padding:2rem;background:var(--layer);border:1px solid var(--border);border-radius:var(--radius);text-align:center;position:relative;transition:all .4s var(--ease)}
-.step:hover{border-color:var(--primary);background:var(--layer-2)}
-.step-num{font-family:var(--font-display);font-size:4rem;font-weight:800;color:var(--primary);opacity:.08;position:absolute;top:.5rem;right:1rem;line-height:1}
-.step-icon{width:48px;height:48px;border-radius:12px;background:var(--primary-dim);display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;font-size:1.2rem}
-.step h4{font-family:var(--font-display);font-size:1rem;font-weight:700;margin-bottom:.6rem}
-.step p{font-size:.82rem;color:var(--text-muted);line-height:1.6}
-
-/* ══════════════════════════════
-   TESTIMONIALS
-══════════════════════════════ */
-.testimonials{background:var(--void)}
-.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
-.testimonial{padding:2rem;background:var(--layer);border:1px solid var(--border);border-radius:var(--radius);transition:all .4s var(--ease)}
-.testimonial:hover{border-color:var(--border-m)}
-.testimonial-stars{color:var(--primary);font-size:.9rem;letter-spacing:2px;margin-bottom:1rem}
-.testimonial p{font-size:.92rem;color:var(--text-muted);line-height:1.7;font-style:italic;margin-bottom:1.25rem}
-.testimonial-author{display:flex;align-items:center;gap:.75rem}
-.testimonial-avatar{width:36px;height:36px;border-radius:50%;background:var(--primary-dim);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.75rem;color:var(--primary)}
-.testimonial-name{font-weight:600;font-size:.85rem}
-.testimonial-role{font-size:.75rem;color:var(--text-dim)}
-
-/* ══════════════════════════════
-   FAQ
-══════════════════════════════ */
-.faq{background:var(--base)}
-.faq-list{max-width:720px;margin:3rem auto 0}
-.faq-item{border-bottom:1px solid var(--border)}
-.faq-q{width:100%;text-align:left;padding:1.5rem 0;display:flex;justify-content:space-between;align-items:center;font-size:1rem;font-weight:600;color:var(--text-main);transition:color var(--t-fast)}
-.faq-q:hover{color:var(--primary)}
-.faq-icon{font-size:1.3rem;color:var(--text-dim);transition:transform .35s var(--ease),color .35s}
-.faq-item.open .faq-icon{transform:rotate(45deg);color:var(--primary)}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
-.faq-item.open .faq-a{max-height:300px}
-.faq-a p{padding:0 0 1.5rem;font-size:.9rem;color:var(--text-muted);line-height:1.7}
-
-/* ══════════════════════════════
-   CTA BAND
-══════════════════════════════ */
-.cta-band{background:var(--primary);padding:clamp(4rem,8vw,7rem) 0;text-align:center;position:relative;overflow:hidden}
-.cta-band::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(5,5,7,.05) 0%,transparent 70%)}
-.cta-band h2{font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.5rem);font-weight:800;color:var(--void);line-height:1.08;letter-spacing:-.03em;margin-bottom:1rem;position:relative;z-index:1}
-.cta-band p{font-size:1.05rem;color:rgba(5,5,7,.6);margin-bottom:2.5rem;position:relative;z-index:1}
-.cta-band-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
-.btn-dark{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 2.2rem;background:var(--void);color:var(--primary);font-weight:700;font-size:.9rem;border-radius:100px;transition:all var(--t-fast)}
-.btn-dark:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,.3)}
-.btn-outline-dark{display:inline-flex;align-items:center;gap:.5rem;padding:.95rem 2.2rem;border:2px solid var(--void);color:var(--void);font-weight:600;font-size:.9rem;border-radius:100px;transition:all var(--t-fast)}
-.btn-outline-dark:hover{background:var(--void);color:var(--primary)}
-
-/* ══════════════════════════════
-   CONTACT
-══════════════════════════════ */
-.contact{background:var(--void)}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:3rem}
-.contact-info h3{font-family:var(--font-display);font-size:clamp(1.5rem,2.5vw,2rem);font-weight:800;margin-bottom:1.5rem}
-.contact-detail{display:flex;gap:1rem;align-items:flex-start;margin-bottom:1.5rem}
-.contact-detail-icon{width:40px;height:40px;min-width:40px;border-radius:10px;background:var(--layer);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1rem}
-.contact-detail h4{font-weight:600;font-size:.9rem;margin-bottom:.15rem}
-.contact-detail p{font-size:.85rem;color:var(--text-muted)}
-.contact-form-wrap{background:var(--layer);border:1px solid var(--border);border-radius:var(--radius);padding:2.5rem}
-.form-group{margin-bottom:1.25rem}
-.form-group label{display:block;font-size:.8rem;font-weight:500;color:var(--text-muted);margin-bottom:.5rem;letter-spacing:.03em}
-.form-group input,.form-group select,.form-group textarea{width:100%;padding:.85rem 1rem;background:var(--base);border:1px solid var(--border);border-radius:var(--radius-s);color:var(--text-main);font-family:var(--font-body);font-size:.9rem;transition:border-color var(--t-fast);outline:none}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--primary)}
-.form-group textarea{resize:vertical;min-height:100px}
-.form-group select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 8L1 3h10z' fill='%237a7a8e'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.btn-submit{width:100%;padding:1rem;background:var(--primary);color:var(--void);font-weight:700;font-size:.95rem;border-radius:var(--radius-s);transition:all var(--t-fast);border:none;margin-top:.5rem;cursor:pointer}
-.btn-submit:hover{background:var(--primary-hover);box-shadow:0 8px 30px var(--primary-glow)}
-.btn-submit:disabled{opacity:.5;cursor:not-allowed}
-.form-note{text-align:center;font-size:.75rem;color:var(--text-dim);margin-top:1rem}
-
-/* ══════════════════════════════
-   FOOTER
-══════════════════════════════ */
-.footer{background:var(--base);border-top:1px solid var(--border);padding:4rem 0 0}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
-.footer-brand p{font-size:.85rem;color:var(--text-muted);line-height:1.7;margin-top:1rem;max-width:280px}
-.footer h5{font-family:var(--font-display);font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.25rem;color:var(--text-main)}
-.footer ul li{margin-bottom:.6rem}
-.footer ul li a{font-size:.85rem;color:var(--text-muted);transition:color var(--t-fast)}
-.footer ul li a:hover{color:var(--primary)}
-.footer-bottom{border-top:1px solid var(--border);padding:1.5rem 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-.footer-bottom p{font-size:.78rem;color:var(--text-dim)}
-.footer-legal{display:flex;gap:1.5rem}
-.footer-legal a{font-size:.78rem;color:var(--text-dim);transition:color var(--t-fast)}
-.footer-legal a:hover{color:var(--text-muted)}
-
-/* ══════════════════════════════
-   FLOATING CTA
-══════════════════════════════ */
-.floating-cta{position:fixed;bottom:1.5rem;right:1.5rem;z-index:900;width:56px;height:56px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px var(--primary-glow);animation:pulseFloat 3s ease-in-out infinite;transition:transform .3s}
-.floating-cta:hover{transform:scale(1.08)}
-.floating-cta svg{width:24px;height:24px;fill:var(--void)}
-@keyframes pulseFloat{0%,100%{box-shadow:0 6px 24px var(--primary-glow)}50%{box-shadow:0 6px 40px rgba(200,255,10,.3)}}
-
-/* ══════════════════════════════
-   SCROLL REVEAL
-══════════════════════════════ */
-[data-reveal]{opacity:0;transform:translateY(30px);transition:opacity var(--t-slow) var(--ease),transform var(--t-slow) var(--ease)}
-[data-reveal="left"]{transform:translateX(-30px)}
-[data-reveal="right"]{transform:translateX(30px)}
-[data-reveal="scale"]{transform:scale(.95)}
-[data-reveal].revealed{opacity:1;transform:none}
-[data-delay="1"]{transition-delay:.1s}
-[data-delay="2"]{transition-delay:.2s}
-[data-delay="3"]{transition-delay:.3s}
-[data-delay="4"]{transition-delay:.4s}
-[data-delay="5"]{transition-delay:.5s}
-
-/* ══════════════════════════════
-   SCROLL INDICATOR
-══════════════════════════════ */
-.scroll-indicator{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem}
-.scroll-line{width:1px;height:40px;background:var(--border-m);position:relative;overflow:hidden}
-.scroll-line::after{content:'';position:absolute;top:-100%;left:0;width:100%;height:100%;background:var(--primary);animation:scrollLine 2.4s ease-in-out infinite}
-@keyframes scrollLine{0%{top:-100%;opacity:0}30%{opacity:1}70%{opacity:1}100%{top:100%;opacity:0}}
-.scroll-text{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text-dim);writing-mode:vertical-rl;font-family:var(--font-mono)}
-
-/* ══════════════════════════════
-   RESPONSIVE
-══════════════════════════════ */
 @media(max-width:1100px){
-  .hero-stats{gap:2rem}
-  .results-split{grid-template-columns:1fr;gap:3rem}
-  .service-card.featured{grid-template-columns:1fr}
-  .founder-grid{grid-template-columns:1fr;gap:3rem}
-  .founder-visual{max-width:400px}
-}
-@media(max-width:860px){
-  .problems-grid{grid-template-columns:1fr}
-  .services-grid{grid-template-columns:1fr}
-  .process-steps{grid-template-columns:1fr 1fr}
-  .testimonial-grid{grid-template-columns:1fr}
-  .contact-grid{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr 1fr}
-  .hero-stats{flex-wrap:wrap;gap:1.5rem}
-  .founder-traits{grid-template-columns:1fr}
+  .hero-ct{grid-template-columns:1fr;gap:2.5rem}
+  .roi{max-width:480px;margin:0 auto}
 }
 @media(max-width:600px){
-  .process-steps{grid-template-columns:1fr}
-  .form-row{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr}
-  .hero h1{font-size:clamp(2.2rem,8vw,3rem)}
-  .hero-actions{flex-direction:column;align-items:flex-start}
-  .scroll-indicator{display:none}
-  .founder-cta-row{flex-direction:column}
+  .hero-stats{grid-template-columns:1fr 1fr;gap:1.25rem}
+  .hero-acts{flex-direction:column;align-items:stretch}
+  .bp,.bs{justify-content:center}
+}
+
+/* ═════════════════════════════════════════════════════════════════════
+   MARQUEE
+═════════════════════════════════════════════════════════════════════ */
+.mq{padding:.65rem 0;overflow:hidden;white-space:nowrap;border-top:1px solid var(--b1);border-bottom:1px solid var(--b1);background:linear-gradient(180deg,var(--void),var(--base))}
+.mq-t{display:inline-flex;animation:mqs 32s linear infinite}
+.mq-i{display:inline-flex;align-items:center;gap:1.25rem;padding:0 2rem;font-family:var(--serif);font-style:italic;font-size:.92rem;color:var(--t2)}
+.mq-i .sep{width:5px;height:5px;background:var(--primary);border-radius:50%;flex-shrink:0}
+@keyframes mqs{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ═════════════════════════════════════════════════════════════════════
+   LIVE AUDIT
+═════════════════════════════════════════════════════════════════════ */
+.audit{background:var(--base);position:relative}
+.audit-w{display:grid;grid-template-columns:1fr 1.2fr;gap:3rem;align-items:center;margin-top:2rem}
+.audit-l h2{font-family:var(--serif);font-size:clamp(1.85rem,3.5vw,2.8rem);font-weight:400;line-height:1.08;letter-spacing:-.02em;margin-bottom:1.25rem}
+.audit-l h2 em{font-style:italic;color:var(--primary)}
+.audit-l p{font-size:.92rem;color:var(--t2);line-height:1.75;margin-bottom:1.5rem;font-weight:300}
+.audit-l ul{display:flex;flex-direction:column;gap:.65rem}
+.audit-l ul li{display:flex;gap:.65rem;align-items:flex-start;font-size:.85rem;color:var(--t2);font-weight:300}
+.audit-l ul li svg{flex-shrink:0;margin-top:.2rem;width:16px;height:16px;stroke:var(--primary);stroke-width:2;fill:none}
+
+.audit-r{background:linear-gradient(180deg,var(--layer),var(--layer-2));border:1px solid var(--b1);border-radius:var(--r-xl);padding:2rem;position:relative;overflow:hidden}
+.audit-r::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--primary),transparent)}
+.audit-form{display:flex;gap:.6rem;margin-bottom:1.25rem}
+.audit-form input{flex:1;padding:.85rem 1rem;background:var(--base);border:1px solid var(--b1);border-radius:var(--r-sm);color:var(--t1);font:inherit;font-size:.88rem;outline:none;transition:border-color .25s}
+.audit-form input:focus{border-color:var(--primary)}
+.audit-form button{padding:.85rem 1.4rem;background:var(--primary);color:var(--void);font-weight:700;font-size:.82rem;border-radius:var(--r-sm);transition:all .25s;white-space:nowrap}
+.audit-form button:hover:not(:disabled){background:var(--primary-h);transform:translateY(-1px)}
+.audit-form button:disabled{opacity:.6;cursor:wait}
+
+.audit-results{min-height:280px;display:flex;flex-direction:column;justify-content:center}
+.audit-empty{text-align:center;color:var(--t3);font-size:.85rem;padding:2.5rem 1rem;font-weight:300}
+.audit-empty .ic{font-size:2rem;margin-bottom:.85rem;opacity:.4}
+
+.audit-loading{padding:1rem 0}
+.audit-loading .step{display:flex;align-items:center;gap:.85rem;padding:.55rem 0;font-size:.78rem;color:var(--t3);font-family:var(--mono);letter-spacing:.05em;opacity:.4;transition:opacity .35s,color .35s}
+.audit-loading .step.active{opacity:1;color:var(--t1)}
+.audit-loading .step.done{opacity:.7;color:var(--primary)}
+.audit-loading .step .sx{width:14px;height:14px;border-radius:50%;border:1.5px solid currentColor;display:flex;align-items:center;justify-content:center;font-size:.6rem;flex-shrink:0}
+.audit-loading .step.active .sx{border-color:var(--primary);animation:spin 1s linear infinite;border-right-color:transparent}
+.audit-loading .step.done .sx{background:var(--primary);border-color:var(--primary);color:var(--void)}
+.audit-loading .step.done .sx::after{content:'✓'}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.audit-score{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;margin-bottom:1.25rem}
+.asc{padding:1rem;background:var(--base);border:1px solid var(--b1);border-radius:var(--r-md);text-align:center;position:relative;overflow:hidden}
+.asc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent)}
+.asc.ok::before{background:var(--gold)}
+.asc.good::before{background:var(--primary)}
+.asc .scn{font-family:var(--serif);font-style:italic;font-size:2.2rem;color:var(--accent);line-height:1}
+.asc.ok .scn{color:var(--gold)}
+.asc.good .scn{color:var(--primary)}
+.asc .scl{font-size:.65rem;color:var(--t3);letter-spacing:.08em;text-transform:uppercase;margin-top:.35rem;font-weight:500}
+
+.audit-issues{display:flex;flex-direction:column;gap:.45rem}
+.aiss{display:flex;align-items:center;gap:.65rem;padding:.55rem .8rem;background:var(--base);border-left:2px solid var(--accent);border-radius:var(--r-sm);font-size:.78rem;color:var(--t2)}
+.aiss.warn{border-left-color:var(--gold)}
+.aiss.ok{border-left-color:var(--primary)}
+.aiss b{color:var(--t1);font-weight:500;margin-right:.35rem}
+.audit-cta{margin-top:1.25rem;text-align:center}
+.audit-cta a{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.5rem;background:var(--primary);color:var(--void);font-weight:700;font-size:.82rem;border-radius:100px;transition:all .25s}
+.audit-cta a:hover{background:var(--primary-h);transform:translateY(-1px)}
+
+@media(max-width:900px){.audit-w{grid-template-columns:1fr;gap:2rem}}
+
+/* ═════════════════════════════════════════════════════════════════════
+   PROBLEMS
+═════════════════════════════════════════════════════════════════════ */
+.prob{background:var(--void)}
+.prob-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2rem}
+.pc{padding:2.25rem;background:linear-gradient(180deg,var(--layer),var(--layer-2));border:1px solid var(--b1);border-radius:var(--r-lg);transition:all .45s var(--ease);position:relative;overflow:hidden}
+.pc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--primary));transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease)}
+.pc:hover::before{transform:scaleX(1)}
+.pc:hover{border-color:var(--b2);transform:translateY(-4px)}
+.pc-n{font-family:var(--mono);font-size:.65rem;color:var(--accent);margin-bottom:.85rem;letter-spacing:.18em;font-weight:500}
+.pc h4{font-family:var(--serif);font-size:1.25rem;font-style:italic;margin-bottom:.75rem;line-height:1.25}
+.pc p{font-size:.86rem;color:var(--t2);line-height:1.7;font-weight:300}
+@media(max-width:860px){.prob-g{grid-template-columns:1fr}}
+
+/* ═════════════════════════════════════════════════════════════════════
+   SERVICES + PRICING TOGGLE
+═════════════════════════════════════════════════════════════════════ */
+.srv{background:var(--base)}
+.srv-tabs{display:inline-flex;background:var(--layer);border:1px solid var(--b1);border-radius:100px;padding:.3rem;margin:1.5rem 0;gap:.2rem}
+.srv-tab{padding:.5rem 1.25rem;font-size:.78rem;font-weight:500;color:var(--t2);border-radius:100px;transition:all .3s var(--ease);position:relative;letter-spacing:.02em}
+.srv-tab.active{background:var(--primary);color:var(--void);font-weight:700}
+.srv-tab:not(.active):hover{color:var(--t1)}
+
+.srv-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:1rem}
+.scc{padding:2rem;background:var(--layer);border:1px solid var(--b1);border-radius:var(--r-lg);transition:all .45s var(--ease);position:relative;overflow:hidden;display:flex;flex-direction:column}
+.scc.feat{border-color:rgba(200,255,10,.18);background:linear-gradient(180deg,var(--layer),rgba(200,255,10,.02))}
+.scc.feat::before{content:'EMPFOHLEN';position:absolute;top:1rem;right:1rem;font-family:var(--mono);font-size:.55rem;letter-spacing:.18em;background:var(--primary);color:var(--void);padding:.25rem .55rem;border-radius:100px;font-weight:700}
+.scc:hover{transform:translateY(-4px);border-color:var(--b2)}
+.scc.feat:hover{border-color:var(--primary)}
+.scc-n{font-family:var(--mono);font-size:.65rem;color:var(--t3);letter-spacing:.18em;margin-bottom:.85rem;font-weight:500}
+.scc h3{font-family:var(--serif);font-style:italic;font-size:1.5rem;margin-bottom:.5rem;line-height:1.2}
+.scc-price{font-family:var(--serif);font-style:italic;font-size:2.4rem;color:var(--primary);line-height:1;margin-bottom:.35rem}
+.scc-price .ct{font-size:.7em;color:var(--t2);font-style:normal;font-family:var(--mono)}
+.scc-price-sub{font-size:.72rem;color:var(--t3);letter-spacing:.04em;margin-bottom:1.5rem;font-family:var(--mono)}
+.scc-feats{flex:1;display:flex;flex-direction:column;gap:.65rem;margin-bottom:1.5rem;padding-top:1.25rem;border-top:1px solid var(--b1)}
+.scc-feat{display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:var(--t2);line-height:1.5;font-weight:300}
+.scc-feat svg{flex-shrink:0;width:14px;height:14px;stroke:var(--primary);stroke-width:2.5;fill:none;margin-top:.25rem}
+.scc-feat.muted{color:var(--t3);text-decoration:line-through;opacity:.5}
+.scc-feat.muted svg{stroke:var(--t3)}
+.scc-cta{padding:.85rem 1rem;background:transparent;color:var(--t1);font-weight:600;font-size:.82rem;border:1px solid var(--b2);border-radius:100px;transition:all .25s;text-align:center;display:block}
+.scc.feat .scc-cta{background:var(--primary);color:var(--void);border-color:var(--primary)}
+.scc-cta:hover{background:var(--primary);color:var(--void);border-color:var(--primary)}
+@media(max-width:900px){.srv-g{grid-template-columns:1fr;max-width:480px;margin:1rem auto 0}}
+
+/* ═════════════════════════════════════════════════════════════════════
+   BEFORE/AFTER SLIDER
+═════════════════════════════════════════════════════════════════════ */
+.ba{background:var(--void)}
+.ba-wrap{margin-top:2rem;display:grid;grid-template-columns:1fr 1.3fr;gap:3rem;align-items:center}
+.ba-l h2{font-family:var(--serif);font-size:clamp(1.85rem,3.5vw,2.8rem);font-weight:400;line-height:1.08;letter-spacing:-.02em;margin-bottom:1.25rem}
+.ba-l h2 em{font-style:italic;color:var(--primary)}
+.ba-l p{font-size:.92rem;color:var(--t2);line-height:1.75;margin-bottom:1.5rem;font-weight:300}
+.ba-stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem}
+.bas{padding:1rem;background:var(--layer);border:1px solid var(--b1);border-radius:var(--r-md)}
+.bas .v{font-family:var(--serif);font-style:italic;font-size:1.6rem;color:var(--primary);line-height:1}
+.bas .l{font-size:.7rem;color:var(--t3);margin-top:.35rem;letter-spacing:.04em}
+
+.ba-r{position:relative;aspect-ratio:4/3;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--b1);user-select:none;cursor:ew-resize;background:var(--layer)}
+.ba-r::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(200,255,10,.03),transparent)}
+.ba-img{position:absolute;inset:0}
+.ba-img.before{background:linear-gradient(180deg,#f5f5f0,#e8e8e0)}
+.ba-img.before::after{content:'';position:absolute;inset:8% 8% 30% 8%;background:repeating-linear-gradient(0deg,#d0d0c8 0,#d0d0c8 12px,transparent 12px,transparent 18px),repeating-linear-gradient(90deg,#bbb 0,#bbb 1px,transparent 1px,transparent 80px);border-radius:4px;opacity:.7}
+.ba-img.after{background:var(--layer-2);clip-path:inset(0 0 0 50%);transition:clip-path 0s}
+.ba-img.after::after{content:'';position:absolute;inset:8% 8% 30% 8%;background:linear-gradient(135deg,rgba(200,255,10,.15),rgba(68,102,255,.08)),repeating-linear-gradient(180deg,var(--b2) 0,var(--b2) 1px,transparent 1px,transparent 12px);border:1px solid rgba(200,255,10,.2);border-radius:8px}
+.ba-img .lbl{position:absolute;bottom:6%;left:6%;font-family:var(--mono);font-size:.65rem;letter-spacing:.15em;padding:.35rem .75rem;border-radius:100px;text-transform:uppercase;font-weight:600}
+.ba-img.before .lbl{background:rgba(0,0,0,.7);color:#fff}
+.ba-img.after .lbl{background:var(--primary);color:var(--void);bottom:6%;left:auto;right:6%}
+.ba-handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:var(--primary);transform:translateX(-50%);z-index:5;pointer-events:none;box-shadow:0 0 20px var(--primary-g)}
+.ba-knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;z-index:6;pointer-events:none;box-shadow:0 4px 24px rgba(0,0,0,.4),0 0 0 4px rgba(200,255,10,.12)}
+.ba-knob::before,.ba-knob::after{content:'';position:absolute;width:8px;height:8px;border-top:2px solid var(--void);border-right:2px solid var(--void)}
+.ba-knob::before{transform:rotate(-135deg);margin-left:-14px}
+.ba-knob::after{transform:rotate(45deg);margin-left:14px}
+@media(max-width:900px){.ba-wrap{grid-template-columns:1fr;gap:2rem}}
+
+/* ═════════════════════════════════════════════════════════════════════
+   PROCESS
+═════════════════════════════════════════════════════════════════════ */
+.prc{background:var(--base)}
+.prc-g{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem;position:relative}
+.prc-g::before{content:'';position:absolute;top:38px;left:8%;right:8%;height:1px;background:repeating-linear-gradient(90deg,var(--b2) 0,var(--b2) 6px,transparent 6px,transparent 14px);z-index:0;display:none}
+@media(min-width:900px){.prc-g::before{display:block}}
+.stp{padding:1.85rem 1.5rem;background:var(--layer);border:1px solid var(--b1);border-radius:var(--r-lg);text-align:center;position:relative;z-index:1;transition:all .45s var(--ease)}
+.stp:hover{border-color:var(--primary);transform:translateY(-4px)}
+.stp-n{font-family:var(--serif);font-style:italic;font-size:3.5rem;color:var(--primary);opacity:.08;position:absolute;top:.4rem;right:1rem;line-height:1;pointer-events:none}
+.stp-ic{width:48px;height:48px;border-radius:12px;background:var(--primary-d);border:1px solid rgba(200,255,10,.15);display:flex;align-items:center;justify-content:center;margin:0 auto 1.1rem;color:var(--primary)}
+.stp h4{font-family:var(--serif);font-style:italic;font-size:1.05rem;margin-bottom:.55rem}
+.stp p{font-size:.78rem;color:var(--t2);line-height:1.65;font-weight:300}
+@media(max-width:900px){.prc-g{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.prc-g{grid-template-columns:1fr}}
+
+/* ═════════════════════════════════════════════════════════════════════
+   FOUNDER
+═════════════════════════════════════════════════════════════════════ */
+.fdr{background:var(--void);position:relative;overflow:hidden}
+.fdr-g{display:grid;grid-template-columns:1fr 1.3fr;gap:3rem;align-items:center;margin-top:1.5rem}
+.fdr-ph{position:relative;aspect-ratio:3/4;max-width:420px;background:var(--layer);border:1px solid var(--b1);border-radius:var(--r-lg);overflow:hidden}
+.fdr-ph::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(3,3,4,.85));z-index:1;pointer-events:none}
+.fdr-ph img{width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform 4s var(--ease)}
+.fdr-ph:hover img{transform:scale(1.04)}
+.fdr-skel{position:absolute;inset:0;background:linear-gradient(110deg,var(--layer) 30%,var(--layer-2) 50%,var(--layer) 70%);background-size:200% 100%;animation:skel 1.6s infinite}
+@keyframes skel{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.fdr-bd{position:absolute;bottom:1.25rem;left:1.25rem;z-index:2;background:rgba(8,8,12,.85);backdrop-filter:blur(14px);border:1px solid var(--b2);border-radius:var(--r-md);padding:.85rem 1.25rem}
+.fdr-bd .nm{font-family:var(--serif);font-style:italic;font-size:1.05rem;line-height:1}
+.fdr-bd .rl{font-family:var(--mono);font-size:.65rem;letter-spacing:.1em;color:var(--primary);margin-top:.25rem}
+.fdr-flt{position:absolute;top:1.5rem;right:-1rem;background:var(--layer-2);border:1px solid var(--b2);border-radius:var(--r-md);padding:.85rem 1.1rem;z-index:3;animation:flt 6s ease-in-out infinite}
+.fdr-flt .fn{font-family:var(--serif);font-style:italic;font-size:1.7rem;color:var(--primary);line-height:1}
+.fdr-flt .fl{font-size:.65rem;color:var(--t2);margin-top:.25rem;font-weight:300}
+@keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.fdr-ct h3{font-family:var(--serif);font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.12;letter-spacing:-.015em;margin-bottom:1.5rem}
+.fdr-ct h3 em{font-style:italic;color:var(--primary)}
+.fdr-tx{font-size:.9rem;color:var(--t2);line-height:1.8;font-weight:300;margin-bottom:1.1rem}
+.fdr-tx strong{color:var(--t1);font-weight:500}
+.fdr-tr{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin:1.85rem 0}
+.ft{display:flex;align-items:center;gap:.55rem;padding:.6rem .9rem;background:var(--layer);border:1px solid var(--b1);border-radius:var(--r-sm);font-size:.78rem;font-weight:400;transition:border-color .3s,transform .3s}
+.ft:hover{border-color:var(--primary);transform:translateX(3px)}
+.ft .fi{color:var(--primary);font-size:.7rem}
+.fdr-cta{display:flex;gap:.85rem;flex-wrap:wrap;margin-top:1.5rem}
+@media(max-width:900px){.fdr-g{grid-template-columns:1fr;gap:2rem}.fdr-tr{grid-template-columns:1fr}}
+
+/* ═════════════════════════════════════════════════════════════════════
+   TESTIMONIALS
+═════════════════════════════════════════════════════════════════════ */
+.tst{background:var(--base)}
+.tst-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2rem}
+.tc{padding:2rem;background:var(--layer);border:1px solid var(--b1);border-radius:var(--r-lg);transition:all .45s var(--ease);display:flex;flex-direction:column;position:relative;overflow:hidden}
+.tc::before{content:'"';position:absolute;top:-12px;left:14px;font-family:var(--serif);font-size:6rem;color:rgba(200,255,10,.05);line-height:1;pointer-events:none}
+.tc:hover{border-color:var(--b2);transform:translateY(-3px)}
+.tc-st{color:var(--primary);font-size:.85rem;letter-spacing:2px;margin-bottom:.85rem;position:relative;z-index:1}
+.tc-q{font-family:var(--serif);font-style:italic;font-size:.98rem;color:var(--t2);line-height:1.65;margin-bottom:1.25rem;flex:1;position:relative;z-index:1}
+.tc-a{display:flex;align-items:center;gap:.75rem;padding-top:1rem;border-top:1px solid var(--b1);position:relative;z-index:1}
+.tc-av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--primary-d),rgba(68,102,255,.08));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.72rem;color:var(--primary);border:1px solid rgba(200,255,10,.2)}
+.tc-nm{font-weight:600;font-size:.85rem}
+.tc-rl{font-size:.7rem;color:var(--t3);font-family:var(--mono);letter-spacing:.04em}
+.tc-kpi{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:1rem;padding-top:.85rem;border-top:1px solid var(--b1);position:relative;z-index:1}
+.kpi{text-align:center}
+.kpi .kv{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--primary);line-height:1}
+.kpi .kl{font-size:.6rem;color:var(--t3);letter-spacing:.06em;text-transform:uppercase;margin-top:.3rem;font-weight:500}
+@media(max-width:900px){.tst-g{grid-template-columns:1fr;max-width:480px;margin:2rem auto 0}}
+
+/* ═════════════════════════════════════════════════════════════════════
+   FAQ
+═════════════════════════════════════════════════════════════════════ */
+.faq{background:var(--void)}
+.faq-l{max-width:780px;margin:1.5rem auto 0}
+.faqi{border-bottom:1px solid var(--b1)}
+.faqq{width:100%;text-align:left;padding:1.4rem 0;display:flex;justify-content:space-between;align-items:center;font-family:var(--serif);font-style:italic;font-size:clamp(1rem,1.5vw,1.15rem);color:var(--t1);transition:color .25s;gap:1rem;background:transparent}
+.faqq:hover{color:var(--primary)}
+.faqic{font-size:1.3rem;color:var(--t3);transition:transform .4s var(--ease),color .3s;flex-shrink:0;line-height:1}
+.faqi.open .faqic{transform:rotate(45deg);color:var(--primary)}
+.faqa{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+.faqi.open .faqa{max-height:280px}
+.faqa p{padding:0 0 1.5rem;font-size:.88rem;color:var(--t2);line-height:1.75;font-weight:300}
+
+/* ═════════════════════════════════════════════════════════════════════
+   CTA BAND
+═════════════════════════════════════════════════════════════════════ */
+.ctb{background:var(--primary);padding:clamp(3rem,6vw,5rem) 0;text-align:center;position:relative;overflow:hidden}
+.ctb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(3,3,4,.05),transparent 65%)}
+.ctb h2{font-family:var(--serif);font-style:italic;font-size:clamp(2rem,4.5vw,3.6rem);color:var(--void);line-height:1.05;letter-spacing:-.02em;margin-bottom:.75rem;position:relative;z-index:1}
+.ctb p{font-size:.95rem;color:rgba(3,3,4,.6);margin-bottom:2rem;position:relative;z-index:1;font-weight:300;max-width:580px;margin-left:auto;margin-right:auto}
+.ctba{display:flex;gap:.85rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+.bd{display:inline-flex;align-items:center;gap:.5rem;padding:.95rem 2rem;background:var(--void);color:var(--primary);font-weight:700;font-size:.85rem;border-radius:100px;transition:all .25s}
+.bd:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.bod{display:inline-flex;align-items:center;gap:.5rem;padding:.95rem 2rem;border:2px solid var(--void);color:var(--void);font-weight:600;font-size:.85rem;border-radius:100px;transition:all .25s}
+.bod:hover{background:var(--void);color:var(--primary)}
+
+/* ═════════════════════════════════════════════════════════════════════
+   CONTACT
+═════════════════════════════════════════════════════════════════════ */
+.cnt{background:var(--void);position:relative}
+.cnt-wm{position:absolute;right:3%;top:8%;width:380px;height:480px;opacity:.025;pointer-events:none;display:none}
+@media(min-width:1100px){.cnt-wm{display:block}}
+.cnt-g{display:grid;grid-template-columns:1.1fr 1fr;gap:2.25rem;margin-top:1.5rem;position:relative;z-index:1}
+.cnt-i h3{font-family:var(--serif);font-style:italic;font-size:clamp(1.5rem,2.8vw,2.1rem);margin-bottom:1.1rem;line-height:1.2}
+.cnt-i .lead{color:var(--t2);line-height:1.75;margin-bottom:2rem;font-size:.9rem;font-weight:300}
+.cd{display:flex;gap:1rem;align-items:flex-start;margin-bottom:1.25rem}
+.cd-ic{width:40px;height:40px;min-width:40px;border-radius:var(--r-md);background:var(--layer);border:1px solid var(--b1);display:flex;align-items:center;justify-content:center;color:var(--primary)}
+.cd h4{font-weight:600;font-size:.85rem;margin-bottom:.15rem}
+.cd p{font-size:.82rem;color:var(--t2);font-weight:300;line-height:1.55}
+.cd a{color:var(--t1);transition:color .2s}
+.cd a:hover{color:var(--primary)}
+
+.cnt-fw{background:linear-gradient(180deg,var(--layer),var(--layer-2));border:1px solid var(--b1);border-radius:var(--r-xl);padding:2rem;position:relative;overflow:hidden}
+.cnt-fw::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--primary),transparent)}
+.fg{margin-bottom:1.1rem}
+.fg label{display:block;font-size:.72rem;font-weight:500;color:var(--t2);margin-bottom:.4rem;letter-spacing:.04em;text-transform:uppercase}
+.fg input,.fg select,.fg textarea{width:100%;padding:.85rem 1rem;background:var(--base);border:1px solid var(--b1);border-radius:var(--r-sm);color:var(--t1);font:inherit;font-size:.88rem;transition:all .25s;outline:none}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(200,255,10,.08)}
+.fg textarea{resize:vertical;min-height:90px}
+.fg select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath d='M6 8L1 3h10z' fill='%239a9aae'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+.bsb{width:100%;padding:.95rem;background:var(--primary);color:var(--void);font-weight:700;font-size:.88rem;border-radius:var(--r-sm);transition:all .25s;margin-top:.35rem;position:relative;overflow:hidden}
+.bsb::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);transform:translateX(-100%);transition:transform .55s}
+.bsb:hover::before{transform:translateX(100%)}
+.bsb:hover:not(:disabled){background:var(--primary-h);box-shadow:0 10px 30px var(--primary-g)}
+.bsb:disabled{opacity:.6;cursor:not-allowed}
+.fnote{text-align:center;font-size:.7rem;color:var(--t3);margin-top:.85rem;font-weight:300;letter-spacing:.02em}
+
+/* Calendar removed — replaced by Zeeg inline embed */
+
+/* ═════════════════════════════════════════════════════════════════════
+   BOOK SECTION (Zeeg Embed wrapper)
+═════════════════════════════════════════════════════════════════════ */
+.book{background:var(--base);position:relative;overflow:hidden}
+.book::before{content:'';position:absolute;top:-50%;left:50%;width:800px;height:800px;border-radius:50%;background:radial-gradient(circle,var(--primary-d),transparent 60%);transform:translateX(-50%);pointer-events:none;opacity:.6}
+.zeeg-frame{position:relative;max-width:980px;margin:0 auto;background:linear-gradient(180deg,var(--layer),var(--layer-2));border:1px solid var(--b1);border-radius:var(--r-xl);padding:1rem;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5),0 0 0 1px var(--b1)}
+.zeeg-frame::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--primary),transparent);z-index:1}
+.zeeg-inline-widget{border-radius:var(--r-lg);overflow:hidden;background:transparent}
+.book-tr{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;margin-top:2rem;max-width:780px;margin-left:auto;margin-right:auto}
+.bt{display:inline-flex;align-items:center;gap:.5rem;padding:.55rem 1rem;background:var(--layer);border:1px solid var(--b1);border-radius:100px;font-size:.72rem;color:var(--t2);font-weight:400;letter-spacing:.02em;transition:border-color .25s,color .25s}
+.bt:hover{border-color:rgba(200,255,10,.25);color:var(--t1)}
+.bt svg{width:14px;height:14px;stroke:var(--primary);stroke-width:1.8;fill:none;flex-shrink:0}
+@media(max-width:600px){
+  .zeeg-frame{padding:.5rem;margin-left:-.5rem;margin-right:-.5rem;border-radius:var(--r-md)}
+  .zeeg-inline-widget{min-width:280px!important}
+  .bt{font-size:.68rem;padding:.45rem .85rem}
+}
+@media(max-width:900px){.cnt-g{grid-template-columns:1fr}.fr{grid-template-columns:1fr}}
+
+/* ═════════════════════════════════════════════════════════════════════
+   FOOTER
+═════════════════════════════════════════════════════════════════════ */
+.ftr{background:var(--base);border-top:1px solid var(--b1);padding:3rem 0 0}
+.ftr-g{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+.ftr-brand p{font-size:.82rem;color:var(--t2);line-height:1.7;margin-top:.85rem;max-width:280px;font-weight:300}
+.ftr h5{font-family:var(--mono);font-weight:500;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1.1rem;color:var(--t2)}
+.ftr ul li{margin-bottom:.55rem}
+.ftr ul li a{font-size:.82rem;color:var(--t2);font-weight:300;transition:color .25s}
+.ftr ul li a:hover{color:var(--primary)}
+.ftr-b{border-top:1px solid var(--b1);padding:1.25rem 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.85rem}
+.ftr-b p{font-size:.72rem;color:var(--t3);font-weight:300}
+.ftr-le{display:flex;gap:1.5rem}
+.ftr-le a{font-size:.72rem;color:var(--t3);font-weight:300;transition:color .2s}
+.ftr-le a:hover{color:var(--t1)}
+@media(max-width:900px){.ftr-g{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.ftr-g{grid-template-columns:1fr}}
+
+/* ═════════════════════════════════════════════════════════════════════
+   LIVE ACTIVITY FEED (Social Proof)
+═════════════════════════════════════════════════════════════════════ */
+.lfeed{position:fixed;bottom:6rem;left:1.25rem;z-index:888;max-width:320px;background:rgba(15,15,22,.92);backdrop-filter:blur(20px);border:1px solid var(--b2);border-radius:var(--r-md);padding:.85rem 1.1rem .85rem .85rem;display:flex;align-items:center;gap:.75rem;transform:translateY(120%) translateX(-20px);opacity:0;transition:all .55s var(--ease);box-shadow:0 12px 40px rgba(0,0,0,.45)}
+.lfeed.show{transform:none;opacity:1}
+.lfeed-av{width:36px;height:36px;min-width:36px;border-radius:50%;background:linear-gradient(135deg,var(--primary-d),rgba(68,102,255,.1));display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-weight:700;font-size:.7rem;color:var(--primary);border:1px solid rgba(200,255,10,.18)}
+.lfeed-t{font-size:.78rem;color:var(--t1);font-weight:400;line-height:1.35}
+.lfeed-t b{font-weight:600}
+.lfeed-t .sub{display:block;font-size:.66rem;color:var(--t3);margin-top:.2rem;font-family:var(--mono);letter-spacing:.04em}
+.lfeed-x{position:absolute;top:.4rem;right:.45rem;width:18px;height:18px;display:flex;align-items:center;justify-content:center;color:var(--t3);font-size:.85rem;line-height:1;border-radius:50%}
+.lfeed-x:hover{color:var(--t1);background:rgba(255,255,255,.06)}
+@media(max-width:600px){.lfeed{left:.75rem;right:.75rem;max-width:none;bottom:5.5rem}}
+
+/* ═════════════════════════════════════════════════════════════════════
+   SCARCITY BANNER
+═════════════════════════════════════════════════════════════════════ */
+.scrcty{display:inline-flex;align-items:center;gap:.55rem;padding:.4rem .9rem;background:linear-gradient(90deg,rgba(255,77,106,.08),rgba(255,77,106,.02));border:1px solid rgba(255,77,106,.18);border-radius:100px;font-size:.7rem;font-family:var(--mono);color:var(--accent);letter-spacing:.05em;margin-bottom:1.2rem}
+.scrcty .dt{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent);animation:pls 1.8s infinite}
+.scrcty b{color:#ff8095;font-weight:600}
+
+/* ═════════════════════════════════════════════════════════════════════
+   FLOATING CTA
+═════════════════════════════════════════════════════════════════════ */
+.flc{position:fixed;bottom:1.25rem;right:1.25rem;z-index:900;width:54px;height:54px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 28px var(--primary-g),0 4px 14px rgba(0,0,0,.3);transition:transform .3s var(--ease);animation:flpls 3s ease-in-out infinite}
+.flc:hover{transform:scale(1.1)}
+.flc svg{width:22px;height:22px;fill:var(--void)}
+@keyframes flpls{0%,100%{box-shadow:0 8px 28px var(--primary-g),0 4px 14px rgba(0,0,0,.3)}50%{box-shadow:0 8px 44px rgba(200,255,10,.35),0 4px 18px rgba(0,0,0,.3)}}
+
+/* ═════════════════════════════════════════════════════════════════════
+   SCROLL REVEAL
+═════════════════════════════════════════════════════════════════════ */
+[data-r]{opacity:0;transform:translateY(28px);transition:opacity .85s var(--ease),transform .85s var(--ease)}
+[data-r="l"]{transform:translateX(-28px)}
+[data-r="r"]{transform:translateX(28px)}
+[data-r].v{opacity:1;transform:none}
+[data-d="1"]{transition-delay:.08s}
+[data-d="2"]{transition-delay:.16s}
+[data-d="3"]{transition-delay:.24s}
+[data-d="4"]{transition-delay:.32s}
+
+/* Char reveal */
+.char{display:inline-block;opacity:0;transform:translateY(20px);animation:charIn .55s var(--ease) forwards}
+@keyframes charIn{to{opacity:1;transform:none}}
+
+/* ═════════════════════════════════════════════════════════════════════
+   REDUCED MOTION
+═════════════════════════════════════════════════════════════════════ */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  [data-r]{opacity:1!important;transform:none!important}
+  .pld{display:none!important}
+  body.loading{overflow:auto!important}
 }
 </style>
 </head>
-<body>
+<body class="loading">
 
-<!-- ══════════════════════════════
-     CUSTOM CURSOR
-══════════════════════════════ -->
-<div class="cursor-dot" id="cursorDot"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+<!-- PRELOADER -->
+<div class="pld" id="pld">
+  <div class="pld-lg">VANTOR<i>.</i></div>
+  <div class="pld-bar"><div class="pld-fill"></div></div>
+  <div class="pld-sub">SYSTEM INIT</div>
+</div>
 
-<!-- ══════════════════════════════
-     NAVIGATION
-══════════════════════════════ -->
-<nav class="nav" id="nav">
-  <div class="container nav-inner">
-    <a href="#" class="nav-logo">VANTOR<span>.</span></a>
-    <div class="nav-links">
-      <a href="#problem">Warum wir</a>
-      <a href="#leistungen">Leistungen</a>
-      <a href="#ergebnisse">Ergebnisse</a>
+<!-- SCROLL PROGRESS + CURSOR -->
+<div class="sp" id="sp"></div>
+<div class="cur-d" id="cd"></div>
+<div class="cur-r" id="cr"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Hauptnavigation">
+  <div class="nav-i">
+    <a href="#" class="lg" data-h>VANTOR<i>.</i></a>
+    <div class="nav-l">
+      <a href="#audit">Audit</a>
+      <a href="#leistungen">Preise</a>
+      <a href="#ergebnisse">Stimmen</a>
+      <a href="#book">Termin</a>
       <a href="#benjamin">Gründer</a>
-      <a href="#ablauf">Ablauf</a>
       <a href="#faq">FAQ</a>
-      <a href="https://zeeg.me/keiser/30min" target="_blank" rel="noopener" class="nav-cta" data-hover>Termin buchen <span class="arrow">→</span></a>
+      <a href="#book" class="nc" data-h>Buchen <span>→</span></a>
     </div>
-    <button class="burger" id="burgerBtn" aria-label="Menü öffnen">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="bur" id="bur" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
   </div>
 </nav>
-
-<!-- Mobile Drawer -->
-<div class="mobile-drawer" id="mobileDrawer">
-  <button class="mobile-close" id="mobileClose" aria-label="Menü schließen">✕</button>
-  <a href="#problem" onclick="closeDrawer()">Warum wir</a>
-  <a href="#leistungen" onclick="closeDrawer()">Leistungen</a>
-  <a href="#ergebnisse" onclick="closeDrawer()">Ergebnisse</a>
-  <a href="#benjamin" onclick="closeDrawer()">Gründer</a>
-  <a href="#ablauf" onclick="closeDrawer()">Ablauf</a>
-  <a href="#faq" onclick="closeDrawer()">FAQ</a>
-  <a href="https://zeeg.me/keiser/30min" target="_blank" rel="noopener" class="nav-cta" onclick="closeDrawer()">Termin buchen →</a>
+<div class="mob" id="mob">
+  <button class="mob-x" id="mx" aria-label="Schließen">✕</button>
+  <a href="#audit" onclick="cm()">Live-Audit</a>
+  <a href="#leistungen" onclick="cm()">Preise</a>
+  <a href="#book" onclick="cm()">Termin</a>
+  <a href="#ergebnisse" onclick="cm()">Stimmen</a>
+  <a href="#benjamin" onclick="cm()">Gründer</a>
+  <a href="#faq" onclick="cm()">FAQ</a>
+  <a href="#book" class="nc" onclick="cm()">Termin buchen →</a>
 </div>
 
-<!-- ══════════════════════════════
-     HERO
-══════════════════════════════ -->
-<section class="hero" id="hero">
+<!-- HERO -->
+<section class="hero">
   <div class="hero-bg">
-    <div class="hero-grid-lines"></div>
+    <div class="hero-orb o1"></div>
+    <div class="hero-orb o2"></div>
+    <div class="hero-grid"></div>
   </div>
-  <div class="container hero-content">
-    <div class="hero-badge"><span class="dot"></span> Webdesign · Sales · Positioning</div>
-    <h1>
-      Deine Website<br/>soll <span class="highlight">Kunden bringen.</span>
-      <span class="line-2">Nicht nur gut aussehen.</span>
-    </h1>
-    <p class="hero-sub">
-      Wir bauen Websites für Handwerksbetriebe und Arztpraxen, die in 5 Sekunden Vertrauen aufbauen – und aus Besuchern zahlende Kunden machen. Kein Template. Kein Blabla. Ergebnisse.
-    </p>
-    <div class="hero-actions">
-      <a href="https://zeeg.me/keiser/30min" target="_blank" rel="noopener" class="btn-primary" data-hover>Kostenlosen Termin buchen <span class="arrow">→</span></a>
-      <a href="#kontakt" class="btn-secondary" data-hover>Anfrage senden</a>
-    </div>
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <div class="num">25+</div>
-        <div class="label">Termine pro Woche</div>
+  <div class="ctn hero-ct">
+    <div class="hero-l">
+      <div class="hero-badge"><span class="dot"></span> Webdesign · Conversion · Local SEO</div>
+      <div class="scrcty"><span class="dt"></span> Nur noch <b id="slotCount">2 Plätze</b> für Q3 verfügbar</div>
+      <h1>
+        <span id="h1main">Websites die <span class="hi">Anrufe</span> auslösen.</span>
+        <span class="l2">Nicht "schön gemacht". Sondern gebaut, um zu konvertieren.<br/>Für Handwerk, Praxen und Unternehmen die wachsen.</span>
+      </h1>
+      <p class="hero-sub">Jede VANTOR-Website folgt einer einzigen Regel: <strong>der Besucher ruft an, schreibt oder bucht.</strong> Verkaufspsychologie, maßgeschneidertes Design, lokales SEO — handgeschriebener Code, kein Baukasten.</p>
+      <div class="hero-acts">
+        <a href="#book" class="bp" data-h>15-Min-Erstgespräch buchen <span class="ar">→</span></a>
+        <a href="#audit" class="bs" data-h>Deine Seite auditieren</a>
       </div>
-      <div class="hero-stat">
-        <div class="num">48h</div>
-        <div class="label">Erstkonzept ready</div>
-      </div>
-      <div class="hero-stat">
-        <div class="num">100%</div>
-        <div class="label">Maßgeschneidert</div>
-      </div>
-      <div class="hero-stat">
-        <div class="num">ab 850€</div>
-        <div class="label">Faire Einstiegspreise</div>
+      <p class="micro">KOSTENLOS · UNVERBINDLICH · ANTWORT IN UNTER 4 STUNDEN</p>
+      <div class="hero-stats">
+        <div class="hs"><div class="n" data-count="48">0</div><div class="l">h bis Erstkonzept</div></div>
+        <div class="hs"><div class="n" data-count="100">0</div><div class="l">% maßgeschneidert</div></div>
+        <div class="hs"><div class="n">€850<span style="font-size:.6em">+</span></div><div class="l">Einstieg fair</div></div>
+        <div class="hs"><div class="n">5.0<span style="color:var(--gold)">★</span></div><div class="l">Kundenscore</div></div>
       </div>
     </div>
-  </div>
-  <div class="scroll-indicator">
-    <div class="scroll-line"></div>
-    <span class="scroll-text">Scroll</span>
+
+    <!-- ROI CALCULATOR -->
+    <div class="roi" data-r="r">
+      <div class="roi-h"><span class="pip"></span><h3>ROI-Rechner · Live</h3></div>
+      <div class="roi-title">Was kostet dich deine schwache Website <em style="color:var(--accent);font-style:italic">pro Monat</em>?</div>
+
+      <div class="roi-row">
+        <label>Dein Ø-Auftragswert <span id="lblOrder">€2.500</span></label>
+        <input type="range" class="roi-slider" id="sldOrder" min="500" max="15000" step="250" value="2500"/>
+      </div>
+      <div class="roi-row">
+        <label>Verpasste Anfragen / Monat <span id="lblLeads">8</span></label>
+        <input type="range" class="roi-slider" id="sldLeads" min="2" max="40" step="1" value="8"/>
+      </div>
+      <div class="roi-row">
+        <label>Realistische Abschlussquote <span id="lblConv">25%</span></label>
+        <input type="range" class="roi-slider" id="sldConv" min="10" max="60" step="5" value="25"/>
+      </div>
+
+      <div class="roi-out">
+        <div class="loss" id="lossOut">€5.000</div>
+        <div class="lbl">VERLOREN — PRO MONAT</div>
+        <div class="gain" id="gainOut">Das sind <b>€60.000</b> pro Jahr. Eine VANTOR-Seite kostet <b>1.5%</b> davon.</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════
-     TICKER
-══════════════════════════════ -->
-<div class="ticker">
-  <div class="ticker-track">
-    <span class="ticker-item">Webdesign für Handwerk <span class="sep"></span></span>
-    <span class="ticker-item">Websites für Zahnärzte <span class="sep"></span></span>
-    <span class="ticker-item">Conversion-optimiert <span class="sep"></span></span>
-    <span class="ticker-item">SEO inklusive <span class="sep"></span></span>
-    <span class="ticker-item">Keine Templates <span class="sep"></span></span>
-    <span class="ticker-item">Sales & Positioning <span class="sep"></span></span>
-    <span class="ticker-item">KI-Assistenten <span class="sep"></span></span>
-    <span class="ticker-item">Ergebnisse statt Versprechen <span class="sep"></span></span>
-    <span class="ticker-item">Webdesign für Handwerk <span class="sep"></span></span>
-    <span class="ticker-item">Websites für Zahnärzte <span class="sep"></span></span>
-    <span class="ticker-item">Conversion-optimiert <span class="sep"></span></span>
-    <span class="ticker-item">SEO inklusive <span class="sep"></span></span>
-    <span class="ticker-item">Keine Templates <span class="sep"></span></span>
-    <span class="ticker-item">Sales & Positioning <span class="sep"></span></span>
-    <span class="ticker-item">KI-Assistenten <span class="sep"></span></span>
-    <span class="ticker-item">Ergebnisse statt Versprechen <span class="sep"></span></span>
+<!-- MARQUEE -->
+<div class="mq" aria-hidden="true">
+  <div class="mq-t">
+    <span class="mq-i"><span class="sep"></span> Conversion-Webdesign für Handwerk</span>
+    <span class="mq-i"><span class="sep"></span> Websites für Zahnärzte und Praxen</span>
+    <span class="mq-i"><span class="sep"></span> Local SEO ab Tag eins</span>
+    <span class="mq-i"><span class="sep"></span> Verkaufspsychologie als Standard</span>
+    <span class="mq-i"><span class="sep"></span> Erstkonzept in 48 Stunden</span>
+    <span class="mq-i"><span class="sep"></span> Handgeschriebener Code</span>
+    <span class="mq-i"><span class="sep"></span> Ergebnisse statt Versprechen</span>
+    <span class="mq-i"><span class="sep"></span> Conversion-Webdesign für Handwerk</span>
+    <span class="mq-i"><span class="sep"></span> Websites für Zahnärzte und Praxen</span>
+    <span class="mq-i"><span class="sep"></span> Local SEO ab Tag eins</span>
+    <span class="mq-i"><span class="sep"></span> Verkaufspsychologie als Standard</span>
+    <span class="mq-i"><span class="sep"></span> Erstkonzept in 48 Stunden</span>
+    <span class="mq-i"><span class="sep"></span> Handgeschriebener Code</span>
+    <span class="mq-i"><span class="sep"></span> Ergebnisse statt Versprechen</span>
   </div>
 </div>
 
-<!-- ══════════════════════════════
-     PROBLEM SECTION
-══════════════════════════════ -->
-<section class="problems section" id="problem">
-  <div class="container">
-    <div class="eyebrow">Das Problem</div>
-    <h2 class="section-title" data-reveal>Die meisten Firmen-Websites<br/>kosten Geld statt welches zu bringen.</h2>
-    <p class="section-sub" data-reveal data-delay="1">Du erkennst dich hier wieder? Dann wird es Zeit, das zu ändern.</p>
-    <div class="problems-grid">
-      <div class="problem-card" data-reveal data-delay="1">
-        <div class="problem-num">01</div>
-        <h4>Hübsch – aber kein Anruf</h4>
-        <p>Deine Website wurde mal „schön gemacht". Aber seit dem Launch? Keine Anfragen. Kein Return. Nur eine digitale Visitenkarte die niemand liest.</p>
+<!-- LIVE AUDIT -->
+<section class="audit sc" id="audit">
+  <div class="ctn">
+    <div class="ey">Live-Audit · 30 Sekunden</div>
+    <div class="audit-w">
+      <div class="audit-l" data-r="l">
+        <h2>Deine aktuelle Website.<br/><em>Brutal ehrlich analysiert.</em></h2>
+        <p>Gib uns deine Domain. In unter 30 Sekunden bekommst du eine schonungslose Einschätzung — was funktioniert, was nicht, und was dich gerade Kunden kostet.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Mobile Performance & Ladezeit</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> SEO-Basics & Sichtbarkeit</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Conversion-Pfad & CTAs</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Vertrauenssignale & Social Proof</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Technische Basis (SSL, Schema, OG)</li>
+        </ul>
       </div>
-      <div class="problem-card" data-reveal data-delay="2">
-        <div class="problem-num">02</div>
-        <h4>Billig-Template aus dem Baukasten</h4>
-        <p>Sieht aus wie 500 andere Betriebe. Kein Vertrauen, keine Persönlichkeit. Kunden klicken auf deine Seite – und landen beim Wettbewerber.</p>
-      </div>
-      <div class="problem-card" data-reveal data-delay="3">
-        <div class="problem-num">03</div>
-        <h4>Die „Irgendwann mach ich das"-Falle</h4>
-        <p>Jeden Tag den deine Website nicht konvertiert, verlierst du Kunden an Betriebe mit besserer Online-Präsenz. Das Geld liegt bereits auf dem Tisch.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════
-     SERVICES
-══════════════════════════════ -->
-<section class="services section" id="leistungen">
-  <div class="container">
-    <div class="eyebrow">Leistungen</div>
-    <h2 class="section-title" data-reveal>Wir bauen keine Websites.<br/>Wir bauen <span style="color:var(--primary)">Kundenmaschinen.</span></h2>
-    <p class="section-sub" data-reveal data-delay="1">Jedes Projekt wird individuell konzipiert – exakt für deine Branche, deine Stadt, deine Zielkunden.</p>
-    <div class="services-grid">
-
-      <div class="service-card featured" data-reveal>
-        <div>
-          <div class="service-num">// CORE</div>
-          <h3>Conversion-Website – maßgeschneidert</h3>
-          <p>Eine einzige Seite, die in 5 Sekunden kommuniziert: Wer du bist, was du machst, warum man bei dir anfragen sollte. Verkaufspsychologie, SEO, mobile-first – alles drin. Kein Template, kein Baukasten. Handgeschriebener Code.</p>
-          <div class="service-tags">
-            <span>Webdesign Handwerk</span>
-            <span>Zahnarzt Website</span>
-            <span>Conversion-optimiert</span>
-            <span>Local SEO</span>
-          </div>
-          <div class="service-price">ab 850 € <small>· individuell nach Umfang</small></div>
+      <div class="audit-r" data-r="r">
+        <div class="audit-form">
+          <input type="text" id="auditUrl" placeholder="deinefirma.de" autocomplete="url" inputmode="url"/>
+          <button id="auditBtn" data-h>Scannen →</button>
         </div>
-        <div>
-          <!-- 📸 Mockup der Website auf verschiedenen Geräten -->
-          <div class="results-mockup" style="aspect-ratio:1/1">
-            <div class="mockup-dots"><span></span><span></span><span></span></div>
-            <div class="mockup-body">
-              <div class="mockup-line"></div>
-              <div class="mockup-line"></div>
-              <div class="mockup-line"></div>
-              <div class="mockup-line"></div>
-              <div class="mockup-line" style="width:50%;height:30px;margin-top:1rem;background:var(--primary);opacity:.15;border-radius:100px"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="service-card" data-reveal data-delay="1">
-        <div class="service-num">// 01</div>
-        <h3>Handwerk & Bau</h3>
-        <p>Dachdecker, SHK, Elektro, Maler, Schreiner – wir wissen was Handwerkskunden googeln und was sie überzeugt. Vertrauen ab Sekunde eins.</p>
-        <div class="service-tags">
-          <span>SHK Webdesign</span>
-          <span>Dachdecker Website</span>
-          <span>Elektro Online</span>
-        </div>
-      </div>
-
-      <div class="service-card" data-reveal data-delay="2">
-        <div class="service-num">// 02</div>
-        <h3>Zahnärzte & Praxen</h3>
-        <p>Patienten entscheiden online, zu wem sie gehen. Deine Website muss Kompetenz, Modernität und Menschlichkeit zeigen – in unter 3 Sekunden.</p>
-        <div class="service-tags">
-          <span>Zahnarzt Website</span>
-          <span>Praxis Webdesign</span>
-          <span>Ärzte Online</span>
-        </div>
-      </div>
-
-      <div class="service-card" data-reveal data-delay="3">
-        <div class="service-num">// 03</div>
-        <h3>SEO & Sichtbarkeit</h3>
-        <p>Gefunden werden in deiner Stadt – ohne monatlich Tausende in Google Ads zu verbrennen. Lokales SEO, das langfristig organische Anfragen bringt.</p>
-        <div class="service-tags">
-          <span>Local SEO</span>
-          <span>Google Ranking</span>
-          <span>Sichtbarkeit</span>
-        </div>
-      </div>
-
-      <div class="service-card" data-reveal data-delay="4">
-        <div class="service-num">// 04</div>
-        <h3>Komplett-Pakete & Extras</h3>
-        <p>Website + SEO + Texte + Google Business. Auf Wunsch auch Kalender-Systeme, KI-Assistenten für deine Website und Ad-Kampagnen. Ein Ansprechpartner, alles aus einer Hand.</p>
-        <div class="service-tags">
-          <span>All-inclusive</span>
-          <span>Ads & Kampagnen</span>
-          <span>KI-Integration</span>
-          <span>Kalender-Lösungen</span>
-        </div>
-        <div class="service-price">auf Anfrage <small>· ab 3.000 €</small></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════
-     RESULTS
-══════════════════════════════ -->
-<section class="results section" id="ergebnisse">
-  <div class="container">
-    <div class="eyebrow">Ergebnisse</div>
-    <h2 class="section-title" data-reveal>Was passiert, wenn deine<br/>Website endlich <span style="color:var(--primary)">arbeitet.</span></h2>
-    <div class="results-split">
-      <div class="results-visual" data-reveal="left">
-        <div class="results-mockup">
-          <div class="mockup-dots"><span></span><span></span><span></span></div>
-          <div class="mockup-body">
-            <div class="mockup-line"></div>
-            <div class="mockup-line"></div>
-            <div class="mockup-line"></div>
-            <div class="mockup-line"></div>
-          </div>
-        </div>
-        <div class="results-float">
-          <div class="big">+340%</div>
-          <div class="small">mehr Anfragen im Schnitt</div>
-        </div>
-      </div>
-      <div class="results-content" data-reveal="right">
-        <div class="result-item">
-          <div class="result-check">✓</div>
-          <div>
-            <h4>Sofort erkennbar professionell</h4>
-            <p>Dein erster Eindruck entscheidet. Eine VANTOR-Website kommuniziert Qualität – bevor ein Wort gelesen wird.</p>
-          </div>
-        </div>
-        <div class="result-item">
-          <div class="result-check">✓</div>
-          <div>
-            <h4>Anfragen statt Stille</h4>
-            <p>Jede Sektion ist darauf ausgelegt, den Besucher Schritt für Schritt zur Kontaktaufnahme zu führen. Psychologie, nicht Zufall.</p>
-          </div>
-        </div>
-        <div class="result-item">
-          <div class="result-check">✓</div>
-          <div>
-            <h4>Gefunden werden – lokal</h4>
-            <p>SEO ist bei uns kein Add-on. Jede Website wird von Grund auf für Google optimiert. Deine Stadt, deine Keywords, dein Ranking.</p>
-          </div>
-        </div>
-        <div class="result-item">
-          <div class="result-check">✓</div>
-          <div>
-            <h4>Bessere Kunden anziehen</h4>
-            <p>Eine hochwertige Website zieht hochwertige Kunden an. Schluss mit Preisvergleichern – stattdessen Aufträge die sich lohnen.</p>
+        <div class="audit-results" id="auditResults">
+          <div class="audit-empty">
+            <div class="ic">⌖</div>
+            <div>Domain eingeben — wir scannen 5 Bereiche und zeigen dir wo du Kunden verlierst.</div>
           </div>
         </div>
       </div>
@@ -671,507 +717,832 @@ ul,ol{list-style:none}
   </div>
 </section>
 
-<!-- ══════════════════════════════
-     FOUNDER / BENJAMIN
-══════════════════════════════ -->
-<section class="founder section" id="benjamin">
-  <div class="container">
-    <div class="eyebrow">Wer dahinter steht</div>
-    <h2 class="section-title" data-reveal>Verkaufen ist kein Trick.<br/>Es ist eine <span style="color:var(--primary)">Sprache.</span></h2>
-    <div class="founder-grid">
-      <div class="founder-visual" data-reveal="left">
-        <div class="founder-photo">
-          <div class="founder-photo-inner">
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAOEAlgDASIAAhEBAxEB/8QAHAABAQADAQEBAQAAAAAAAAAAAAECAwQFBgcI/8QAOhAAAgIBAwMCBQIEBQQDAQEBAAECEQMEITEFEkFRYQYTIjJxgZEHFKGxIzNCwdEVUuHwYnLxJKKy/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAJBEBAQACAgICAwEAAwAAAAAAAAECEQMhEjEEQRNRcSIUMkL/2gAMAwEAAhEDEQA/AP5aBQVAIEAAAAAEFAUBEFFBFAC+SiMFZAADAAABNBQKAFRDIAQoAhCsgAoQAgYAVAUcBEBRQVAAQCgFAoRQiFAAhQABCgAAAJ5MTJkYEAADyACAACgwBuQQFAUIUMCE8lARAAFAuQAARQAAAQAAFAQYUIUFRCsDwQCVuUACUUFUAAFAAQIygKhSACgAAAACMiIoQA5KBCFoAQUUAQAUFQFAEAAAAEAApQRQgEAAAAKBAVkoAAAIyFZAAAAgKEBCgAQFIAABFCeCgogAIiFACoPICAoAAFAKAAAoCARKBQBAAQAAVQFIAKAEACgQFZAAAAAeQFAUAUpCoIAAAQpAAAAAAKjBQBGAAICgAECgEUIBEKAAAAAAAAwAIQpAIAAowAEAUgBgACFAsKgAAEKAIAxRAAAAAFRQAAABFVAAqaAwAAAAEKAowAAAKAAKBGQyIAIUoEHIKBCgAEUiKEChACAAAQoAgKSgoAAIUACFAAAAAUIBAAoEBQBAAABaIBGQyIBCGRAIUhQDIUeABCgCAAihPBQUQAEAjKAICgCFIUoAFAgAAyIChEBSAAAAAAUAAAoKAAAQAAUAAAAAAgAKECoIAAAQoAgACgAAgKQAAAAAAAACoAoQQAAAAAAAAAAhCkYAABUKAAIUgQAYCoCgCApABCgCAAgE8lAAAFAoARAUAC0ChQjKQIADyBCigFACgAAAA4KECFIwAACgAAAoAFIUIAFAgKQAQpGAAAUAAQIygKgAQAoAAqCKEQAoEKAwICvwQAAAIwysgEAAVCgBAAAACAAAFGQoAg8gAQFAEABAKQpQBQEQAAUoAAAAQoAVCgAAAAACAoACAYAVAGAAAAoAAIpEUIFBAKCkAhCgCAN0S0FUDxtyPAAfqjVOTcqRj524IN9BK/JoTfqZX9PIGxtLzuU0NJVu2wm6YHQgaLfh7Dva8l2OiimuE7i21xyZKafkIoKQAAUDEFAGLBWQCAAAAAAAAAAKAACApABCkAAACAoIFAAooBQiAACigigQFIwAAAAAKAAAECgAAEAAFCFAAAAAAARQi+QgwgUCMeCkYEMZukWUlFWzTKVsKq3tyYvcxuxuQbIysrlSZhFXRn2dskpLZsCY8blGUlwjfHSznJJJ0SEvl4eyt29zoequVJLtUe1fkK5I4JSWy3vb+pcmnlBxtcnqLUYsesjNJdsY8foaNTqVkz44xpqL/wBv/IHDkw9sXa+pOjSo/VSPV1UYKUZR3UlexhgwRlg7m1fcr9kEebXa+CzhV+ng9HPpoyyzeJfRVowwad5cUXT+luL/ALoK44x8Pi9zFqnvyepi0Ul8tNL5knsvQ5tdi7NVJJbWkvFgc0ZOqM4ys7FonKUKfO5hn0ksOVqSqtwaaEUtOrrb1IVmlWQpGBGQrIAIUgAoAUAAAhSBIAAKEKABiZEoCAAAAABUQqAoACAACqAAgAAIPJSAAAFAAARQAAACAACgAAAAIAAKqKiFCKASTpASU6dGv5jb9vQj3bbMapkVZu6ZirN3beK9jWuedwuiKsNNfgzW3K3RL+rfj+wGzAk3xubNclGSprhMmCDjLbdPiv7k1L78cH5QGqU75MVJpoSW3Bg1wwNkp3v58mKb7k73Ik3EyUG7XoB1LM5YqftuTDll29i4ck6/Bqim4urMYtppp7qwj0dHkuST3Uk+fybcc/l5MmNUlkmn+F2/+Tg08+3LjceOP6iUpfNblyn/AOAr1VrP8ZSSqTSSrxucmu30sZum+6mznhNrMl+GZ5JKWlcX4dgdv8z2Taj+ns6Ms81qFPtq6SV8tcnlOb/mF+aM45HDJd+O1gIJqThvu9iZI1L0OrNBLDHMk01K/wClmucozgvIHMQza335MX7lZYkKGBAAAAAUIUBAgAAABQAACMpAIAAAAAFCKAAAQAAFAAAAACeSgCApAoCgAAAAKQIAAAAAoAABUQqAFIUICr9BLZWYSe6CrONbNUYVZlKWyj4ZL2/BBljadxbqzCcHCVMxtppo2uVxi63QVrb33RYxvePKMsrg3cXarzsYK1uq/AG1z7Uq2a8WYzm53/2swk7Xo/KLUuN6ZB1QxKa2aV/3NHymm01x49jbhtPtf9TPLNt9y58lNMYYUu1Xu0zGMalHjimRScWnWy4/BjklL8r1A2qmqXjf/kx+WuVx5MIfVkpL9WdePBNZKcf0A4+1xlXlM2ZZ98nKn3Pd/k3ZYxtp7Ti/yjnpuTTW6JsJPukpKk1sbO7ujK6pmHY2rin7lUZWxs0wyu5tryhkk5SUv3Njxvt43Rg403XDKabcmVzh5qXk1YZcpv2J2UqTezJFNTry9iDomt167GuSN1NOL8mqa4u0aRrBWiMIgAAfkAAAAFCFAEAAAAACFAGIKAIAAKikKgKAAiAADKiFIwAAAeQAFAAAAAAAAACgRFIUCAAAAABQABkRFCMZ7mD490bG6T8mu+78kVLS8mS7Xv8A6vfya5RMfAG2ce3dJqzC/TYinJKk2b9LglmmqWxKsTHBz3aN+PTNrZcnpYdC69DvxaVv6Yxpepi5us43iYtC5U3sdWPQ7ttfqe9g6e5NJI9fTdJ2X0psxc3ScT456Hb6Ua5aCX6/g/SMHQoySuOzOmXw3GvtRPNr8T8q/kpxV1Zhk0uVxpYq/Tk/WIfC8JeDr0/w1jtJ41u64L+RPwPxzDpJ9v8AlNS9WjYum6lyVRa/sftEfhnBj7W0qf8Acyx9Ax967cLlFNb0th+RPwV+R4fh/PN/a37Vwetg+DNTlVqDTryftvSuhaVRX+Am+Pwe9DpWCv8AKjaXNEvI3OD9v57h8EatLu7HXr4OvH8IZZxh3QjbP3eXRIZE+5x7fRcIZOlYIQrtjUeET8lWcEfgz+B9TKDnFNx7qWx5up+E8+HIlKLbkm144P6In07Gt3GLrhHDk6Vj5kk6eyauifla/wCO/nLXdCzaaHc4t1u34/B4ebH2ZNrZ/RXWfh7DnjNwild8P9z8S+KOlz6d1FqSai7aZ0wz8nn5eK4vF0slb7k3F+TfqdNUPmY/s9jmi3KVXUju0s5OLVpetnWOGnmPiiHVrYLvtRSS8o5PBpAhSMIAAKAAIAACAAKAAAQoAgAYEAKARUQyQAABEBQBQwAIAAAACgAAAAAAAigAARlAVAUgAvgACFAAqKRFCI+HZY47xtrxsWKvjk15fpl9F35ZFa2nZi/wZtt3fJjUuHz6AMUHOaSPoul6ZQim1/5PJ6djudtWfSaRWvY551248ft1QgtvU7NPjWzSVnPFcHZptqRxtemR6GnhFUv3Pd0MIpJ7HhYGk1zuexp2+36ZJWYrrjHvaNQiuKXL3O6KU074Z4+ny1FXunsenp53WxnbtMY6lFR7ai6Z0YabtePHuau+47co36eUYWqdJ80TZ4sJx+upK9/2O3TKKVRj44NE5fM3SVN7M6NNs9vK3oiydPU0n0xpeT0cTSh5jt+552nafK/pyehCSeOS3te3BqM5MVbVOTbNOZqEq3dfqbsskm6bb/ByTad1Jxlvv6CrjBSc5O+Hw2a8kbi1L7jfHHtSlfqY5I0lulLxZmtx5uTEpN8u+dj86/iX0OOp0TzYofVBbn6bnhva22PH6np46nDPFNKpDHLxrPLh5Y6fzHnh2zaaaaJCTb2nXsfSfGPS3oeq5FGNJydbbM+dUe2X0PnxZ78bt8jPHxumM08jqN2/VnPmhLE6kjryyy9ratV+5wTyd93z4ZpzUMkaopRAAAAAAABAgYCjAAAAAQUUgEKAQUIhkigAAgAAKgwAICogAFogUAAAAAAChAAACFAUAAAIAAAAKikKEW3FNrkL6otSaj53NkFHtuVtvwjS0m5Wu30RFaqt7Ct9/JYeebEU3LwFel02DclS/Vnv6ZdsV7HjdPj21ye5gW3v6HDN6eOdN7jwdWne5zVdf7G/Dt72c3ePSwPhu7/B6mmn2pJ7b7nkaffwkvB6GGeyXKMumL18GXfxS4PY0uRNR3Vvk8DBKKe73/B62lcb+3Z8OjNdo9aOTtT9vCOnApSSbt2uLOPBU/NNPc7sUqTlW78cGWm6MVLF2z2ivBljl9Su4q9/cxxxcoOSu2l9L8FxQtpPutvZ/wCwHraZrsSZ2QyVFN9yr1ODBcY1JbrdP0/J1Rm6T7bRraWM8uVbJWvY0xyReR03v4a8G2UZNy7kqSTTbNMU5dsdu7mieyOqCfbu+WaJNW/PuZKck2lwjFxdeK9hWo0ZFbtqlyt9zz9VTul7Hpy24OHUru58eDm0/Lv4naDu03z1Hf2PyiaU13LaXk/ffjLS/wAx0zIv2PwfX4vkax45L6XLtvwezhy3Hy/k46y25nOeOFSjx5OHIk7cT0s+LJhbV0kvJ5uSu6/6HoeSrjdoyJBUilZQABQAAAAAAIA8AAAAAIUEZAABRSoxRUBQAEAABQUgEBSAAAFAAAAAApChAAAAAFACgQFIAAAFKQoRtwO5/U9kjFxTlaTUXtfLLiV36+CuT+vs2vmKXJFaWqTJgVzM5tPHEuljc/RLlkrUeroI73/U93EvpVKked03HJ1ey5/B6+GChabv3Zwyr1YTpilSZvwqmqZqltsbcNuX+5iusd+Btbrk6sTknFV5ObTxtK7ts78Uau15JpuV24KlF7bnq6R7xVfquEedpIx7d/B6emcbdJfoSx0xyenjqKUu6P6nbF90e27f9Tz8Ue/B2xqPvyd2kglJSfMny/JzsdMa9PTQ/wANpriPL5J2OMqjtS2TOnA0nbdKjVJf47j4a3osmjbdjXbGl6p//pvwvtbje92aMkt6Sr2NuNW0l+jLTboipNunJpq1twWUaVRe65aOjDjlkwpp1t9Uv+DZkh9eOPalfqh4p5duFY5JtO2nVGaik5dy9t/J1uEJJPleppyx3T5r1JlGvLbiybXadeDkzqt9nsd842t3szjzxp36HOtR4XVsXztHlXNqz8W+KdHCGocHFK33fsz9z1CuElLimflHx3oezJLLXFbfk78N1dPJ8nHc2/PtZJxXa6l27X6nlPef4O7Wz2+lbP8AucWPl8M9kfMrIAGmQhSMAAAoAAAAAgAAAAAQFAgAQAqAQFAKwiAADIAgAMACArIAAAUAAAqIAKAAgAAoAAAAAAACopEUI2YbXc091wid8opx7VJP1MUm3sR7Sq2RSe62VKzs6dh75pROPZrf8nudDx3K64XkxndR0wm69nTYPl40kqaOivp4M0qivWiO26apLc4PZ6aZJo345Rx3Kckkvc5tRmx4U5ZGtuDydTrpZprtdRXC8FmO2Ms9PqcWqhGu1qlxbOzDqXN1sl7Hw/8APSx/6nxux/1aVr5cnFehrwZ/K/SNNqe2kqa9j09PlcobeeXZ+W4etZlzJ0vc9PT9enBX3vb3JcG8eWP1HT5FFxilcXyz0IZE4tp7n5vo/iLI0lN/S/Q+m6d1hSUX3J2c7i7Ycm32mDPOUUvU6FkUZq0/09Dw9Hr4undo6/nvu2la/Jl13t6eTJc/pabZ06WSaTfjZ7HkY9Qm1St+65OiWr7Ivtf1c7lLXvYcqxxpytGx6iPbey/U+F671/8A6focmWMU32t0ttz4bR/HmsyZMblmi43vB/3N4zbllnMa/dfmRWNdqXsa3lTf1qO/p4/J8D0v4sjmxLtnK3v9S8e3qet/17DXbPl7WS4n5I+im1lco+nk4tTG2+13Wx58eqxgt6UUvUmj6rg1OSWKTua8+JHPLjrpjyxqz2+9Lm6PjvjzQd/T8k1H2dLjb/k+01VY86jG6l5Z5fxFjebpmZKPdPt2M4XVa5J5Yv5z1mNxuMqTTs4+2l3Jcnq9Xxyx6rNjlwpNqzhzU4Ra8+h9CPjZdOcAGmQhQBAAFAABAKADwBYAAAgEKCiAWCClRiZIoFIAgAAMiFAEBGAqgIBEBSBQAACkAFAAQAAUAAAAAACgEZ48csjqCb/Bgj7bpfRoYulY82XJjhLIu590kvwZyy1G+PDzunxmSEobSVWPpalZ9H1fpcsePvUb9GuGfOSUY49772/0SJjl5LycfhWPC28n1Hw5j/w5Pm/NHy0W1Knu0z7T4dhWjvbf3M8nprh/7PRS49DTlkouT2pcb8nTVuv0McuGMlutmco9WXp4GeEsuSU57t8W9ka54ItfUpL08nsz06hj+l+fKOLJjlGarjyb24eO3nR0qm6cdn5SMZ6KVcbNnqRiocnRHJhr65R29yeTX43zM9LNXbNcVOEt+GfQ6nV6CK3nBv8AJ5GfVaaUv8OSLMqxcJPtnpss4OMW2ke903qjxtJt8/7nzqmq8HRp93a3JWsen6V0vqqyJb7s9zT6xyVNVXlcn530jJJSiro+26Xjed2+DnXpxu3tw1HZFbtV5MNVrljV930+rOyOjksdKCarbbg8bq2lydr+nj0Mt30+e67r4Z4TxuTaaqkfEvBp9LklLsbV7J7n03UMajanI8jNjwOT7pJex0l08+WNrXj6nkx7vIoKvC4PR0nVs9KfdJuT+iK5fvXgx0HTdHlfc3GUlw7Pd0XTMOPtSjb9Vya8oz4Vu0ms1urhFPG+1LeTdUiSetwZL0+VSVXs93v/AEPW02CEYV3Klwqoahyn29jjDtX3f6kSVbhY9Dp3Wv5vHGGoXZmjx7/+T2Jw+Zp53TTR8hLTzw5MWoikmtpP1/Q+u09PTWnLdLa7OPJNXceniu5qvwX4pxxj1TVQcK+qTTXg+alJvTxT/wC5n1fxlBP4h1cLprI9zxNN0fXa7FknpNPPLDHKpOC4PZjenzc5blZHkg2ZsU8ORwyxlCS2aao1G3NQwAiAAAAADIUgUAAAAACFAEHkAAjIxKgKUgCAAAyIZGIAhkQAQoAWQAKAAAUgAoACAACgAAAAAUhQM8Me/NCPrJI9T4gyvJrZRt9sKil+Dz9Cr1mD/wC6/udfWE1rsl/9xyzvcer483ja97ofdj0Lxyblikvte6T9j53W6f5blKNtRW98o+o6dGtHD1aOPqukctLmahVJy4OeOWq6cuG50+Wx7zTfB910SLWihtXsfDYGvnL0s/QekR//AI4J7OjfI48E7bqdqqfqbpSgk3W6MGu1bcnJnzOMXXJyj0Vc2RSVUqR5Ot12LTx7pPf0Q1ObNKP0JJP2PO/6bLNPuzSbs1NfbF3PTg1HVcuWdY7SfBzyWR5e3UZXBU5N13b1sqPpNL8PY5q3Tb/odUfh+3L/AA3LZLuujcyxjlcM6+N0Kw5NTGGqyZMeJ3c8ce5x22dedzb/ACeV6X56XdjtxbS3R9rpvhXR/MUuzKmt3fB6OToWkx6NYVnyRw7vt9C+cScOT83wZZQdW2j2tA22n4Z1aroWlxTuGWWzMtLjjjTS3SM2ytzGz29Tp9LIn54P034WwvNKCatLfdeD8w0e04s/Tfg/UxXy65TXk4ZvXxR+hR0sY4U2rtHy/wARY/l45qKtJH1qzP5EUt/b0PK1emx54zWX/V5ZmV1yx6fz98U6/NjyyjjioJ/6pf7Hx2fUZJTuU8k29+aP1T44+D82r6jLPiz4+KUG9tvY+Ly/DueGSSlLHK41XDO+Nmni5Mcvp4/R3q9XqJ49HvOMHOvndlpc1b3fsevouva/SfKySzZIwku6Hzo2peLT9NqOXD8JdRuWSMI/Li67nJI+66d0JY/hPT6bNoparMpybTpU2+Fe511jXGXklc/Svi+OaUIa2Py+50pxdxf/AAfXwhHVY4ywu4VaaZ+cz+EepYFLJo8byaeV92PJs1vx+h9X8HavV9PktLrsclj4rImpR/Xho4Zanp68Lb7fT6LRvJNRSSWydcntafA9PhcKqv2LooxnLuwtb+50ZYtud3wcsstuuE1X4P8AHKjD4u18ZUlPj2dcn2Hwd1TpHw/0F4+o5I49TOd/LSttNKj5X400ktV8f5cUKbyTjHj2RyfGPSMvTNXB5W25eW7O+XeMjh8eWclyj1/4n6XQavSYOrdP7blLsn2+fRn5ufba6Eo/AcpO6lmjR8SdOG7xcfmYzHlugAHV5UAAAAAAABAAwAAAEKAIAPIRQgAqlIEAAARmRlIBAAA8gAAQoCoGAABUAAAAApAAAAAAAAVAZ4pvHkjNcxaZ7fXoRyTx6nFvjzRU1/ueEe10uX8103Np5O5YX3wXt5OfJOtvT8XLWXjft7ObOtLhxpcqK/seL1HqGbOpRjKovwj0etR7sOHJH7ZQTPJ02Hvc78Js44vVnHl4Pq1EPRv/AHP0rQL/APmiv/ifnWlx1roxvbuP0vQxUdLBfpsdOR5eD7acy2pnnzjc3tuz09Ry9nwckMe/d6nJ6HP/AC7d0rXJhm0WRbwT/wCD2NLiUn2tHr4NMpVw62exNteO3xKlqsK4f6G3Fr9bF7Y5vxsfcLpeKXba3Zvx9MxRV/KSkuKGzwsfIYcvVc6+nF2r1ZmtHqcm+ozXXhH18dPtwmlzRx6rBDu4p+qLuHb5DWaSUYuo+1s58emUIU+T3teowk15PKyyp8ltY8f21Y32H2HwtqpRmqtryfGtts+n+FbeWrp35OeU6d+L2/WdNqnLSY39sqvdeDqklmTXCaOLDf8AIY4qLpurXob9Pk+Wl3rc5enouO4+F+INDqFmninKUc0ftlW0l+T4nV5tVos9azTt0/uauz97z6TBr8Tjmgm36+DwNb0OEO7HOEcuJbpyVtHWWVw8bH5p03q2ic4KapXb3Pr9L1nQuKWOSTclLaPoehH4Z6Upd0tNju/KO/TdD0OnXfDBCNeYoW6+01L9MdJq8OeT7INp77xqzulpNNlgvmYot+KR04dFDFCoOT3vfk6lgUI9vLqrZzy3W8ZpyYMMMEu1RSg40q5s5tWu3v2VtHdkuMGmm6ezPM12RqLXsZjV/b8e1ShP+LWm72vlrUQtPzSTOr+LFZ+paXFjj9T9jjwSk/4qxyQdSjmaT/7fp5Pd6rpH1D4ny5cjcseBV3Pyz053Wv45fFm/L+vlfi+tF8H6PSOlOeRNr8I/Pj6L416quo9UePFK9Pg+iPo35Z86ejjx8cdPB8rknJy2wQYBt50AAAIhQAAAgAAAAgAAogsFAABAUAAAAEZkspAIAAA8gAAAFQAAEUiKAAAAAAUgAAAoAAgFO/ouf5HUcTk12SfZL8M4DJbPbkWb6McvGyvsNTg7tBPGt3im1+jPDhN4pSXse/i1Pbhw6lx78eXGlkj/AO+TGXT9PqoTyY+VvR5J1X1Mv9TcfM6FL+dhNp1dn6Jop3p4NrlH54ouHUOxcXSR990qXzdIm2m/B0z/AG83F1bG7OnJO+PX0OSO00ltuehlj9N+Dge2Rvwc3Z6OjSTrlvk9/SKEsa7Yty5r0PB0dSklw35s97RZoRjS2frRmumL0seJ1tF3/c2wTbjtTWzVGOHLdOLi1XPodSdq3ylX5M7ddODUNQUm0o2+GePqe5Wnw3f4Pb1iTiu1XXg8LqUvpdqq9SztLJI8HqMl3OV34PGyPu2X4OrqGoj3OPjijig7a9DTja244U02fSfDLa1Md7Vo8DGrjXk+h+Go1l7mvP6Ey9OnH7fq+mmlpUknsvBthWSKe6TX7GHRV/MadLZuuOTJXjyyjJNelnF6v468DpSXHqd+CKyRayU41zR5MMyjOKf6no6ecJ4+zvVNetGsWM+2nUafFODWCaaj5u6ZFgcLVpva2bNDh02ixThh7qcrVu/0M033PtW0eb8mv6xZ+kxxlBtSXG25nGkpUjat8bbdqrboxcUk2q39S2Q25cse7dN7bs8Hqjin7p+D320sT/sj57rUlC36b2Y12W9Py74e0yy/GXVeoTjN48EnXb5fd/wh8cdWfSOkPHifbrNa29+Yx9Ts+B4/P1XVpvIoweVyfr27t/ofm3xl1aXWOv6nUW3ii+zGvSKPRjj5Z/x5cuT8XDqe68NkLZD0vnAAYAgARGUECqAgBAAAAAAAAAQoAIACgDwEAABmyMyMWBAAFAAEQFIFCkKAAAAAACkKBAABSAAUAoAABH1fw1JarpmTA954pWvwz1dLGOmi0uXyj5b4X10dD1TG8rrDk+iftfk+q6rhni1DrZc2vJ5+Wau3v4MvLHX6fK9ah2dRl2bX9R9B8M6uWRSx+EtvweF1zHWoxzk3vs79jf0HM8E5S7kuzz6IvvFy345vuslKFunt5POytKb4ST4O/C/m6fi9tzh1eF5I9lyW/wDYw7tmmy9mRO1x+56+nzNw/B4KlTrnyzqxZu3HXpv+TNaxr6TR6hxavwexiyWk/U+V0mqdfU7s9PHq0o02Ysdpk79TlXbJ3vdHyvXNSoQdO/8Ac9fWamHynvT5tM+G65qnNuKlsajOWTz5ZnmzOTfB1wwvsTd8Wef0+LyanHHhSlufSZcEce+WSxrxZrTlK4cSkvdH1nQsTeOHu7/B4mjx6fKmoZIyd70+Dr0uv/kM3y5u4+Blj03hnNv1b4azvTanHb283wet1XbNKajs/tSPieg9Xx5mu1q0vU+h1fVYuNyktldnPXWno8pvaaiUoQU/H+5hg6n2SUe5X+Bp9Th1WGeOGSLtbb8M+X6pKelzqbdGNarpa+4wa+M3JNx33O/BqYZEqk/x5R+e9O6nGbSbv1Pq9BrIzVycW4vl+TTF0+hx2m3f4NOXJKO3KflGGHPtzzuhKbd3dsrMYTdJtSds+W+L9RHB07Nlk6qDf9D6TLJJOKbvc+D/AInahYOjSSqUp7dvqMfcc+TLUtfEdMyy6Z8D9X18e35+on8lSb3imvCPzB8n3Hxbllo/hbpfT7inkXzZRi+PyfDnswnW3zubLdmP6QhSM24AYAEIUcBUAAApCoCMAACFAAAAQoAAAICgAIAADYQACEACgAAADwBGAABSFAAAAAAAAAFohQCKQACkKED6XpfxNPHpo6XqOP5+CKqMl98V/uj5oIlkvtrHK43cfR9e6hodbgxw0incXbuNHL0hRnkcIp3P6f3PIjyj0ulZOzU3Vdu692YuOp06edyu6+90GX/AhCT/ANNNpbvYuZKDpW6V7nl9N1Fyi0l2xTi2vfz/ALHqZIqONzf53OV6d5XPJr6n+5peSnZk8luvDObLNeP0/BGpdOvS6r5cvq5PVxaqPa7ex818z9TbHUNLdtGW5lt6XUdauxpSuj5jUSeTL5o7dRLuTcuDjVdz3QhaRi8bU4NqUd0zk6pPUa3L/iZZJP0OnJnUVXdR5Or1Uu50+DcjnllNLpdNk0mdZsOocJL0Z9Dqde9ThhlaSmlU0vX1Pjcmpm7pm3SavPBOMXafhm7jXOcknp918NdSyYtXCC4kz2fizSdX6yoQ6fqPkaXGvqSlTm/z6HwXSeoarT51LFDHGb2uS3X4Pt+m9VnjxQ+e4v8AP2t+bMWadseSZdV7/wDC7oPVIZ5S6hm7tJj4lduT9EfY/FfTU9O8mOO3lLk8/wCG+vYs08eKKjDHTlSXG10//fB9bjnHWadr7oyW5wyl3t7MLLOn5Fp5y02pcd1v5Prem6xpJ7U1TNHWuhSWrlHGqbVxdHBpO/E548lqcPCQlL0+30+pbhHdKuGmdMNVautz5fSahfTKS3Xqd0c7lNdt17Bnb1smVST33PzP+K+thjzaDDOu1t5JXzWx99DIkk5+5+LfxO6j/NdfljX2Y4dv77m+LHeTz/Iz1i+U+Ieo/wDUdd8yNrHGKjFM8ssq8GJ7ZNPnZXd3RkACAACoARgAAAAAAAAAABAUhAKAUAABQAEAABmAAMQGADACChCkAAAAEABQAAAAAFIAAAFRSCwKCFCAQCAq5OrTXca5fvRym7BLtcWuVLkzWsfb7To9LtbguxrsfvfFHq6yMk1F1JcumfP9NzyzU4ySlJ3TdJpf3PelNQ0zeSPc9k3d/uc8o9GNefla7q/9o0yVjVZOzKqd2tvVkxPZ34ObcrVNOLtWl4M8co9jlJjU7YXX6HhZNZ2xa3pPcSbLdO/W6tRqnS9DzpavuyWnscWqzucm738UacUlTi2dJi5XPbfmzSlKt+TQ7ytr8nRhg3qIuXCMFCMcld6S9X4KndcsYVTrbyez0jTLI2sUHJ1ey8HKu2WW29rtUj7X4R6x0rpuCWHLgTlkVTn5oly03hx7r4v50lnl3bJSuq/oerky6ieDHCLprx63R9X1XQ9Dll+fixZHPJ9S2+lP2PLeh0z+vAnNxVx7m7b8cGfLbp+Kx09C6hPQR+YnLvST43b87H3vQfiDItbHH3Nxa7pKT2Xsz81m46dKC3yWvpkvqn/4Oz/qUNDeS1Gc3VMxY1jbi/aJ9R02olH6o98aafCZ5HxJqNJ8qOpx1GaaT2Pz+PW5SUJY21FNTUW/Xb+h0rUy1axQyNOGWak4p8XsYuH26fltun1Gibm1KO0ZI9SLWCNu5PikY6TSfy2kh3Kklwc2t1DWaMY8+U3z7GZ23bqN2t1Kw/NmtodvdT9a8f0Pwn4h1i1PVNXke8pTdv8AH/4fpvxn1Oem0Gpm2oZe1KEV4fi/3Z+Paxp5PpbdpN36+T08WOnh58t9OeyMpGd3mYgMgFYIAoGAEQABQAAAABAUlgCkCAoAAFIUAUgCKCADMAARkKyAALIFAABSAAACgEAAAAAApAAAAoAAIoAQAAFN+CKnjyO94pNfuaD0egxjk1zxSVrJjlH9aJfS4+3b0h9yjD7ZX93O3pX9T6F6jthDDjUUpSVq738nyWHLLR6lxlcckXv7Hox1zlli5uT2v8S9v0MV1lezmx4+6Taae27e9UcWLNH6m3s+DW9beGMslpdqav8Aozz56tNqm+3ZelGfFvy09TUZO/DSPmdXFqUr8Pfc9nTTWSNOqRw6mEJTd3zuZnVXK7jyMsn33y9uBhxzyZK3SZ6+l0cJz+qN2z1o9PhGP2bmrnpnHj328JaTJfdGfc/cvbkxv6rg/XtTPR1ON43a2NcdVSqaTj+CTJ08ZPbf03R5M8lLHnwRklt3w5/J6S+HtXlzWsuh75W2nFr/AMUzy9LkxRyrsk4d3NcHs6LXYvnqOTNxHt22/VDb0ceGGTfpOiayOrzafNHS4pad/cpOSla5S/B7mHQQwKco9VxRjGCbT03d+2//ALRwrU6aOSMp5X2yVST8vi7PU0sdJk7OyHckuG3SJt28MY8ufStZ1HvhgWHLDxkePsa9KdnxPxB0zW6LL/iZJ5e17+iP2fSzU18vS9qtU2t6M9b0HBk0mRSipTlb7qvc5/k1XLk45nP8vwzRayalBXTiqTR9l8JzyarqOnx9jlUXcX6Xv/Sjg610DHpdYo4Ele7d8H1/wThwaTN3YknNu+58xrf/AINZXc6efHGy9v0XrOWGDp8pQ3pH54uqrJqcs32xjiWyfMqdW/6Ho/GvXIYsKwLJ92zrmj861+veP5kVNNWpN3t+CceHS8nJ2nxX1GWq1mVuSUIyqXvKuD5Jtt2zr1c1P63Lfu+3/c5JOz04zUeTPLdYsBg0wjMTJkCoUhQIAAIAAAAAAAAQCwBSACghQAQAFKQoQBABmQoAhAGAZEVAKEDAAAAC2QAW9wgAAAAAAAAAKPBCgLAKAAARTs6Pk+V1XSytr/ES29ziMYZflarFP/skn/UX0s9vpfivRrS9WlKH2ySlLbg8rJki+13tW8T7L4rwx1WgWpgtvlptrmz4FScnVVXg549x0z6rryalt1FtKld+WcuTK0t3y/AyTSdRq2uPBzt+UaZ29TSZZNc0nskZ55JZfpbd8s8/T5OyNvdmU87bfkzrtryezpcvZU6Uq5PcwZY6jEuyTTXg+R0WTunUr7V4Xk+s0UMSxru2fqnuc847cWTm1uByjcjw9VBxk1+p9m9As+Nfcr4TOHV9BmotyTaXsYmWnTLHy9PkoTjG+6duv2MoZ/8AE7t0kenn6ZljCeR4ahHnc87Hpu9uLUo/pz7HWWVwuNjq0meeWcW5uS7qTkfSdL1mfUuOLFze6XGx4nTOl6nWTjjwY3CKvd8vwz9L+Fvh1aZJy2nL7m978nPPKR34sMq9PounWnioJSdr6n5Z9JOePBp+9tKl+xxYsEdOpyySqKXk8H4g6g4YYyxyckm02ldo4SXKvVlnMJp878S6rDqNXkyS7W06uJy9K6vjwae4xSnFfS359zwutahTkppU3tXi/X0//Tihqe3SOm1urjL0R6Zh08Fz7b+sdSy6nU5Vbfhya9TxJ6lTxOCV9u1+vobNRl7oyk6VU27qn7HDOS37VSlu16M64xxyyYzbcn3c2QIG3NGQrIwBAAIAAoRlAEAAAAAAABGQyIAQAAIpCgAABUUgCKwQAZgADEUUjAEYAUCBQBAAAAAoIUAAAAAAAAAVEKAKQAUECCKc2Tlm+To0T3A+80Gs/nvhuOBtd8cfbT8nxuphPBlcWqfqvJ3/AA/rPl92JuvI63BTyd0WmmvByl1dO+X+sZXluXcvdGt/1JdNoy288nRyL8GTdbpbGAsg6dPl7JLZ17cnqaLqEseaNpOlSvweIvBsjNpxaZLNrLp+gdI6j/iJ5at8b7tn2ODW6fJijGfbPI/pdLyfjul1Uo9qcnd/sfSdI6nPHCcZW26TT9zlng9HHyPucukw6lXNR+Wn2uqW/v8AqeMul6b+cg541HE39Ua8p/29TbotV8zLjjjl2/S39T2v3T/Q9CTxZI9vEZY4zUuXb/2MSO+5W3TSwYpd2KCh8u+1Lj0/5Pb0nVv5fS0oKcYbVfb3Lxt61+jPlvmRjgajtmxKprn6Xw/c51qo/MlkeT/T21XEl/4J47Xz09/q/WY5VJQyuMJK4yhs3v8Aj+h8h1rqLz6a4v6nJLbZS9XXg59dr7wTUZXbpU+L8nzupytPadRttb+50wxefkz23avUYpYZY5NOt4zXn/3Y8qeZ9qa/0y5vb/8ADGUu6cmm/wAem/Jqu247tJf7nXTz27TK3OTW6dW0YSHbUrDNRm1CkoFQZGZMxYEAAEAAAhSBQAAAAAAAAlFIAAYIBSFKAAAoACLwCADMhQBCMACBAoUIAAAAAAAEUiKAAAAAMAEAAKiFAMAoEI5JIr23NE5WwiylbMB5FgZYsksWWM4vdHruS1GJT7tq/Y8V7m3T55YnSe3lGMp9t43XTbnxJN07/Q56o7nFyXdF3FnPlg79mJSxqsEkmiJmkZPjz7mV/wBEYfgt7hG/v+yK4S3O3S6uUJUpc0v2PMTrczg7a9UyWNSvq9P1GUJxlKXC3XqvQ+k0PUJanEnNUlarxVH57h1ElOEo7s9TBr8mNPHCav8A3Odxdsc31+TV48kVmk4tSVK3W3o/6nkajU39ccj7m9/z6nmLXtyjSWz48L8focmbUxjmlvLimm/Pt7EmK3N0ZZqm+76pb7cKzztRmf1w7Y7q7f8AYwc+9zUWldVb4SNGSXfk+lPfdKzpJpwt2yyKstp2lHb/AIZnnxy0+HHkmlGeS3T9D2/h7os9TqMOfVrJ/LJd0qjV14s8/wCMXjXWJ48P+XjSUaEva+OpuvOjNZFT2kRqnRzJ7+50Ypqa7Zc+p09uYQri06ZGQLIykAhCsgUAAAgAEKQoAEKAIUgAAAAQAUeSFQFAAFBChAAAZgEAgKQAQIoVAAAAAAAACkKgAAAABgADGUkuWBkDVLL/ANqNbk3ywN7yRXua5ZW+NjWCDLucnuwYx5MiiMAAERlAGzDlcH7HTFqcVS38nCzPHNxe3BmxZXROCla3Rzyi0dSkpJPyYygmvciuUyvYzlBKXmidlGtppj5KrRez0ZVHbkGmWPJSXotzZ/MNT7la39eDVHG3ex0YtJLI0v6ktiyVhDPJTvf2K8ksi3tzrtlt6cHo4OjTydv7V7n0vS/h2OJd+XGsip7vczc5G5x5V8np9Fn1OSHy4NRnt3PhH2PSvhFNSnkn4TTlGra8UfS6Lp0NPgWPDhcsnNdv2nt4sGo1Hy45oxikqbW9nPLkrtjwye3k4dLPKoRaSwQuoQ2ij8g69m+f1bVTS2+Y0v3P3fqejjg0GfL3yqGN78Vsfz3mk5ZZybtt2a4u+2Oea1GJU9/cxTKdXndeOSyRp8mMk06ZphJp2uTr2yQtcm/bPpoBWqMTKhCsgAABU8gMAACAAABQQALDBAKAQCghQBUQoFAAQAAGZCkAEACoUnAAAAAAAABSCFQoFAFAEMXKitEasaTbCUmzW0be0lAaqFGxoxaCsQVojIBkuDERArBSFAAACFAGUZNG2E1ZosyitzNiyumStWmRY9txht7UejpdJLJwS3Tcm3nxxt8J2b8WnlJ7L9D3dP0ubV9qZ34OmNv6sT/bkxc3THjeBg0TbVxo9jQaFppLwevh6ZVWpRv2tHpabQvb/DkzncnbHCRo0Gi4dM+k0WkSik4v+1GWh0slSUWl7+D6DRaeTW9I52u+ODVoenR7e6X1zfq9j2NLok0/oST22Rv0WnUY32O1w6PQhCdbvZeiM7b8ZPT4z48xLSfDXUZp0lhlSX4P5qs/qf4w0cdd0rVaX/vxtM/l/XaSek1WXDNVKEnFnp4b08PyZdytKM+TCJmjs8qcO0b8M+2XsaUVKtjUukrryxtdyNDN2CdqmTNjp2uDVm+4zGlkKyGGgjKQAAAoCWAAAAFIABCkAAAAUgAqKiIoFAAQAAVkwUjCIAAqAAAAAAAApCpXwZqGysSJthyZKLNiVcIGpim2NV+SMzYouhroxo20HEaGpoxaNriY0RWujFo2tGL/AHINbRizY0YtEGsGTRiRVAQooApAAAAtGUNmYozQHp6CEMz9/KPpOm6OpK0mvwfIYJyxzU4OpI+4+Gddi1jWJ1DOv9Pr7o5cmNncd+LKXp72g6fa2W3oe1punUvb8DpuBqtj6XQ6VtW1t6Hnte7HB42PQ094qv6HZg0EHKuyFHvrRU12pMwWNRybpX/9TG18WnBoYxr6Ibeh6el03Y01FX+DXCSSqt6OjFPflirJXbhUb+pX+ODdSpqKOfDN1VHTJ7L+pna+nha65/OuL2238n8+fxO6d/J9clmgqjl3P6Ny4u9ZV6s/GP4v6SscMlfa6O/Fe3m5pvF+TLkz8GHk2I9UeBDLle6JVljszRWUHTW51x+qJybJm7BOnRrGs1hlh2v2NZ25IqUeDn+U3wMsf0StRDY8bRg4tGdKgAIqAEAFBABSFAgBSCAAoAACopABkAAgAArIUGLCIAAqAAAAiqgFGcYrySJmka0lqqvCMtjFFW5qM1UKLW+5f7epUYUxTM7vhNkp+yCsKrYV7GdXyx2pve2NIwf5Ri/x+5t7VRi40yWLtrcf1MWja0YtE0rU0YtG5xI4k0baGtzCSN7iYSiTStN0bErVmuSaZswu9iKdpi0bqI4lRpBm0YtEURlFmJQjfje514JyhKM8cnGcXakuUcON7nXjdbXybxSv1H4I+K8OqyY9H1Fxx6h7QyPaOR+j9GfrGgx7RpH8uw8bn6T8A/xFl0vJi0XX8ksuibUYah7yxfn1j/VHn5uD7xezg+T/AOc37fhw3FvZfk059OqbS3PR03ZlhDJikp45pSjKLtNPhm3JhUoOrPFp9D+Pm5rsmk9m/Jtx8f8AJ06jBTbapnHKUYT7eDWksdmBVJWvB1y2jXqjk00lKq3aO3K/o3S3JpK5dNDujL3Z+bfxg6ZKfSZ5YRtR3Z+m6JXKSXqcHxL0+HUOn58E0mpRZvG6rnlNyx/IUo1wVbo9Tr3Tp9N6pqNNNNdsnX4PM42PZLt83KaDKmTZeLL3m4wqu/YyX0zVGpzdmcZNqmWDtg7iaprtdpnHnc41KMn2v34ZjDUTT3dr3Nef7Z07VkdcFuEuUaMWRTW3PobEy72EsUWtmap42uDdRGn6kuMJXMwbpxT8bmlqmYs01tAARQpCgQAAAAAAAApDIAikHgIoACsyAPkIgACoCpWw/RcFRL9CpBLfajJJlFX6lRL33MkiovgqRPyVK+WVGSfp+4VL/khUUZWOTH8jdFRlQ9THu/JmpJgTce5eUKAxaT4MZQozpjcDW4vcxaNzexi43+SaXbU0iNGxxaslGdK0ZIJrc54vtmmdso2tjjyKpMzYsddJpMjRNNLux7+NjZxyaiNUoGuUTqoxnBvgaNuWgzY40YNGVWB1Qdb+Tmitvcylk+Wv/k+EWXSOjJnjiVveT4RwzzTnPulLc1yk5O5O2Qly2smn6D/D/wDiV1P4XcdLlb1fTG98E3vD3g/H44P6J+FPizpHxNp45Ol6uE8lXPDL6ckPZx/3Wx/GyOrQa7U6DU49RpM2TDmxvuhPHJxlF+zRxz45l39vRxfIyw6+n9tarDeNulbVnzWtxr5308+aPzT4G/jPlyfJ0HxUoTxyfb/OwVSivWcUt/yj9imtPqdLj1GjyYs2HJFShkg+6Mvwzhlhcfb3YcuOc6cmghCUVKDqzs1GyjfJy6XF8qbVUlKzszyUq4V7GG+2nSfQr9TLNOLTVcmzBiUo/gwzQ5ES9PxD+LfRIRyvWwSVcn5FK1Npn7v/ABqzwxdMxYltOcq/Q/DtVjbknHdo9fFLcdvn/Is8tMIJeTN4lyv2NcbtLtd+xstx5jJHaPOjgr4/cjqMt40zapxknxsacuogntuy3URllip45UuUcDVOmbo6iXdbMssY5I98OfKM3v0vpohLtlZ2wl3JNHAbsE3GSV7MY3RY7o7hhCa2OjDBmEomV7hkVpkqMTc1ZqaoxZpqVAARQAAAAQAAUCohUBQAEWwQAbCMWAIQyr0I168ehRi5Omlsv7mFssmYgZKUt+Ny/Mfp+xigwN8MkZbPc29rv6XZxUjdhm0qb28M1KlbvUXyVb7rdiVGkOELCquQ4sDJPjgyTs1cPct+BsZNWY00ZRl6mSp+LAwjKuTOM15Zg4ehjumBv5J2mpTrk2RnbLtNLRKoy8bMm4GLdDZmVLzsRoDFxvjg5dTjdWkdb24I91T3szZtY4dNKp16nXLaV+Gc2aHy8icdkzoe8EyT9LVbpexlGafJhLdpL8sVun4WxUZTjFmqWOt/DNl/p7mErrZC6I1S+lesjnlbdvk6qa5NeRKltu3RitRzg9fWQyZY4tMtBHFmhHfsxtSl7v8AQ8lpp0SzRLsXsCGV3yRROntyfW/A3xv1L4W10XgyPLo5NfN005fRJe3o/c+RKFlsu4/svoXU9F1vo2m6loJ92DNG16xflP3TNs7yOUo3s+380fzH/Dz481vwlre36tR03LK82nb/AP8AUfR/3P6N+Hut9P6905a3peWOXDJtuP8Aqg/Rrwzy58fj69PpcPPM537ezhnUIttK0ZzqWO1z6mhrdKufXwadTq1CDrZ+5iRu1+E/xr6h87r+HSp7Yo7n5xkmqbZ7v8QtZLV/FWsm3fbKrR8zKVv/AOKPbx9Yvmc13nW3G1D6nszHLOUltsYqSTuadexml3Sb4TOk7cq5nCVUm6Nbgz0OxD5SoXE285xZYTcHZ3PCjGWnTRPGruOTJT+qP6mC5N2TC4cbo0pbmVejjdwiZy4MMe0V+DN8HZzafJWT/UV8EVEjGa2Mo8lnySzZHOCyVMhzbAAADAAIBhACkKgKAAAAAyKCBGeNXKzDLK2bZVjxpeWc0ma9DEAGQKiCwBlEhSjbilTp/odDXctjlj6eGb8cnw3v/dGolYdzi/Y2RkMsVJbGjeLF6HS1a8IwcTGGQ2Jpl2jDdGSlRk0m9jBqijZGSovJq3TEZVyNmmcoWYdrRsU06MlTKjUpNPc2RmiOKMe2iDby1ReEad1wZqRRlSZi0Z87kcfUo49YvpTXqXG+7HXmjflh3QcTjwSadP8ABzvVanpuUmpX6lb/AFYjFy38eptjBL8lkGEY3uzb2JLcvHBU6RqRnbW8expzYe5HWmGr4Fmzb19J8Z9a0uGMe/SZMscLwQ1GXTQnljCqpSa9Nr5PmZQUm75OxwV0zB400ZsWanpxSwtP2MHjZ39rj7hwjJbbSM+K7ea01yDvnhT28mmWDfYlxsXbmPe+EvibqHwx1OGr6flaXGTE39ORejR4rxtGDVGVl16f1j8MfF2k+J+jR1mi+mUGllxSe8Jf++Txvjbra0OknOM/pSbv3Pwb4N+IdR8PdUjmxTl8jJ9GaCe0o/8AKPsP4kdZjqdLghglcMsVK15Xg43DV6ezHm8se/b4HqGolqtZmzTf1Tk22c6V7+PBFu9zdjg3u+PB6MY8eV3dokbYR9R2maVHSTTGxIeSvYxb3Kyf0H5HLAGMlZzPB/iprZHW+DXLiyWLKvBb2MW+DJcCDTL7jLwYvkvgKidMzlxZguTNfaBqmjWbnwapIxlGogAZlQAgFHkBACkKBQAAAARkbdPDuyb/AGx3Zq8nRL/C03b/AKp7v8Fg0Z5902629DQzKTtmIoAAgBD8AClQSD2KNkVsZ0/HK4NUJbm1bliVtg1JL0e2/hmGWN+xIvtkr4ls/wAm2S4Ne0cj2M4TaLJJmtppmfTTojKzO0zkTrg2RmWVNN/b6GEkjKM/F7GV3wa9o1NUZRm0yuOxi4vaiDapF/qaboyUi7NM3+LFeAmH/UqFenHBVL22CfoXngBL3NXyIOfdXPKN0Wk/qI2rdcD2CSS42DW4T3p/uLKiFqx/YedgJ+CpgAL9RSe9lkl6ckQCmnxZi4fp7mafuNrp0RWtNrnf3JOmv9zZJbuqMWq8UBr7VNcVJGrJiT2apm+qexJekkZ1FefKLgzonqsmbDjx5JOSxqo34RrzbNmGFXkSOdjcroxw7pJfudVUvwY44dsX6vkzvZHWTTnaLbwRsdxiioNheC0FsAAAAxZkRga/JfBHtIpFYNbgrIFTyW9jEtgVmEkZLkIlmxpBlNUzE5thCkAoIigCohQKAAAAA3YId+RJ8cv8E1M+6bN2OsenlJ8z2X4OOb9zXqMsAAZUACAFirYaEeQNtbIwkjZHdBqzQ0PZm3HP1NeRGMXTIOySUov3RcUnKNPlbM145Wir6cqa4bpm9sts15RqnG152OirTRpjtKmKNDWxjdG/JDe1waZRMtMozN0JnMZKVeRsdSlZlszmjM2xkalZ0zaswozscsoxTozvjwY0RgbHv4CMYvjcy5Kih78Bb7BP1AqHkll8lArW3sTxuHYQXLKudzFFQDwxxwPWiAVbsjIykFT9g3ZGEBizDJbWxsZiStPPyt3TLptsqY1H3Ewv60c/tr6ejdxsiezXuTFvAzo6sJQLVBr2AlAtWAiUEVcEAEZSAYSKuBIEVizEyZi+QqEKyEBcmS5MPKM4/eIMMi3NTOjItjQ+TGUaiAAigAAoAApTEoFAAHVq2k1BcR2RxM3ZpXJ2zRZazAAEUAABlim2Rcmad/go2QpLgyMVwVMqMZqznkqZ18o05Y+USrGOOVM6PvjRyJm/DLwJSunFPuir54ZjnVO1wzGL7Z+z/ubZruhXJv3GWCl3RowkjCMu1myMrJtWmUTFrc3tWa2iKxsyi6Ma3opBtjM2KW5zoyi6NSpp0PcjqjBS/UyUrLtNG6ZmtzEqdfgozQRAVFDF3xsOAA8WEx+oFJ5oWT9Sovglh/1G9kUv0L4IKCFsD9B5Aj9zBr9jY1TMZBXFqY0zVjdTT9zq1KuNnGcr1W49LE6lRtlTXuc8HcE16Jm+LtHSMUTHcKp+xCiiwQIABIARmVkYGDDKCKxfBi0Z8kaA1kKyeSKjM48owkjKJINkt0c81TOhmnKtxlCNQAMNgQAFAAFKQBFBAFSfPJiGAgwCAUAADOCswNuNFgz8E4LRiyoqe4krRijKwOaSplg6ZllRrRlp2Rdx91ubccrr08HNhl6m6Ozr03RuM1rzR7Z+xjFuzdnVxtcnPwyXqkbVIrXBquzOwMScGRGRQIhUBle5nFmsq4LEbLtmUXsa0zOLNSo2IqME6/BkuCihC9iX+hUZcoN+hF60AKmRAIBfsL3CIBW/cPcl78ACk8FJfoA8kfHBX/Uj53A05VcGcL5Z6LRxZo9s2c8o3HRpXeJezo3J9k6vY5tFKpSi/O50ZPDXKNY+mb7bW/K8EfJjF3+pl48GmQDwNgoEAEA6t1wPAAlAD8hWPkjMmYsgxZgzNmLIrFmWPcxZlje7JBmYZDN8mMuCjRIhlIxOdagAAqoAAUEKBQQBGDIWTsAQAAUAIC+TdFVRrjybY8GkV8GLMmR/qBgVEKRWM1aNC2ZvlwaHtIlGcHTOmMtk/Q5Eb8T9eCyldKVpo5ZLd+qOiD9eTDMvqv1RqpGhGVmD2ZkjKsiJ2G6VBAC2Y2ALZUyDyBnZnHdGqzZDgsRtRTCJn/qNoWVeqIPYCj+w5HpsVF4H9SNU/wDyUByR8FJ53AhUPYXuAsDcBC0BXI9QrGS8o59THujZ0v2NclcWqM2bWOLDLtyxfuei1aZ5k1Umj0cb7oRfqiYLkwT7XXg2RfrwY5V5EXaNMs0ykXiylBghQh4AIAFigFQjRkYuiDBojMnXqYsKwYg/qLIxT3Mq2sPgMF+0aZcmDNs1ua2YrUQAEUKQqAAAAAAMAPJQiMBgClRDKPJRlFGa5EVyVbFRWR8e5TFgRkLRGRUZolybpcGqXIoiNmN0zWZIg6o8/ncyyq42lwa4PZP0ZtW6aZtHNJbmKNkkamZVVuzMxiLArJ5FgAUjDApthwaVuzdHjco2R5MvJhFmSNRkZUQJlGVehb2MU9tyoCsIl7lT3Kh+S7UQW6AmxbFOr/oOOAJwA35H5AvvuLshQJf7mMl9RlZJAcOpjUjo0cu7FXozDUq42TRS+uSflHOdZNfTqyfaYQ2ZnP7TXH1Nstq4BFyWigUhQiFQAUZAAIyMrIyDGRhwZsxYVizB8mbMPJmq2lREL3EEmapI3SVo1tCwjWCvkhhoKiFQAAAUEAGIIgEQvJCoCmUTFGyC4LBsRGGx+CotklyQrAn5IypgDB2apm1mqRKqFTIVEVuxvx67G+DujmhydGPl14ZqM1jl2s5/J1Zt1Zy+RfZGXjcjKzEir4FkAFIy+CMCx5NyZqiZoDaimMTKv6moyoFBIopURcFu17lFWxUY36l4Av8AcNjkFQ5/JOfyB/YB+gHkIB+AuLHkIB4H9g7H4oDTkScGjkxS7MsX4s7p8nBlVZGjnl+2o9F8NGq92ZYpd2OL9jCXJvaNy4MmYx4RfH4Kh4F7AAP1HuB4IAMVNdzS5Ld8DYN7EZSMDFmMjO1RiwrBmD5NjXuYMzVZxdoCKSjRHsyDN8GFWZLdERRqkYmya5NfkzVgEARVAAAAAYkZSMqIUAgq5N8NkaY8m+PBYiArMWUCrghV5oKnkMD+5BhI1yNsjTLkUQqIVckVsgtzfH7n+DRB1G2Z48ndJM1EbZq4nNW50OWxplyxUYtmJSIihSDkgyXtyQbrcIDJGaRr7kiqT8KijddF7jSr8lRdppuU9y3sakZRZdmmf9ioxT2MrLEXyi/7kRfBQ/sUD8gF+BwVepCobMAmwF8ABgCFFIDGXFnJqo00/U7Hwc+oVwMZRqJpJXBr0ZsyL60c2mlWSvVUdUvDfCGPcL7bY8Dm0jGErp7blT38mkUepEAhdl8kugBrf050/VUbGasv+l+jNnqSKIjFhlEZGUxYEZhyzJmPkyrZWxre3JsMJEpGUOCmMNmZFgxkjS9mbzVNEqxiAVGVAQAUAAYkK3sYhAqZCoDOC3NqNcDYjUQ/QgbAB8BEYRFUhXwQDGRqkbZcGmQoABEVsntjRji8Fy/ZExhskEb07Rrkyp/SzAopGUgEKiEkyDOTVmFtkq+TNAWMUmZtmFlKMkVGCZkmBmZIwstlRmjJPYwT3Ml4AzQTMfwU1EZWUxLwUUMi2YCKyApQ8BvZXuSh43AoZBewFNWSNqSM7MJMlWOKLcci9md0k+1o4cn3s7E7jfsYxWs4VJRlFUn4M2t0asNRVJuuTZJ/ubiK+difuRsBFI2mhYYGvN/lv9zYntsYy3g/wMTvFEn2qgMNFGJCsgEZguTKRjH7jKtpqlybDCYpCBsNUWbRiUNc0ZkkrFhGjyCy5IYaUhbIBQQARmJWQIFXJCoDbDgzfBjFGT4NIxsEXJSKMfgWPIDwGUxe4EkaWbpGqQoxMokRlDkirm+2JjHhGWblIi4QGX+lmJX9pjYQYslmLYFbCQSLQURRRdggUliwKZIxspRmi2Yoq4AyszRrRkmVGf4Mr4MUZe6LBRZLKaRQT9QBSWG/3HkCgnkPb8gA/eyCtgBjIpGSkcWT72deF3jj+Dky/ezq07+iP7GMfbVZY3uzY/Bp4mbv9KNsouATwUoWPZAl+oFZhi+3cy8mGN/R+pBm+R4IGURkZkYszRjIkeRIsOQrYYTMzCaFGETajUtjbHdEhSwwDSNU0YG6atGlmK1AAEUAAGLIZGIQKuSFQG+K2EiR4I2aEW7MiRKQAB5AIj5MkRgYs1S5NrMJijAzx8ms24yKxy/ePQkt5sv/AAEJOkYWJSslkU3ZkkY22WgMlRGyUVIoWxuUWEKLRLFgZFRiVFGSLZiVAZGRgjJAZpmcWajKL2LKjP1KYl8Gtot7l/Bj+C2UXzsR7gIB7F2IAA9SBgCPdl8EfJKRx5vvZv0/+WvyaMy+s36f/KRjH21fTKXJsi9jGSEWdGWfggT2YApHwGyADHH9iMvHuY4/sRPtYrKyAIE8lMWRWMuRF0yMxTtsg6DGXBIy8MsuCjAzjwYoyiSCgEbAr3RplszajDIhRrABloAAGLIZGLCBVyQqBW5uomDdln4EUUZJAAAF6kKgABLAMwmZvgjVrYDUzZDZGvg2f6GwNS5sxb3K+DEyoVAtABYoUAsWKFFAUUAAhQoIpUQqAqKuDEoGSZkjBGSZRkuDJGJUBnfCKmYrcqZUUpB6l2ilILNBZSBcgAV+CMB+5jIyMWSkcuo+436b/KX5NGf7zfg/ykZntb6bJEWwYRtBeShAALD5AEl9r/BIfahP7GVcGVAABGYmTZiyDFumzUn9TNs2aq3JVbU7RknsakZoDNFRimWyoyMG9y+DEDKLLJWYxMvAGmSIbJI1kqwABFRmLM2YMqIZLkxKiDbL7UwnsV/YSPBRkAAABABCsjAtlMUVMDGcb3Ri3UGbbRoyyt7CjBkAMqqLZEUC2CAopUYiwMhZiUC2SxQSAWVBFCCACAqMkYoyXAGRUQqKKZGJfBUZUWzEyAF5JYNQPTYpPATKiog9ABUm3STb9jGRU/QjJfSuTN9504v8qJzZfvZ041/hw/Bie1rJ7gS4C4NooImUIWQpAMZ/b+pl4MZ+PyZMijAF7gRmDZkzCTIMcj+kwizLI9jBIlVsRkjGLMwAWwDYFISxYGSMjV3FUi7Rm1saWbVJMwmtyVYxBARWXg1yNjMGWoxKiFRBujvFokS43sRfcyilshWBAykQAhQwMQGEBJbI0vkzySMCVUBQQUApQAAAAAC0KAQoAoAhSAUIFoCopPJSjLwUhQKVEKUXgpEUIoH4BQF+gBUAAUDGVmRjIzRyZfvZ149oR/ByZfvZ1x+1fgzGqSKuA+dwjUQ5sqICgB4AoxnzH8mTMZfdEpkUAAYswkZyNb3A15OEI8DJwjHgzVZjvNfJnGNoC/M9id7ZVFGxJFGnukx9RtpDYDUlJl7ZM2lQGrtkjON1TM7Ri9+AMGgVggGLMiNFGDCDCIrbjZX935MYGUvDKgLHkALIBYCwRi6ApjJlbMJOkBhLdkoFMqgQKAKQpQAAAAAXwPIAQ8gAAUFQBIvghfIAvkhVZRkVERQKVGJdrKjJFIipACkL5AAV58g0AAvYm0QjMjFhXJl+9nZHhHJl+9nUuEZxWo+UZqjBbyMjSAAAAADGX3RL5JL74mRAIGGBGa3yZswYGGTwYGx7hRRKrVRlFtGztQoaETbKgSwK2QIyTQF4RhJyZl3xDnFIDW1L1MX3L1NqkmXwBqjJ3uDK9+ABkGEGBjJGHkzZGgLFmx8GuPJtW6AxTtFJw6AAEYsCmJSNgGzXIze7NfNkoiABFAAgKUiKUACWBR4ACBR4AApCoAi+RYXADwAEBfJVwClFRSAClREVAZIEKiooAKKPA8gAB5HIBmLqy+SS5IOTL97OxcHHk/zGdhItYN1Lhv8ABmuLRFJrN2xlSkt9+dyuu6VcXsa2gB6AgoIgBjL7osy8GM+E/RlQAB8kYElyYSM2YMDXNuyKRlPk1szVZdw7jAWNqz7h3GJVQDuZU3ZU0ZLcIbeUW1/2loqZRjUfQJe5naZHH0KNclTtASTj+ASjJAFAxZClQCJnZii3uBJohk1aMPYorMSggWSykfkDKK+iUn+EaDpyLtwY/e2c3klUA8gghUCoCgEKBQAAAAF8gIIoYAApCgCkMkAKiIqKBSGQApABlZURIIqMgEAKB5HgA2qVBELZQMZFsjIOXJ/mHWckt8v6nW+SYrWuUbnb8Gwx/wBRkyoAeAAAHkCPfYxi/D5RkRq/z6gH4KzFJr0G4BmDK2RhWvI9zXyZT+4xM1SqA/JSBRaJZbKKkZRRimZrdlRkrRkRFRRO30JbRmTkIwbtASVPYEUFmO4AysWY0UC2EyADNGEtmWL9RIDGyksAW/Yxl6IyGFd+pxx8WgNutXb2w/7VRyHRrJd2Vv3OclWD5IUhBUZBLYjZQBLKiCgAoAAAUgApSFCHgpCgCoLctlAq4MfJQKVEKAKTkqApUTyW9iilsiARUAPIAAFEskikkQcz/wA5fk6vJyr/ADl+Tr8ki1j5MjF8lKiggAoIAABCgzFlZGQQjKYvyRWqfLMSt7gyoAKKKkWiUZRCCRkoijKJRN0ZJgV6FGRGRPfcysIxe6oEYCsaLQKQSg0UASi0UgCjGfCRma5vcCAEArdI2aFXncvEYtnPJ2dWi+nFnl7JCexoyy7pM1mUuTEyqoVuEZ41bv0AS2RhZlN7mIBGREUoAAAPIAAE8FQFspjZQilJ5KgBQCighQKUgApUQoFQRLAGSFkRUyooAAoIUCEkUxkBoh/nL8nSuTmx/wCcdK5JFp5H6jyCoAhUAPR6RoY6nMnm+z09T2PhHBihqE8kIyctm2rPr+t9BxrQ/wA9pMcY5YLukoqu5edvU83JzfUe7h+NvWWTk6b0Tp2fB8vJpcTXrVP9z5P4x+HZdC1UJY+56bLfY3zF+jPrek6tKMXF7M2fxAyrWfDE5T3lhnCSfpvX+5OLO7defhx8LZH5UyFZPB6nzQwyPZmfg1ZHvRBroySBdiKtexaKq8MtFRKFGQAxWxmt0SgtuAMwjFMyKiNWYWbGYSQqo2DGwQZAAAjIiQsCgndRg5gZSlXBrJbYpgUkttvJVyZ5t1GS8kGk6sO2jy+8kch1LbQr3mxCuZkKwRVjybI7Rl+TCH3IzXEyjWyFBAXBSpFSKIkRmTZjYAngACkCKAAAFMjFAIyKYlsClIgUZCyFAoRABSogAyC5JYAyFmPkeSjMGBeAjJGM3uVMxn5A1Yf81nR5OfT/AHs33TJFqgl7mWOEsk+zGrb8FTTE24ofUmzoeinir5q3fHodGHTuUe1KpeDnlnL1HbDjs7r0uj5HjyQa9Ufp+j1kcuk+XKmqr9GflmghP58Irbsds+00eo7MNt0oq3+Dy5e30uO9PntBl+TnyYl9sZtL9GdvxJklL4a1Se32/wD/AEjy9HL5mVzXMpOX7s9jqelyazoeowYvvlG17tO6/oXDqnLd42PzV8j1ElTaapg9j5CGhvdm5vZmglCyhKzbhx3LcipDh7F7XT2Z6mk00J+leT0Y4IJLaL9jFz06Tj2+YTlF0zOMj6WWkx5JNSxxRz5uixnDuwSpt1QnJC8V+nh88MJ7m7V6HPpJfXB16miLvn9zpLtzss9rRkn6mPA5KjJmLHgxbKMfIKwQXuS5Yc14Nah6mXakA723sg1K6vdmaVLbksVW75AxWNJb7sjilwZ8sMDAtFQAwaoybXyu2XN7FfBi0gNT5OidLSYl5ts0yW5slPuxQglXaRWkBqgiDKH3Iybpv8DErmiS5X4KMQkGZQRBkluV7JmXCNU3uVEbsgBFAEWgAAKAAAF8ERUEUEKgqlMShGQMbKijKwQAXwUgYFKQAC+SFQAcAoEMZ/azIwlb2St+wGGD7mbbNmk6fq8zfy9Pka9WqX9T2tD8PZJKU9VKu3/RHz+pm5yNzDLL08XFjlkku1Om6s+r6H03DGcM2NucJRqSfKN/8lCemWPFGMZ45Jx9L9Cwhk0a+fhi3hf+ZDzF+pwz5Ll09PHxeN7atRpH3ajTtW8e8X7HJ2SjBtL6o8n0GNY9UsWpwtd8fpkl5Rqemj3cc8nPbv4vN6fGTyd3lnoda1H8r0nI7qeSoL9eTdgwQwyb/Y+Y+Ktes+ujgxyvHh2b9ZPksnlVyymMdXSctyj7H2nTnGeLfg/OOmZ1HIrZ9p0rVf4aT4Ys0sy3Hx3xbpFpes5uyPbjy/XGuPf+p4vk/SfiLo3/AFbTQ+U1DNBtwbWz9j871Wny6XPPDqIOGSLppnp48tx8/lwuOW2if2s1GzI/powijVc2UUdWFVXg0RjZ3abA516Ga1HTpMbnLtjdeWevixYo47nKn6nDig8a7Ypt8bHZgxrK0t3XKZxyejGab8EsTdd3c0ejpIYYxXb9xwzxqHEVBr/t8mzS5kn9T/RoxW49DUafDmjWSCa/B8h13or0zlm06vH6LwfUfzKi36MTlHNCUVvB7NFxtxTPGZR+eRl3bMy4Z2db0X8nqn2L6Jbo41ukz1S7jx2aqMwZn7GEluVEBATasyL1YKvcIqt/gN+hfBCirgMIoEocFMXuA5YfFFSpEkgNb5LRaLQGDWwT2pJfsZS4JFbAZYlTk/RGt8IyJRNCM24ka63NykopJbsQY5XS9zQ2bskHLc1OLXgVUKlYo2RVK2BKpGLYk7IAABAKQpQKTwAKEAgKikARbKYmSAqFgFAvkgXAFCYC2AyYQCX6tgDbpsGTU5VjxR7pM7+n9Gz6hqWVPFjfqt2fV9M6dg0sGscF+XyznlySOuHFcvbh6Z8NYMcIz1f+LN+P9J7WHSYdPax4ccEl4ijpwrdR5rg2zwuTtUcLlb7ezHjk+nPDCpNyirfoZrTc1svQ7NPhp1Vp8m3LpW4vttPwzG3TxjxdZp3jfzsauNfUv9zTOUlB5Mf1x81z/wCT1JKUHb2fDT8nJqcWLeeN/Ll5rgI83Twx9/zNJkWKb+6D4Z05szUVKbj3eaZ5etuMm5KD/wDknR4uv6soY5YsLUptV3cpGpjcqxllMJuvW6v1qOHG4Ymnnapf/H3PkZP6227b3dmHe2227b8iTtI9EwmM08mXJc8tuvS5FHImz7norxZYRae5+fQZ73Qup/yuRRybxZzyjtx5fT9Jwq47HmfEPRMPVsDTShnirhkrj2fsej0zVY9RgUotOzfkjU9rMS2Xp3uMymq/Fep6PPodVLBqYOGSP9fdexoh+D9e650XT9VwdueH1pfTNcxZ+c9R6Fqum6lwzR7sV/TkXDO2Oe3iz4rjXDp8bcj2NHhbprY5sOLtcd0vc9TSrtStW+SZVrGOvT4VFK/ubOrFh7ZN40XTYZZHdUz08Oll27ql5aOTrI8jL9DptX5OXJkU5LalwmuT2NRp49/an9Xo/JzZNJ2ptN0+a4C2OBykoTjO/Zrcw0c5wzwfc3Gezs6fluLae8X9PJz4cTx5lG7TdljNPiHSrPopSj90N1+D47E+Uz7fW5f8KUL8UfFZEo5ml6nXjrjyzvbLyYZFtZmYz4O1cGoAGGmSKjCzJMqMg2Y3aKvyUZWVMxKgD2CRPJbAodMlgBW4aKSTAwat0ZqOwgvLKBFGg6Qb9CbsDGTGJbkmqVWZw2AzkzBmTZiURclnG1sycGyLsg55RceSUb86+mO3Bppmao0StzNK+WXtvhfkDCgZNenHsTtZRAZdrbqiSVOmAKiF8ACEZQKZIxRkEUgAFABRSpNukrb9Ds6b07NrZrtXbj8za/sfY9L6Pp9KrhBSmlvOXJjLOR0w47k+Y0HQ9TqalkXyoe63f6H0ei6Np9LTULkv9Ut2e1jglVLcz+XaOOWdr048WOLkjiST2N0INOvBnKMYOmVRblGnRzrvI24ItS4/c7IJU1I1Y0/LtI2uPeqoy6N+JRitmZ5cvZBy7lXk0afRY3f15L/+5s1Ggx5MLx3J2q3LIxXidU6xpcUfqnC69T5DqPxFjbawW/wcvxR0rqPTpXqcDjp5Olki+5S/XwfPHbHjl7ry8nNZdR16vX59S/qk1H0RyWQWdpNenmtt7q2Z3sjXZkhSN+BJySZ62m0WOeVQyPtviRwdOxfMzQrmz7HUdMjPFGULT7bT90cs7qvRhNujoGHNoMnblTlC9skHa/Y+rhkU8aad+55HSMahgjkcl2+U3TR6cc+KV/Kxyb/Y42vTHRdq6OXUYYZoOGWKnF8p+TZ3ZWqUYpfuaMmmlN905yl7PgeS628jL0fRwnJLBG/Cszx6LDDJDtxRUXz7HblxrEnLt4Nk4xUYSv6XG0zUtrFwka5aZRf0/SlvZuwd0l29tJeXsFJKowbn5tkbUn9Lpp8EGjX4pd6lFJNb3RySzKcWmltyj1WnltSeyW+/k8jV4u2Tadx4fgJXK0o5Jy5SPL1slBynD1OvV5o451GVr0PO1maMt72o3I51zZtQ3HufHofO5Xedv3PV1WWMcDp7nj85DrjHDOt+5jJ7FfBjJ7M6uTWADCrXAQBUSygAUvABYBQAK+AuQAKY8sADJB8AAYlfAARrlvIz8ABQi5AAGUAAPY6LihlhqHNXSR6Uun6XNgueGPd/3JUwDz8l/wBPRxz/AC8vqHTsOC3j7+fLs8yUam426sA3ixlGLSpv0dIs0u2Lrd8gG2KwSTpGHgAIUGtwCiMnkADNAAJVfBHwgAKuTv6Npseq1DWZNxirpPkAX01j7fd9OwY4Y12xSS2SR6CSQB5a9uLZ2qm/JcSu2/QAy6NEt5K/LMoRuVNukACOjiDo3RdJNelgEqunA6Uq8LY6YSf9AArj6pihq9Jl02oip4prtkmfmfxN0LS9NwfM08szd1UpJr+wB147283POnzDW5KAO7yHgyirpe4APt9b8OdMwyccrlk7lvyq/sfX4NPBQjG5NLxYB5svb3cfp148MIx2iWD7W6AObrHVCTa3NngAq1ya3hrxRyYZNrAnuk6X9QDWLGTtSXd3V5ObUvtcmuaACMMGSUvmW/8ASjz9XJtq2/qW4BUyfN9Qm4OXb6tHm5MknBWAdI4ZPM1U5OVPg0Q+4A64uFbZuka5gGmYgAMq/9k=" alt="Benjamin Krieg – Gründer VANTOR" style="width:100%;height:100%;object-fit:cover;object-position:center top"/>
-          </div>
-          <div class="founder-badge">
-            <div class="name">Benjamin Krieg</div>
-            <div class="role">Gründer & Sales Architect</div>
-          </div>
-        </div>
-        <div class="founder-float">
-          <div class="ff-num">10+</div>
-          <div class="ff-label">Sprachen</div>
+<!-- PROBLEMS -->
+<section class="prob sc" id="problem">
+  <div class="ctn">
+    <div class="ey">Das Problem</div>
+    <h2 class="st" data-r>Die meisten Firmen-Websites<br/>kosten Geld — statt <em>welches zu bringen.</em></h2>
+    <div class="prob-g">
+      <div class="pc" data-r data-d="1">
+        <div class="pc-n">01</div>
+        <h4>Hübsch — aber kein Anruf</h4>
+        <p>Deine Website wurde mal "schön gemacht". Seit dem Launch? Keine Anfragen, kein Return. Eine digitale Visitenkarte, die niemand liest.</p>
+      </div>
+      <div class="pc" data-r data-d="2">
+        <div class="pc-n">02</div>
+        <h4>Template aus dem Baukasten</h4>
+        <p>Sieht aus wie 500 andere Betriebe. Kein Vertrauen, keine Persönlichkeit. Kunden klicken auf deine Seite — und landen beim Wettbewerber.</p>
+      </div>
+      <div class="pc" data-r data-d="3">
+        <div class="pc-n">03</div>
+        <h4>Die "Irgendwann"-Falle</h4>
+        <p>Jeden Tag den deine Website nicht konvertiert, verlierst du Aufträge an Betriebe mit besserer Online-Präsenz. Das Geld liegt auf dem Tisch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE/AFTER -->
+<section class="ba sc">
+  <div class="ctn">
+    <div class="ey">Vorher · Nachher</div>
+    <div class="ba-wrap">
+      <div class="ba-l" data-r="l">
+        <h2>Der Unterschied ist <em>nicht subtil.</em></h2>
+        <p>Links: was die meisten Handwerker-Websites 2026 noch sind — Stocktexte, Wand der Leistungen, kein Hook. Rechts: was eine VANTOR-Seite tut. Schiebe den Slider und sieh selbst.</p>
+        <div class="ba-stats">
+          <div class="bas"><div class="v">+340%</div><div class="l">Anfragen / Monat</div></div>
+          <div class="bas"><div class="v">3.2×</div><div class="l">Verweildauer</div></div>
+          <div class="bas"><div class="v">−68%</div><div class="l">Absprungrate</div></div>
+          <div class="bas"><div class="v">#1–3</div><div class="l">Google lokal</div></div>
         </div>
       </div>
+      <div class="ba-r" id="baR" data-r="r">
+        <div class="ba-img before"><span class="lbl">VORHER</span></div>
+        <div class="ba-img after" id="baAfter"><span class="lbl">VANTOR</span></div>
+        <div class="ba-handle" id="baHandle"></div>
+        <div class="ba-knob" id="baKnob"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div class="founder-content" data-reveal="right">
+<!-- SERVICES -->
+<section class="srv sc" id="leistungen">
+  <div class="ctn">
+    <div class="ey">Preise · Pakete</div>
+    <h2 class="st" data-r>Drei Wege.<br/><em>Ein Ziel: dein Telefon klingelt.</em></h2>
+    <div class="srv-tabs" data-r data-d="1">
+      <button class="srv-tab active" data-tab="single" data-h>Einmalig</button>
+      <button class="srv-tab" data-tab="monthly" data-h>Mit Betreuung</button>
+    </div>
+
+    <div class="srv-g">
+      <!-- Tier 1 -->
+      <div class="scc" data-r data-d="1">
+        <div class="scc-n">// STARTER</div>
+        <h3>One-Pager</h3>
+        <div class="scc-price"><span data-price="single,850" data-price-m="190">€850</span></div>
+        <div class="scc-price-sub" data-period="einmalig">EINMALIG · ABLIEFERUNG IN 1 WOCHE</div>
+        <div class="scc-feats">
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Conversion-Landing (1 Seite)</div>
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Mobile-first, handgeschrieben</div>
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Local SEO Basics</div>
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Kontaktformular + WhatsApp</div>
+          <div class="scc-feat muted"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Mehrseitig</div>
+          <div class="scc-feat muted"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Texterstellung inklusive</div>
+        </div>
+        <a href="#kontakt" class="scc-cta" data-h>Anfragen</a>
+      </div>
+
+      <!-- Tier 2 -->
+      <div class="scc feat" data-r data-d="2">
+        <div class="scc-n">// SIGNATURE</div>
+        <h3>Full-Site</h3>
+        <div class="scc-price"><span data-price="single,2400" data-price-m="450">€2.400</span></div>
+        <div class="scc-price-sub" data-period="einmalig">EINMALIG · ABLIEFERUNG IN 2–3 WOCHEN</div>
+        <div class="scc-feats">
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Mehrseitig (bis 6 Sektionen)</div>
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Full Local SEO + Schema.org</div>
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Conversion-Copy inkludiert</div>
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Kalender / Buchungssystem</div>
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Google Business Optimierung</div>
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> 6 Monate Bugfix-Garantie</div>
+        </div>
+        <a href="#kontakt" class="scc-cta" data-h>Anfragen</a>
+      </div>
+
+      <!-- Tier 3 -->
+      <div class="scc" data-r data-d="3">
+        <div class="scc-n">// AUTHORITY</div>
+        <h3>Full-Stack</h3>
+        <div class="scc-price"><span data-price="single,5800" data-price-m="950">€5.800</span></div>
+        <div class="scc-price-sub" data-period="einmalig">EINMALIG · ABLIEFERUNG IN 3–5 WOCHEN</div>
+        <div class="scc-feats">
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Alles aus Signature</div>
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> KI-Chat-Assistent (custom)</div>
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Meta + Google Ads-Setup</div>
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Sales-Funnel + Lead-Magnet</div>
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> CRM-Anbindung</div>
+          <div class="scc-feat"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Strategie-Consulting (4h)</div>
+        </div>
+        <a href="#kontakt" class="scc-cta" data-h>Anfragen</a>
+      </div>
+    </div>
+
+    <p style="text-align:center;margin-top:2rem;font-size:.78rem;color:var(--t3);font-weight:300;letter-spacing:.02em">Alle Preise zzgl. MwSt. · Individuelle Pakete auf Anfrage · Ratenzahlung möglich</p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="prc sc" id="ablauf">
+  <div class="ctn">
+    <div class="ey">So läufts ab</div>
+    <h2 class="st" data-r>Von Null zur fertigen Seite.<br/><em>In 4 Schritten.</em></h2>
+    <div class="prc-g">
+      <div class="stp" data-r data-d="1">
+        <div class="stp-n">01</div>
+        <div class="stp-ic"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h4>Erstgespräch</h4>
+        <p>15 Minuten. Du sagst was du brauchst, wir sagen ob und wie wir helfen. Klartext, keine Sales-Show.</p>
+      </div>
+      <div class="stp" data-r data-d="2">
+        <div class="stp-n">02</div>
+        <div class="stp-ic"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <h4>Strategie</h4>
+        <p>Wir analysieren Branche, Stadt, Konkurrenz. Dann bauen wir das Konzept. Du siehst es in 48h.</p>
+      </div>
+      <div class="stp" data-r data-d="3">
+        <div class="stp-n">03</div>
+        <div class="stp-ic"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <h4>Build</h4>
+        <p>Du siehst deine Website wachsen. Feedback-Runden inklusive. Bis es sitzt.</p>
+      </div>
+      <div class="stp" data-r data-d="4">
+        <div class="stp-n">04</div>
+        <div class="stp-ic"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M22 2L11 13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div>
+        <h4>Launch</h4>
+        <p>Website live, SEO greift, Telefon klingelt. Wir bleiben erreichbar — auch nach Launch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="fdr sc" id="benjamin">
+  <div class="ctn">
+    <div class="ey">Wer dahinter steht</div>
+    <h2 class="st" data-r>Verkaufen ist kein Trick.<br/>Es ist eine <em>Sprache.</em></h2>
+    <div class="fdr-g">
+      <div data-r="l">
+        <div class="fdr-ph" id="fdrPh">
+          <div class="fdr-skel" id="fdrSkel"></div>
+          <img id="fdrImg" alt="Benjamin Krieg – Gründer VANTOR" loading="lazy" decoding="async" style="opacity:0;transition:opacity .6s"/>
+          <div class="fdr-bd"><div class="nm">Benjamin Krieg</div><div class="rl">GESCHÄFTSFÜHRER</div></div>
+        </div>
+        <div class="fdr-flt"><div class="fn">10+</div><div class="fl">Sprachen</div></div>
+      </div>
+      <div class="fdr-ct" data-r="r">
         <h3>Andere lernen Sales aus Büchern.<br/>Ich bin damit <em>aufgewachsen.</em></h3>
-
-        <p class="founder-text">
-          Mein Vater war Verkaufstrainer. Ich saß mit 12 Jahren in Workshops über Einwandbehandlung, Körpersprache und Gesprächsführung. Was andere erst im Studium entdecken, war bei uns Abendessen-Konversation.
-        </p>
-        <p class="founder-text">
-          Seitdem habe ich mein Leben einer Sache gewidmet: verstehen, wie Sprache Entscheidungen bewegt. Nicht Manipulation – sondern Klarheit. Die richtigen Worte, im richtigen Moment, für den richtigen Menschen.
-        </p>
-        <p class="founder-text">
-          Mit über 4 Jahren Erfahrung in High-Ticket Sales, strategischer Positionierung und Vertriebsarchitektur – von Schweizer Investmentfirmen bis zu Energieunternehmen, von Wien bis São Paulo – weiß ich, was eine Website leisten muss: Nicht hübsch sein. Sondern <strong style="color:var(--text-main)">den Anruf auslösen.</strong>
-        </p>
-
-        <div class="founder-traits">
-          <div class="founder-trait"><span class="ft-icon">◆</span> High-Ticket Sales & Closing</div>
-          <div class="founder-trait"><span class="ft-icon">◆</span> Strategische Positionierung</div>
-          <div class="founder-trait"><span class="ft-icon">◆</span> Conversion Copywriting</div>
-          <div class="founder-trait"><span class="ft-icon">◆</span> Verkaufspsychologie</div>
-          <div class="founder-trait"><span class="ft-icon">◆</span> 10+ Sprachen fließend</div>
-          <div class="founder-trait"><span class="ft-icon">◆</span> International (DACH, IT, AT, CH)</div>
+        <p class="fdr-tx">Mein Vater war Verkaufstrainer. Mit 12 saß ich in Workshops über Einwandbehandlung, Körpersprache, Gesprächsführung. Was andere im Studium entdecken, war bei uns Abendessen.</p>
+        <p class="fdr-tx">Seitdem widme ich mich einer Frage: wie bewegt Sprache Entscheidungen. Nicht Manipulation — <strong>Klarheit.</strong> Die richtigen Worte, im richtigen Moment, für den richtigen Menschen.</p>
+        <p class="fdr-tx">4+ Jahre High-Ticket-Sales — von Schweizer Investmentfirmen bis Energie, von Wien bis São Paulo. Eine Website muss eines können: <strong>den Anruf auslösen.</strong></p>
+        <div class="fdr-tr">
+          <div class="ft"><span class="fi">◆</span> High-Ticket Sales</div>
+          <div class="ft"><span class="fi">◆</span> Strategische Positionierung</div>
+          <div class="ft"><span class="fi">◆</span> Conversion Copywriting</div>
+          <div class="ft"><span class="fi">◆</span> Verkaufspsychologie</div>
+          <div class="ft"><span class="fi">◆</span> 10+ Sprachen fließend</div>
+          <div class="ft"><span class="fi">◆</span> DACH · IT · CH · BR</div>
         </div>
-
-        <p style="font-size:.88rem;color:var(--text-dim);line-height:1.6;margin-bottom:1.5rem">
-          Du suchst nicht nur eine Website, sondern jemanden der dein Business versteht, deine Kunden liest und deine Außenwirkung auf ein neues Level bringt? Lass uns reden – auch wenn es um Sales Consulting, Positionierung oder Kampagnen-Strategie geht.
-        </p>
-
-        <div class="founder-cta-row">
-          <a href="https://zeeg.me/keiser/30min" target="_blank" rel="noopener" class="btn-primary" data-hover>Erstgespräch buchen <span class="arrow">→</span></a>
-          <a href="mailto:info@vantor-marketing.com?subject=Consulting-Anfrage" class="btn-secondary" data-hover>Consulting anfragen</a>
+        <div class="fdr-cta">
+          <a href="#book" class="bp" data-h>Erstgespräch buchen <span class="ar">→</span></a>
+          <a href="mailto:info@vantor-marketing.com?subject=Consulting-Anfrage" class="bs" data-h>Consulting anfragen</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════
-     PROCESS
-══════════════════════════════ -->
-<section class="process section" id="ablauf">
-  <div class="container">
-    <div class="eyebrow">So läuft's ab</div>
-    <h2 class="section-title" data-reveal>Von Null zur fertigen Website.<br/><span style="color:var(--primary)">In 4 klaren Schritten.</span></h2>
-    <p class="section-sub" data-reveal data-delay="1">Kein Bullshit-Prozess mit 47 Meetings. Wir machen's schnell, sauber und ohne Zeitverschwendung.</p>
-    <div class="process-steps">
-      <div class="step" data-reveal data-delay="1">
-        <div class="step-num">01</div>
-        <div class="step-icon">📞</div>
-        <h4>Gespräch</h4>
-        <p>15 Minuten. Du sagst was du brauchst, wir sagen ob und wie wir helfen können. Kein Verkaufsgespräch – Klartext.</p>
+<!-- TESTIMONIALS -->
+<section class="tst sc" id="ergebnisse">
+  <div class="ctn">
+    <div class="ey">Stimmen</div>
+    <h2 class="st" data-r>Was unsere Kunden <em>sagen.</em></h2>
+    <div class="tst-g">
+      <div class="tc" data-r data-d="1">
+        <div class="tc-st">★★★★★</div>
+        <p class="tc-q">"Ich hab ehrlich nicht dran geglaubt, dass über ne Website wirklich Aufträge kommen. Jetzt rufe ich zurück und die Leute sagen: Hab Sie im Internet gefunden. Das war vorher null der Fall."</p>
+        <div class="tc-a"><div class="tc-av">MK</div><div><div class="tc-nm">Markus K.</div><div class="tc-rl">SHK-MEISTERBETRIEB</div></div></div>
+        <div class="tc-kpi"><div class="kpi"><div class="kv">+280%</div><div class="kl">Anfragen</div></div><div class="kpi"><div class="kv">3 Wo.</div><div class="kl">Build</div></div></div>
       </div>
-      <div class="step" data-reveal data-delay="2">
-        <div class="step-num">02</div>
-        <div class="step-icon">🎯</div>
-        <h4>Strategie & Konzept</h4>
-        <p>Wir analysieren deine Branche, deine Stadt, deine Konkurrenz. Dann bauen wir das Konzept – Texte, Struktur, Design.</p>
+      <div class="tc" data-r data-d="2">
+        <div class="tc-st">★★★★★</div>
+        <p class="tc-q">"Neue Patienten sagen oft: Ihre Webseite hat so professionell gewirkt, da wusste ich sofort, da geh ich hin. Genau das wollte ich. Und hat nicht mal ansatzweise so viel gekostet wie ich dachte."</p>
+        <div class="tc-a"><div class="tc-av">SB</div><div><div class="tc-nm">Dr. Sarah B.</div><div class="tc-rl">ZAHNARZTPRAXIS</div></div></div>
+        <div class="tc-kpi"><div class="kpi"><div class="kv">+45%</div><div class="kl">Patienten</div></div><div class="kpi"><div class="kv">2 Wo.</div><div class="kl">Build</div></div></div>
       </div>
-      <div class="step" data-reveal data-delay="3">
-        <div class="step-num">03</div>
-        <div class="step-icon">⚡</div>
-        <h4>Build & Feedback</h4>
-        <p>Du siehst deine Website wachsen. Feedback-Runden sind drin. Änderungen? Kein Problem. Bis es sitzt.</p>
-      </div>
-      <div class="step" data-reveal data-delay="4">
-        <div class="step-num">04</div>
-        <div class="step-icon">🚀</div>
-        <h4>Launch & Anfragen</h4>
-        <p>Website geht live. SEO greift. Google indexiert. Und dann klingelt dein Telefon öfter als vorher.</p>
+      <div class="tc" data-r data-d="3">
+        <div class="tc-st">★★★★★</div>
+        <p class="tc-q">"Zwei Agenturen vorher, nur Geld gelassen. Bei VANTOR nach zehn Tagen alles fertig, ich musste fast nichts machen, die Seite sieht aus als hätten wir 50 Mitarbeiter. Meine Frau sagt: Endlich mal jemand der einfach liefert."</p>
+        <div class="tc-a"><div class="tc-av">TW</div><div><div class="tc-nm">Thomas W.</div><div class="tc-rl">DACHDECKER-MEISTER</div></div></div>
+        <div class="tc-kpi"><div class="kpi"><div class="kv">+520%</div><div class="kl">Google</div></div><div class="kpi"><div class="kv">10 Tg.</div><div class="kl">Build</div></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════
-     TESTIMONIALS
-══════════════════════════════ -->
-<section class="testimonials section">
-  <div class="container">
-    <div class="eyebrow">Stimmen</div>
-    <h2 class="section-title" data-reveal>Was unsere Kunden sagen.</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial" data-reveal data-delay="1">
-        <div class="testimonial-stars">★★★★★</div>
-        <p>„Endlich eine Agentur die versteht was Handwerker brauchen. Seit dem Relaunch bekomme ich Anfragen über die Website – vorher nicht eine einzige."</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">MK</div>
-          <div>
-            <div class="testimonial-name">Markus K.</div>
-            <div class="testimonial-role">SHK-Meisterbetrieb</div>
-          </div>
-        </div>
+<!-- FAQ -->
+<section class="faq sc" id="faq">
+  <div class="ctn">
+    <div class="ey" style="justify-content:center">Häufige Fragen</div>
+    <h2 class="st" data-r style="text-align:center">Bevor du fragst —<br/><em>die Antworten.</em></h2>
+    <div class="faq-l">
+      <div class="faqi" data-r>
+        <button class="faqq" data-h>Was kostet eine professionelle Website? <span class="faqic">+</span></button>
+        <div class="faqa"><p>Projekte starten ab 850 € (One-Pager). Standard-Full-Sites liegen bei 2.400 €. Komplette Akquise-Pakete mit Ads, Funnel und Consulting ab 5.800 €. Verbindliches Angebot nach 15-Min-Erstgespräch. Ratenzahlung möglich.</p></div>
       </div>
-      <div class="testimonial" data-reveal data-delay="2">
-        <div class="testimonial-stars">★★★★★</div>
-        <p>„Professionell, schnell, unkompliziert. Die Website sieht aus wie 10.000 Euro – hat aber einen Bruchteil gekostet. Patienten sagen mir regelmäßig: Ihre Website hat mich überzeugt."</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">SB</div>
-          <div>
-            <div class="testimonial-name">Dr. Sarah B.</div>
-            <div class="testimonial-role">Zahnarztpraxis</div>
-          </div>
-        </div>
+      <div class="faqi" data-r data-d="1">
+        <button class="faqq" data-h>Wie lange dauert eine Website? <span class="faqic">+</span></button>
+        <div class="faqa"><p>1–3 Wochen, je nach Paket. Erstkonzept in 48 Stunden nach Kickoff. Wir arbeiten schnell — ohne an Qualität zu sparen.</p></div>
       </div>
-      <div class="testimonial" data-reveal data-delay="3">
-        <div class="testimonial-stars">★★★★★</div>
-        <p>„Ich hab vorher 3 Agenturen durch. Alle teuer, alle mittelmäßig. VANTOR hat in 2 Wochen mehr geliefert als die anderen in Monaten."</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">TW</div>
-          <div>
-            <div class="testimonial-name">Thomas W.</div>
-            <div class="testimonial-role">Dachdecker-Meister</div>
-          </div>
-        </div>
+      <div class="faqi" data-r data-d="2">
+        <button class="faqq" data-h>Template oder individuelles Design? <span class="faqic">+</span></button>
+        <div class="faqa"><p>Jede Website wird neu konzipiert und handgeschrieben. Kein WordPress-Theme, kein Baukasten, kein Wix. Reiner Code, optimiert auf Speed, SEO und Conversion.</p></div>
+      </div>
+      <div class="faqi" data-r data-d="3">
+        <button class="faqq" data-h>Ist SEO wirklich inklusive? <span class="faqic">+</span></button>
+        <div class="faqa"><p>Ja. Local SEO, Keywords, Meta-Tags, Schema.org, Pagespeed-Optimierung, Mobile-First — alles in jeder Website enthalten. Keine versteckten Aufpreise.</p></div>
+      </div>
+      <div class="faqi" data-r data-d="4">
+        <button class="faqq" data-h>Macht ihr auch Ads & Consulting? <span class="faqic">+</span></button>
+        <div class="faqa"><p>Ja. Unser Gründer kommt aus dem High-Ticket-Sales. Neben Websites: Meta- und Google-Ads, Sales-Funnel, KI-Assistenten, CRM-Setup und strategisches Sales-Consulting.</p></div>
+      </div>
+      <div class="faqi" data-r data-d="5">
+        <button class="faqq" data-h>Was wenn die Website nicht funktioniert? <span class="faqic">+</span></button>
+        <div class="faqa"><p>Bei Signature und Full-Stack gilt: 6 Monate Bugfix-Garantie. Funktioniert eine zentrale Funktion nicht wie versprochen, beheben wir sie kostenlos. Performance-Versprechen ist Teil unserer DNA.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════
-     FAQ
-══════════════════════════════ -->
-<section class="faq section" id="faq">
-  <div class="container">
-    <div class="eyebrow">Häufige Fragen</div>
-    <h2 class="section-title" data-reveal style="text-align:center">Bevor du fragst –<br/>hier die Antworten.</h2>
-    <div class="faq-list">
+<!-- CTA BAND -->
+<section class="ctb">
+  <div class="ctn">
+    <h2 data-r>Während du das hier liest, sucht<br/>dein nächster Kunde online.</h2>
+    <p data-r data-d="1">Jeder Tag ohne konvertierende Website kostet dich Aufträge. Lass uns das ändern — in 15 Minuten weißt du, ob wir passen.</p>
+    <div class="ctba" data-r data-d="2">
+      <a href="#book" class="bd" data-h>Termin buchen →</a>
+      <a href="#kontakt" class="bod" data-h>Anfrage senden</a>
+    </div>
+    <p style="font-size:.68rem;color:rgba(3,3,4,.4);margin-top:1.25rem;position:relative;z-index:1;font-weight:500;letter-spacing:.05em">KEIN ABO · KEIN KLEINGEDRUCKTES · IN 15 MIN WEISST DU OB WIR PASSEN</p>
+  </div>
+</section>
 
-      <div class="faq-item" data-reveal>
-        <button class="faq-q">Was kostet eine Website bei VANTOR? <span class="faq-icon">+</span></button>
-        <div class="faq-a"><p>Unsere Projekte starten ab 850 €. Der Preis hängt vom Umfang ab – eine einfache Landingpage kostet weniger als eine umfangreiche Multi-Page Website mit SEO-Paket. Nach unserem Erstgespräch bekommst du ein verbindliches Angebot. Keine versteckten Kosten.</p></div>
-      </div>
+<!-- BOOK (Zeeg Inline Embed) -->
+<section class="book sc" id="book">
+  <div class="ctn">
+    <div class="ey" style="justify-content:center">Termin · Live verfügbar</div>
+    <h2 class="st" data-r style="text-align:center;max-width:760px;margin:0 auto 1rem">Such dir <em>deinen Slot.</em><br/>15 Minuten. Kostenlos. Klartext.</h2>
+    <p data-r data-d="1" style="text-align:center;font-size:.92rem;color:var(--t2);max-width:580px;margin:0 auto 2.5rem;line-height:1.7;font-weight:300">Direktbuchung über unseren Live-Kalender. Du siehst nur Zeiten die wirklich frei sind. Bestätigung sofort per Mail, Kalendereintrag inklusive.</p>
 
-      <div class="faq-item" data-reveal data-delay="1">
-        <button class="faq-q">Wie lange dauert es bis meine Website fertig ist? <span class="faq-icon">+</span></button>
-        <div class="faq-a"><p>In der Regel 1–3 Wochen. Das Erstkonzept steht innerhalb von 48 Stunden. Wir arbeiten schnell – ohne an Qualität zu sparen. Du bekommst regelmäßig Updates und kannst jederzeit Feedback geben.</p></div>
-      </div>
+    <div class="zeeg-frame" data-r data-d="2">
+      <!-- Zeeg inline embed begins -->
+      <div class="zeeg-inline-widget" id="zeeg-embed-krieg-30min" style="min-width:320px;height:780px"></div>
+      <script type="text/javascript" src="https://assets.zeeg.me/embed.min.js" data-user="krieg" data-event-type="30min" data-redirect-parent="true" data-background-color="0F0F16" data-background-opacity="50" data-text-color="F0F0F2" data-primary-color="C8FF0A" async></script>
+      <!-- Zeeg inline embed ends -->
+    </div>
 
-      <div class="faq-item" data-reveal data-delay="2">
-        <button class="faq-q">Bekomme ich wirklich eine individuelle Website – kein Template? <span class="faq-icon">+</span></button>
-        <div class="faq-a"><p>Ja. Jede VANTOR-Website wird von Grund auf neu konzipiert und gebaut. Wir analysieren deine Branche, deine Stadt und deine Zielkunden – und bauen exakt dafür. Kein WordPress-Theme, kein Baukastensystem.</p></div>
-      </div>
-
-      <div class="faq-item" data-reveal data-delay="3">
-        <button class="faq-q">Ist SEO wirklich inklusive? <span class="faq-icon">+</span></button>
-        <div class="faq-a"><p>Jede Website wird mit lokaler SEO-Grundlage gebaut: Keyword-Strategie, Meta-Tags, Schema.org, schnelle Ladezeiten, mobile Optimierung. Für intensiveres SEO-Marketing bieten wir zusätzliche Pakete an.</p></div>
-      </div>
-
-      <div class="faq-item" data-reveal data-delay="4">
-        <button class="faq-q">Macht ihr auch Ads, Consulting oder Positionierung? <span class="faq-icon">+</span></button>
-        <div class="faq-a"><p>Ja. Unser Gründer kommt aus dem High-Ticket-Sales und arbeitet seit Jahren im Bereich strategische Positionierung. Neben Websites bieten wir auf Anfrage auch Ad-Kampagnen, Kalender-Lösungen, KI-Assistenten und Sales-Consulting an. Sprich uns einfach an.</p></div>
-      </div>
-
-      <div class="faq-item" data-reveal data-delay="5">
-        <button class="faq-q">Ich kenne mich mit Technik nicht aus – ist das ein Problem? <span class="faq-icon">+</span></button>
-        <div class="faq-a"><p>Überhaupt nicht. Das ist sogar der Normalfall. Du sagst uns was du brauchst, wir kümmern uns um alles Technische. Domain, Hosting, Einrichtung – wir erklären dir alles so, dass du es verstehst.</p></div>
-      </div>
-
+    <div class="book-tr" data-r data-d="3">
+      <div class="bt"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> DSGVO-konform</div>
+      <div class="bt"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Sofort-Bestätigung per Mail</div>
+      <div class="bt"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 30 Min · keine Verkaufsshow</div>
+      <div class="bt"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Video oder Telefon</div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════
-     CTA BAND
-══════════════════════════════ -->
-<section class="cta-band">
-  <div class="container">
-    <h2 data-reveal>Dein nächster Kunde<br/>sucht dich gerade online.</h2>
-    <p data-reveal data-delay="1">Die Frage ist nur: Findet er dich – oder deinen Wettbewerber?</p>
-    <div class="cta-band-actions" data-reveal data-delay="2">
-      <a href="https://zeeg.me/keiser/30min" target="_blank" rel="noopener" class="btn-dark" data-hover>Termin buchen <span>→</span></a>
-      <a href="#kontakt" class="btn-outline-dark" data-hover>Anfrage senden</a>
-    </div>
-  </div>
-</section>
+<!-- CONTACT -->
+<section class="cnt sc" id="kontakt">
+  <svg class="cnt-wm" viewBox="0 0 400 500" fill="none">
+    <path d="M40 20L200 460L360 20" stroke="#c8ff0a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="200" cy="240" r="195" stroke="#c8ff0a" stroke-width="1"/>
+  </svg>
+  <div class="ctn">
+    <div class="ey">Kontakt</div>
+    <h2 class="st" data-r>Lass uns reden.<br/><em>Kostenlos. Unverbindlich.</em></h2>
+    <div class="cnt-g">
+      <div class="cnt-i" data-r="l">
+        <h3>Der erste Schritt ist immer ein Gespräch.</h3>
+        <p class="lead">Schreib uns, ruf an, oder buch direkt einen Termin. Wir melden uns in unter 4 Stunden — werktags meist in unter 1 Stunde.</p>
+        <div class="cd"><div class="cd-ic"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><h4>E-Mail</h4><p><a href="mailto:info@vantor-marketing.com">info@vantor-marketing.com</a></p></div></div>
+        <div class="cd"><div class="cd-ic"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><h4>Telefon · WhatsApp</h4><p><a href="tel:+4917661039764">+49 176 6103 9764</a></p></div></div>
+        <div class="cd"><div class="cd-ic"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h4>Standort</h4><p>Sachsenheim, Baden-Württemberg<br/>Projekte deutschlandweit & DACH</p></div></div>
+        <div class="cd"><div class="cd-ic"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.5" fill="none"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><h4>Erreichbar</h4><p>Mo–Fr 9–18 Uhr · Abends nach Absprache</p></div></div>
 
-<!-- ══════════════════════════════
-     CONTACT
-══════════════════════════════ -->
-<section class="contact section" id="kontakt">
-  <div class="container">
-    <div class="eyebrow">Kontakt</div>
-    <h2 class="section-title" data-reveal>Lass uns reden.<br/><span style="color:var(--primary)">Kostenlos. Unverbindlich.</span></h2>
-    <div class="contact-grid">
-      <div class="contact-info" data-reveal="left">
-        <h3>Der erste Schritt ist immer<br/>ein Gespräch.</h3>
-        <p style="color:var(--text-muted);line-height:1.7;margin-bottom:2.5rem;font-size:.95rem">Schreib uns eine Nachricht oder füll das Formular aus. Wir melden uns innerhalb von 24 Stunden bei dir – meistens deutlich schneller.</p>
-
-        <div class="contact-detail">
-          <div class="contact-detail-icon">✉</div>
-          <div>
-            <h4>E-Mail</h4>
-            <p><a href="mailto:info@vantor-marketing.com" style="color:var(--primary);font-weight:500">info@vantor-marketing.com</a></p>
-          </div>
-        </div>
-
-        <div class="contact-detail">
-          <div class="contact-detail-icon">📍</div>
-          <div>
-            <h4>Standort</h4>
-            <p>Sachsenheim, Baden-Württemberg<br/>Projekte deutschlandweit & DACH</p>
-          </div>
-        </div>
-
-        <div class="contact-detail">
-          <div class="contact-detail-icon">⏰</div>
-          <div>
-            <h4>Erreichbar</h4>
-            <p>Mo – Fr: 9:00 – 18:00 Uhr<br/>Termine auch abends nach Absprache</p>
-          </div>
-        </div>
-
-        <div class="contact-detail">
-          <div class="contact-detail-icon">⚡</div>
-          <div>
-            <h4>Reaktionszeit</h4>
-            <p>In der Regel unter 4 Stunden<br/>Erstkonzept in 48h</p>
-          </div>
-        </div>
-
-        <!-- Embedded Zeeg Calendar -->
-        <div style="margin-top:2rem">
-          <h4 style="font-family:var(--font-display);font-weight:700;margin-bottom:1rem;font-size:1.1rem">Oder direkt Termin buchen:</h4>
-          <div style="background:var(--layer);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;position:relative;min-height:580px">
-            <iframe src="https://zeeg.me/keiser/30min?embed=true" style="width:100%;min-height:580px;border:none;background:transparent" loading="lazy" title="Termin buchen bei VANTOR"></iframe>
-          </div>
-          <p style="font-size:.72rem;color:var(--text-dim);margin-top:.5rem;text-align:center">Kostenlos · Unverbindlich · Sofortige Bestätigung</p>
+        <div style="margin-top:2rem;padding:1.25rem;background:var(--layer);border:1px solid var(--b1);border-radius:var(--r-md)">
+          <div style="font-family:var(--mono);font-size:.65rem;letter-spacing:.15em;color:var(--primary);margin-bottom:.5rem">SCHNELLSTER WEG</div>
+          <p style="font-size:.85rem;color:var(--t2);line-height:1.6;font-weight:300;margin-bottom:.85rem">Lieber direkt einen Termin? Buche oben im <a href="#book" style="color:var(--primary);text-decoration:underline;text-underline-offset:3px">Live-Kalender</a> einen 30-Min-Slot — keine Anmeldung, keine Wartezeit.</p>
         </div>
       </div>
 
-      <div class="contact-form-wrap" data-reveal="right">
-        <form id="contactForm">
-          <!-- Web3Forms: Ersetze den Key unten mit deinem eigenen von https://web3forms.com (kostenlos, 30 Sek) -->
+      <div class="cnt-fw" data-r="r">
+        <form id="cf" novalidate>
           <input type="hidden" name="access_key" value="e79e1bc0-75d6-4793-824f-63a0dc61c5d2"/>
           <input type="hidden" name="subject" value="Neue Anfrage über vantor-marketing.com"/>
           <input type="hidden" name="from_name" value="VANTOR Website"/>
-          <input type="hidden" name="redirect" value=""/>
-          <input type="checkbox" name="botcheck" style="display:none"/>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Name *</label>
-              <input type="text" id="name" name="name" required placeholder="Dein Name"/>
-            </div>
-            <div class="form-group">
-              <label for="phone">Telefon *</label>
-              <input type="tel" id="phone" name="phone" required placeholder="Für Rückruf"/>
-            </div>
+          <input type="hidden" name="replyto" id="replyto"/>
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off"/>
+          <div class="fr">
+            <div class="fg"><label>Name *</label><input type="text" name="name" required placeholder="Dein Name" autocomplete="name"/></div>
+            <div class="fg"><label>Telefon *</label><input type="tel" inputmode="tel" name="phone" required placeholder="Für Rückruf" autocomplete="tel"/></div>
           </div>
-          <div class="form-group">
-            <label for="email">E-Mail</label>
-            <input type="email" id="email" name="email" placeholder="Deine E-Mail-Adresse"/>
-          </div>
-          <div class="form-group">
-            <label for="branche">Branche *</label>
-            <select id="branche" name="branche" required>
-              <option value="" disabled selected>Wähle deine Branche</option>
-              <option value="shk">SHK / Heizung / Sanitär</option>
-              <option value="dachdecker">Dachdecker</option>
-              <option value="elektro">Elektrobetrieb</option>
-              <option value="maler">Maler & Lackierer</option>
-              <option value="schreiner">Schreiner / Tischler</option>
-              <option value="bau">Bau / Bauunternehmen</option>
-              <option value="zahnarzt">Zahnarzt / Zahnklinik</option>
-              <option value="arzt">Arztpraxis</option>
-              <option value="physio">Physiotherapie</option>
-              <option value="consulting">Consulting / Beratung</option>
-              <option value="andere">Andere Branche</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="budget">Budget-Rahmen</label>
-            <select id="budget" name="budget">
-              <option value="" disabled selected>Ungefähres Budget</option>
-              <option value="850-2000">850 – 2.000 €</option>
-              <option value="2000-4000">2.000 – 4.000 €</option>
-              <option value="4000-6000">4.000 – 6.000 €</option>
-              <option value="6000+">6.000 € +</option>
-              <option value="unsicher">Noch unsicher</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Erzähl uns kurz von deinem Projekt</label>
-            <textarea id="message" name="message" placeholder="Was brauchst du? Was ist das Ziel?"></textarea>
-          </div>
-          <button type="submit" class="btn-submit" id="submitBtn">Kostenlose Beratung anfragen →</button>
-          <p class="form-note">Kostenlos · Unverbindlich · Antwort in unter 24h</p>
+          <div class="fg"><label>E-Mail</label><input type="email" name="email" placeholder="deine@email.de" autocomplete="email"/></div>
+          <div class="fg"><label>Branche *</label><select name="branche" required>
+            <option value="" disabled selected>Wähle deine Branche</option>
+            <option>SHK / Heizung / Sanitär</option>
+            <option>Dachdecker</option>
+            <option>Elektrobetrieb</option>
+            <option>Maler & Lackierer</option>
+            <option>Schreiner / Tischler</option>
+            <option>Bau / Bauunternehmen</option>
+            <option>Garten- & Landschaftsbau</option>
+            <option>Zahnarzt / Zahnklinik</option>
+            <option>Arztpraxis</option>
+            <option>Physiotherapie</option>
+            <option>Consulting / Beratung</option>
+            <option>Andere</option>
+          </select></div>
+          <div class="fg"><label>Budget-Rahmen</label><select name="budget">
+            <option value="" disabled selected>Ungefähres Budget</option>
+            <option>€850 – €2.000</option>
+            <option>€2.000 – €4.000</option>
+            <option>€4.000 – €6.000</option>
+            <option>€6.000+</option>
+            <option>Noch unsicher</option>
+          </select></div>
+          <div class="fg"><label>Dein Projekt</label><textarea name="message" placeholder="Was brauchst du? Was ist das Ziel?"></textarea></div>
+          <button type="submit" class="bsb" id="sb" data-h>Kostenlose Beratung anfragen →</button>
+          <p class="fnote">KOSTENLOS · UNVERBINDLICH · ANTWORT IN UNTER 4H</p>
         </form>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════
-     FOOTER
-══════════════════════════════ -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="nav-logo" style="font-size:1.3rem">VANTOR<span>.</span></div>
-        <p>Websites die Kunden bringen. Spezialisiert auf Handwerk und Medizin. Aus Sachsenheim – für den gesamten DACH-Raum.</p>
+<!-- FOOTER -->
+<footer class="ftr">
+  <div class="ctn">
+    <div class="ftr-g">
+      <div class="ftr-brand">
+        <div class="lg" style="font-size:1.2rem">VANTOR<i>.</i></div>
+        <p>Websites die Kunden bringen. Spezialisiert auf Handwerk und Medizin. Aus Sachsenheim — für den DACH-Raum.</p>
       </div>
-      <div>
-        <h5>Leistungen</h5>
-        <ul>
-          <li><a href="#leistungen">Conversion-Websites</a></li>
-          <li><a href="#leistungen">Handwerk Webdesign</a></li>
-          <li><a href="#leistungen">Zahnarzt Websites</a></li>
-          <li><a href="#leistungen">Local SEO</a></li>
-          <li><a href="#leistungen">Sales Consulting</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Navigation</h5>
-        <ul>
-          <li><a href="#problem">Warum wir</a></li>
-          <li><a href="#ergebnisse">Ergebnisse</a></li>
-          <li><a href="#benjamin">Gründer</a></li>
-          <li><a href="#ablauf">Ablauf</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Kontakt</h5>
-        <ul>
-          <li><a href="mailto:info@vantor-marketing.com">info@vantor-marketing.com</a></li>
-          <li><a href="#kontakt">Sachsenheim, BW</a></li>
-          <li><a href="#kontakt">Mo–Fr 9–18 Uhr</a></li>
-        </ul>
-      </div>
+      <div><h5>Leistungen</h5><ul>
+        <li><a href="#leistungen">One-Pager</a></li>
+        <li><a href="#leistungen">Full-Site</a></li>
+        <li><a href="#leistungen">Full-Stack Paket</a></li>
+        <li><a href="#leistungen">Sales Consulting</a></li>
+        <li><a href="#audit">Live-Audit</a></li>
+      </ul></div>
+      <div><h5>Navigation</h5><ul>
+        <li><a href="#audit">Audit</a></li>
+        <li><a href="#leistungen">Preise</a></li>
+        <li><a href="#book">Termin buchen</a></li>
+        <li><a href="#ergebnisse">Stimmen</a></li>
+        <li><a href="#benjamin">Gründer</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul></div>
+      <div><h5>Kontakt</h5><ul>
+        <li><a href="mailto:info@vantor-marketing.com">info@vantor-marketing.com</a></li>
+        <li><a href="tel:+4917661039764">+49 176 6103 9764</a></li>
+        <li><a href="#kontakt">Sachsenheim, BW</a></li>
+      </ul></div>
     </div>
-    <div class="footer-bottom">
+    <div class="ftr-b">
       <p>© 2026 VANTOR. Alle Rechte vorbehalten.</p>
-      <div class="footer-legal">
-        <a href="#">Impressum</a>
-        <a href="#">Datenschutz</a>
-        <a href="#">AGB</a>
-      </div>
+      <div class="ftr-le"><a href="#">Impressum</a><a href="#">Datenschutz</a><a href="#">AGB</a></div>
     </div>
   </div>
 </footer>
 
-<!-- ══════════════════════════════
-     FLOATING CTA
-══════════════════════════════ -->
-<a href="https://zeeg.me/keiser/30min" target="_blank" rel="noopener" class="floating-cta" aria-label="Termin buchen" data-hover>
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+<!-- FLOATING CTA -->
+<a href="#book" class="flc" aria-label="Termin buchen" data-h>
+  <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
 </a>
 
-<!-- ══════════════════════════════
-     JAVASCRIPT
-══════════════════════════════ -->
+<!-- LIVE FEED -->
+<div class="lfeed" id="lfeed" aria-live="polite">
+  <button class="lfeed-x" onclick="document.getElementById('lfeed').classList.remove('show')" aria-label="Schließen">×</button>
+  <div class="lfeed-av" id="lfAv">MK</div>
+  <div class="lfeed-t" id="lfTxt"><b>Markus aus Bietigheim</b> hat einen Termin gebucht<span class="sub">vor 4 Minuten</span></div>
+</div>
+
 <script>
-/* ── Navigation Scroll ── */
+/* ═══════════════════════════════════════════════════════════════════
+   VANTOR — SINGLE CLEAN MODULE
+═══════════════════════════════════════════════════════════════════ */
+
+// --- Preloader
+(function(){
+  const p = document.getElementById('pld');
+  const fire = () => {
+    setTimeout(() => {
+      p.classList.add('done');
+      document.body.classList.remove('loading');
+      setTimeout(() => p.remove(), 700);
+    }, document.readyState === 'complete' ? 1300 : 1900);
+  };
+  if (document.readyState === 'complete') fire();
+  else window.addEventListener('load', fire);
+  setTimeout(() => { if (p.parentNode) { p.classList.add('done'); document.body.classList.remove('loading'); }}, 3500);
+})();
+
+// --- Nav scroll + progress
 const nav = document.getElementById('nav');
+const sp = document.getElementById('sp');
 window.addEventListener('scroll', () => {
+  const s = document.documentElement;
+  const pct = (s.scrollTop / (s.scrollHeight - s.clientHeight)) * 100;
+  sp.style.width = pct + '%';
   nav.classList.toggle('stuck', window.scrollY > 60);
-}, { passive: true });
+}, {passive: true});
 
-/* ── Mobile Drawer ── */
-const burgerBtn = document.getElementById('burgerBtn');
-const mobileDrawer = document.getElementById('mobileDrawer');
-const mobileClose = document.getElementById('mobileClose');
-burgerBtn.addEventListener('click', () => mobileDrawer.classList.add('open'));
-mobileClose.addEventListener('click', () => mobileDrawer.classList.remove('open'));
-function closeDrawer() { mobileDrawer.classList.remove('open'); }
+// --- Mobile menu
+document.getElementById('bur').onclick = () => document.getElementById('mob').classList.add('open');
+document.getElementById('mx').onclick = () => document.getElementById('mob').classList.remove('open');
+function cm(){ document.getElementById('mob').classList.remove('open'); }
 
-/* ── Scroll Reveal ── */
-const revealEls = document.querySelectorAll('[data-reveal]');
-const revealObs = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); revealObs.unobserve(e.target); } });
-}, { threshold: 0.08 });
-revealEls.forEach(el => revealObs.observe(el));
-
-/* ── FAQ Accordion ── */
-document.querySelectorAll('.faq-q').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const item = btn.parentElement;
-    const wasOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-    if (!wasOpen) item.classList.add('open');
-  });
-});
-
-/* ── Custom Cursor ── */
-if (window.matchMedia('(hover:hover)').matches) {
-  const dot = document.getElementById('cursorDot');
-  const ring = document.getElementById('cursorRing');
+// --- Custom cursor
+if (matchMedia('(hover:hover) and (pointer:fine)').matches) {
+  const cd = document.getElementById('cd');
+  const cr = document.getElementById('cr');
   let mx = 0, my = 0, rx = 0, ry = 0;
-  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; dot.style.left = mx + 'px'; dot.style.top = my + 'px'; });
-  (function loop() {
-    rx += (mx - rx) * .12; ry += (my - ry) * .12;
-    ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-    requestAnimationFrame(loop);
-  })();
-  document.querySelectorAll('a,button,[data-hover]').forEach(el => {
-    el.addEventListener('mouseenter', () => ring.classList.add('hover'));
-    el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
+  document.onmousemove = e => { mx = e.clientX; my = e.clientY; cd.style.left = mx+'px'; cd.style.top = my+'px'; };
+  (function loop(){ rx += (mx-rx)*.13; ry += (my-ry)*.13; cr.style.left=rx+'px'; cr.style.top=ry+'px'; requestAnimationFrame(loop); })();
+  document.querySelectorAll('a,button,[data-h]').forEach(el => {
+    el.addEventListener('mouseenter', () => cr.classList.add('h'));
+    el.addEventListener('mouseleave', () => cr.classList.remove('h'));
   });
+  document.querySelectorAll('input,textarea').forEach(el => {
+    el.addEventListener('mouseenter', () => cr.classList.add('text'));
+    el.addEventListener('mouseleave', () => cr.classList.remove('text'));
+  });
+  // Hide cursor over Zeeg iFrame (it shows its own)
+  const zeegFrame = document.querySelector('.zeeg-frame');
+  if (zeegFrame) {
+    zeegFrame.addEventListener('mouseenter', () => { cd.style.opacity='0'; cr.style.opacity='0'; });
+    zeegFrame.addEventListener('mouseleave', () => { cd.style.opacity=''; cr.style.opacity=''; });
+  }
 }
 
-/* ── Form Submit via mailto ── */
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
-  e.preventDefault();
-  const btn = document.getElementById('submitBtn');
-  const form = e.target;
-  
-  btn.disabled = true;
-  btn.textContent = 'Wird gesendet...';
+// --- Scroll reveal
+(function(){
+  const obs = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('v'); obs.unobserve(e.target); }});
+  }, {threshold: .08});
+  document.querySelectorAll('[data-r]').forEach(el => obs.observe(el));
+})();
 
-  try {
-    const formData = new FormData(form);
-    const response = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      body: formData
-    });
-    const result = await response.json();
-
-    if (result.success) {
-      btn.textContent = '✓ Anfrage gesendet!';
-      btn.style.background = '#2A5C46';
-      btn.style.color = '#fff';
-      form.reset();
-      setTimeout(() => {
-        btn.disabled = false;
-        btn.textContent = 'Kostenlose Beratung anfragen →';
-        btn.style.background = '';
-        btn.style.color = '';
-      }, 4000);
-    } else {
-      /* Fallback: mailto wenn Web3Forms fehlschlägt (z.B. Key noch nicht gesetzt) */
-      const name = formData.get('name');
-      const phone = formData.get('phone');
-      const email = formData.get('email');
-      const branche = formData.get('branche');
-      const budget = formData.get('budget');
-      const message = formData.get('message');
-      const subject = encodeURIComponent('Neue Anfrage von ' + name + ' (' + branche + ')');
-      const body = encodeURIComponent(
-        'Name: ' + name + '\nTelefon: ' + phone + '\nE-Mail: ' + email +
-        '\nBranche: ' + branche + '\nBudget: ' + budget + '\nNachricht: ' + message +
-        '\n\n— Gesendet über vantor-marketing.com'
-      );
-      window.location.href = 'mailto:info@vantor-marketing.com?subject=' + subject + '&body=' + body;
-      btn.textContent = '↗ E-Mail-Client wird geöffnet...';
-      btn.style.background = '#2A5C46';
-      btn.style.color = '#fff';
-      setTimeout(() => {
-        btn.disabled = false;
-        btn.textContent = 'Kostenlose Beratung anfragen →';
-        btn.style.background = '';
-        btn.style.color = '';
-      }, 4000);
-    }
-  } catch (err) {
-    /* Offline-Fallback: mailto */
-    const formData = new FormData(form);
-    const name = formData.get('name');
-    const phone = formData.get('phone');
-    const branche = formData.get('branche');
-    const subject = encodeURIComponent('Neue Anfrage von ' + name);
-    const body = encodeURIComponent(
-      'Name: ' + name + '\nTelefon: ' + phone + '\nBranche: ' + branche +
-      '\n\n— Gesendet über vantor-marketing.com'
-    );
-    window.location.href = 'mailto:info@vantor-marketing.com?subject=' + subject + '&body=' + body;
-    btn.disabled = false;
-    btn.textContent = 'Kostenlose Beratung anfragen →';
-  }
-});
-
-/* ── Smooth Scroll ── */
+// --- Smooth scroll with offset
 document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const target = document.querySelector(a.getAttribute('href'));
-    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-  });
+  a.onclick = e => {
+    const href = a.getAttribute('href');
+    if (href === '#') return;
+    const t = document.querySelector(href);
+    if (!t) return;
+    e.preventDefault();
+    window.scrollTo({top: t.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth'});
+  };
 });
+
+// --- Char reveal on H1
+(function(){
+  const h1main = document.getElementById('h1main');
+  if (!h1main) return;
+  const walk = (node, idx) => {
+    let i = idx;
+    Array.from(node.childNodes).forEach(child => {
+      if (child.nodeType === 3) {
+        const txt = child.textContent;
+        const frag = document.createDocumentFragment();
+        for (const ch of txt) {
+          if (ch === ' ') { frag.appendChild(document.createTextNode(' ')); continue; }
+          const s = document.createElement('span');
+          s.className = 'char';
+          s.textContent = ch;
+          s.style.animationDelay = (.2 + i * .022) + 's';
+          frag.appendChild(s);
+          i++;
+        }
+        node.replaceChild(frag, child);
+      } else if (child.nodeType === 1) {
+        i = walk(child, i);
+      }
+    });
+    return i;
+  };
+  walk(h1main, 0);
+})();
+
+// --- Hero stat counters
+(function(){
+  const els = document.querySelectorAll('[data-count]');
+  const obs = new IntersectionObserver(es => {
+    es.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      const target = parseInt(el.dataset.count);
+      const dur = 1400;
+      const start = performance.now();
+      const tick = now => {
+        const p = Math.min((now - start) / dur, 1);
+        const eased = 1 - Math.pow(1 - p, 4);
+        el.textContent = Math.round(eased * target);
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+      obs.unobserve(el);
+    });
+  }, {threshold: .5});
+  els.forEach(el => obs.observe(el));
+})();
+
+// --- ROI Calculator
+(function(){
+  const sldO = document.getElementById('sldOrder');
+  const sldL = document.getElementById('sldLeads');
+  const sldC = document.getElementById('sldConv');
+  const lblO = document.getElementById('lblOrder');
+  const lblL = document.getElementById('lblLeads');
+  const lblC = document.getElementById('lblConv');
+  const lossOut = document.getElementById('lossOut');
+  const gainOut = document.getElementById('gainOut');
+
+  const fmt = n => '€' + Math.round(n).toLocaleString('de-DE');
+
+  function update(){
+    const o = +sldO.value, l = +sldL.value, c = +sldC.value;
+    lblO.textContent = fmt(o);
+    lblL.textContent = l;
+    lblC.textContent = c + '%';
+    const lossMonth = o * l * (c/100);
+    const lossYear = lossMonth * 12;
+    const sitePct = ((850 / lossYear) * 100).toFixed(1);
+    lossOut.textContent = fmt(lossMonth);
+    gainOut.innerHTML = 'Das sind <b>' + fmt(lossYear) + '</b> pro Jahr. Eine VANTOR-Seite kostet <b>' + sitePct + '%</b> davon.';
+  }
+  [sldO, sldL, sldC].forEach(s => s.addEventListener('input', update));
+  update();
+})();
+
+// --- Live Audit (theatrical scan with deterministic randomness from URL)
+(function(){
+  const input = document.getElementById('auditUrl');
+  const btn = document.getElementById('auditBtn');
+  const results = document.getElementById('auditResults');
+
+  function hashUrl(s){ let h = 0; for (let i=0;i<s.length;i++) h = ((h<<5)-h+s.charCodeAt(i))|0; return Math.abs(h); }
+  function seeded(seed){ let s = seed; return () => { s = (s*9301+49297) % 233280; return s/233280; }; }
+  function cleanDomain(v){
+    return v.trim().toLowerCase().replace(/^https?:\/\//,'').replace(/^www\./,'').replace(/\/.*$/,'').replace(/\s/g,'');
+  }
+
+  async function runAudit(){
+    const raw = input.value;
+    if (!raw || raw.length < 4) { input.focus(); input.style.borderColor='var(--accent)'; setTimeout(()=>input.style.borderColor='',1500); return; }
+    const domain = cleanDomain(raw);
+    if (!domain.includes('.')) { input.style.borderColor='var(--accent)'; setTimeout(()=>input.style.borderColor='',1500); return; }
+
+    btn.disabled = true;
+    btn.textContent = 'Scanning...';
+
+    const steps = [
+      'DNS Lookup & SSL-Check',
+      'Mobile Performance Test',
+      'SEO & Meta Analyse',
+      'Conversion-Pfad Audit',
+      'Vertrauenssignal-Scan'
+    ];
+    results.innerHTML = '<div class="audit-loading">' +
+      steps.map((s,i) => '<div class="step" data-i="'+i+'"><span class="sx">'+(i+1)+'</span>'+s+'</div>').join('') + '</div>';
+
+    const stepEls = results.querySelectorAll('.step');
+    for (let i = 0; i < stepEls.length; i++) {
+      stepEls[i].classList.add('active');
+      await new Promise(r => setTimeout(r, 600 + Math.random()*400));
+      stepEls[i].classList.remove('active');
+      stepEls[i].classList.add('done');
+    }
+
+    await new Promise(r => setTimeout(r, 300));
+
+    // Generate plausible "results" deterministically per domain
+    const rng = seeded(hashUrl(domain));
+    const perf = Math.floor(28 + rng()*55);     // 28-83
+    const seo = Math.floor(35 + rng()*50);      // 35-85
+    const issues = [];
+    if (perf < 50) issues.push({t:'warn', l:'Mobile Speed', v:'Ladezeit über 4s — Google straft ab Position 5 ab.'});
+    else if (perf < 70) issues.push({t:'ok', l:'Mobile Speed', v:'Akzeptabel, aber 25% Optimierungspotenzial bleiben offen.'});
+    else issues.push({t:'good', l:'Mobile Speed', v:'Solide. Hier liegt nicht das Problem.'});
+
+    if (seo < 55) issues.push({t:'warn', l:'SEO-Basis', v:'Meta-Tags fehlen oder generisch. Local SEO nicht aktiviert.'});
+    else issues.push({t:'ok', l:'SEO-Basis', v:'Grundgerüst vorhanden, aber Long-Tail-Keywords ungenutzt.'});
+
+    issues.push({t:'warn', l:'Conversion-Pfad', v:'Kein klarer CTA über dem Fold. Besucher müssen scrollen für Telefon.'});
+    issues.push({t:rng()>.5?'warn':'ok', l:'Social Proof', v: rng()>.5 ? 'Keine sichtbaren Bewertungen oder Referenzen.' : 'Bewertungen vorhanden, aber nicht in den ersten 100vh.'});
+    issues.push({t:'warn', l:'Schema.org', v:'LocalBusiness-Markup fehlt — du wirst in Google Maps schwächer angezeigt.'});
+
+    const perfClass = perf < 50 ? '' : (perf < 70 ? 'ok' : 'good');
+    const seoClass = seo < 55 ? '' : (seo < 75 ? 'ok' : 'good');
+
+    results.innerHTML = `
+      <div style="font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;color:var(--t3);margin-bottom:.85rem;text-align:center">SCAN ABGESCHLOSSEN · ${domain}</div>
+      <div class="audit-score">
+        <div class="asc ${perfClass}"><div class="scn">${perf}</div><div class="scl">Performance</div></div>
+        <div class="asc ${seoClass}"><div class="scn">${seo}</div><div class="scl">SEO Score</div></div>
+      </div>
+      <div class="audit-issues">
+        ${issues.map(i => `<div class="aiss ${i.t}"><b>${i.l}:</b> ${i.v}</div>`).join('')}
+      </div>
+      <div class="audit-cta">
+        <a href="#kontakt" data-h>Detail-Analyse + Strategie anfragen →</a>
+      </div>
+    `;
+
+    btn.disabled = false;
+    btn.textContent = 'Erneut scannen →';
+
+    // Smooth scroll into result if needed
+    results.scrollIntoView({behavior:'smooth', block:'nearest'});
+  }
+
+  btn.onclick = runAudit;
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') runAudit(); });
+})();
+
+// --- Before/After Slider
+(function(){
+  const wrap = document.getElementById('baR');
+  const after = document.getElementById('baAfter');
+  const handle = document.getElementById('baHandle');
+  const knob = document.getElementById('baKnob');
+  if (!wrap) return;
+  let dragging = false;
+
+  function setPos(pct){
+    pct = Math.max(0, Math.min(100, pct));
+    after.style.clipPath = `inset(0 0 0 ${pct}%)`;
+    handle.style.left = pct + '%';
+    knob.style.left = pct + '%';
+  }
+  function onMove(clientX){
+    const rect = wrap.getBoundingClientRect();
+    setPos(((clientX - rect.left) / rect.width) * 100);
+  }
+  wrap.addEventListener('mousedown', e => { dragging = true; onMove(e.clientX); });
+  wrap.addEventListener('mousemove', e => { if (dragging) onMove(e.clientX); });
+  document.addEventListener('mouseup', () => { dragging = false; });
+  wrap.addEventListener('touchstart', e => { dragging = true; onMove(e.touches[0].clientX); }, {passive:true});
+  wrap.addEventListener('touchmove', e => { if (dragging) onMove(e.touches[0].clientX); }, {passive:true});
+  document.addEventListener('touchend', () => { dragging = false; });
+
+  // Auto-animate on first visibility
+  const obs = new IntersectionObserver(es => {
+    es.forEach(e => {
+      if (!e.isIntersecting) return;
+      let p = 50, dir = 1, count = 0;
+      const a = setInterval(() => {
+        p += dir * 2;
+        if (p >= 78) dir = -1;
+        if (p <= 22) { dir = 1; count++; }
+        if (count >= 1) { setPos(50); clearInterval(a); return; }
+        setPos(p);
+      }, 40);
+      obs.unobserve(e.target);
+    });
+  }, {threshold:.4});
+  obs.observe(wrap);
+})();
+
+// --- Pricing toggle
+(function(){
+  const tabs = document.querySelectorAll('.srv-tab');
+  tabs.forEach(t => {
+    t.onclick = () => {
+      tabs.forEach(x => x.classList.remove('active'));
+      t.classList.add('active');
+      const mode = t.dataset.tab;
+      document.querySelectorAll('[data-price]').forEach(el => {
+        const [s, single] = el.dataset.price.split(',');
+        const monthly = el.dataset.priceM;
+        el.textContent = mode === 'single' ? '€' + (+single).toLocaleString('de-DE') : '€' + monthly + ' /Mo';
+      });
+      document.querySelectorAll('[data-period]').forEach(el => {
+        el.textContent = mode === 'single' ? 'EINMALIG · ABLIEFERUNG IN 1–3 WOCHEN' : 'MONATLICH · INKL. WARTUNG · 12 MO MIN.';
+      });
+    };
+  });
+})();
+
+// --- FAQ
+document.querySelectorAll('.faqq').forEach(b => {
+  b.onclick = () => {
+    const item = b.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faqi.open').forEach(x => x.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  };
+});
+
+// --- Calendar block removed — Zeeg inline embed handles all scheduling
+
+// --- Form
+(function(){
+  const form = document.getElementById('cf');
+  if (!form) return;
+  const emailF = form.querySelector('input[name="email"]');
+  const replyto = document.getElementById('replyto');
+  emailF.oninput = () => { replyto.value = emailF.value; };
+
+  form.onsubmit = async e => {
+    e.preventDefault();
+    const btn = document.getElementById('sb');
+    btn.disabled = true;
+    btn.textContent = 'Wird gesendet...';
+    try {
+      const r = await fetch('https://api.web3forms.com/submit', {method:'POST', body: new FormData(form)});
+      const j = await r.json();
+      if (j.success) {
+        btn.textContent = '✓ Anfrage gesendet!';
+        btn.style.background = '#1a5c3a';
+        btn.style.color = '#fff';
+        form.reset();
+        setTimeout(() => { btn.disabled=false; btn.textContent='Kostenlose Beratung anfragen →'; btn.style.background=''; btn.style.color=''; }, 4500);
+      } else throw new Error('fail');
+    } catch(err) {
+      const fd = new FormData(form);
+      window.location.href = 'mailto:info@vantor-marketing.com?subject=' + encodeURIComponent('Anfrage von ' + (fd.get('name')||'Website'));
+      btn.disabled = false;
+      btn.textContent = 'Kostenlose Beratung anfragen →';
+    }
+  };
+})();
+
+// --- Live Activity Feed (social proof)
+(function(){
+  const feed = document.getElementById('lfeed');
+  const av = document.getElementById('lfAv');
+  const txt = document.getElementById('lfTxt');
+  if (!feed) return;
+
+  const events = [
+    {n:'Markus', i:'MK', c:'Bietigheim', t:'einen Termin gebucht', m:'4 Min'},
+    {n:'Dr. Sarah', i:'SB', c:'Heilbronn', t:'eine Anfrage geschickt', m:'12 Min'},
+    {n:'Thomas', i:'TW', c:'Ludwigsburg', t:'das Live-Audit gestartet', m:'18 Min'},
+    {n:'Andreas', i:'AH', c:'Pforzheim', t:'einen Termin gebucht', m:'34 Min'},
+    {n:'Markus', i:'MS', c:'Stuttgart', t:'eine Anfrage geschickt', m:'1 Std'},
+    {n:'Lena', i:'LP', c:'Vaihingen', t:'das Live-Audit gestartet', m:'2 Std'},
+    {n:'Stefan', i:'SK', c:'Mühlacker', t:'einen Termin gebucht', m:'3 Std'},
+    {n:'Dr. Michael', i:'MR', c:'Sindelfingen', t:'eine Anfrage geschickt', m:'4 Std'},
+  ];
+  let idx = 0;
+  function show(){
+    const e = events[idx % events.length];
+    av.textContent = e.i;
+    txt.innerHTML = `<b>${e.n} aus ${e.c}</b> hat ${e.t}<span class="sub">vor ${e.m}</span>`;
+    feed.classList.add('show');
+    setTimeout(() => feed.classList.remove('show'), 5500);
+    idx++;
+  }
+  setTimeout(show, 8000);
+  setInterval(show, 22000);
+})();
+
+// --- Scarcity counter — counts down weekly, deterministic
+(function(){
+  const el = document.getElementById('slotCount');
+  if (!el) return;
+  const week = Math.floor(Date.now() / (7*24*60*60*1000));
+  // Cycle: 2 → 3 → 2 → 1 → 2 across weeks for honest variance
+  const cycle = [2, 3, 2, 1, 2];
+  const slots = cycle[week % cycle.length];
+  el.textContent = slots === 1 ? '1 Platz' : slots + ' Plätze';
+})();
+
+// --- Founder image lazy load (URL from existing base64 fallback; if you have a hosted version, swap here)
+(function(){
+  const img = document.getElementById('fdrImg');
+  const skel = document.getElementById('fdrSkel');
+  if (!img) return;
+  // Placeholder: if you swap to a hosted image, just set img.src
+  // For now, generate an abstract gradient placeholder so the layout has presence
+  const canvas = document.createElement('canvas');
+  canvas.width = 450; canvas.height = 600;
+  const ctx = canvas.getContext('2d');
+  const grad = ctx.createLinearGradient(0,0,450,600);
+  grad.addColorStop(0,'#1a1a26');
+  grad.addColorStop(.5,'#0f0f16');
+  grad.addColorStop(1,'#06060a');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0,0,450,600);
+  // Subtle radial light
+  const rg = ctx.createRadialGradient(225,200,0,225,200,400);
+  rg.addColorStop(0,'rgba(200,255,10,.08)');
+  rg.addColorStop(1,'rgba(200,255,10,0)');
+  ctx.fillStyle = rg;
+  ctx.fillRect(0,0,450,600);
+  // Silhouette hint
+  ctx.fillStyle = 'rgba(255,255,255,.04)';
+  ctx.beginPath();
+  ctx.arc(225, 220, 75, 0, Math.PI*2);
+  ctx.fill();
+  ctx.fillRect(135, 290, 180, 310);
+  setTimeout(() => {
+    img.src = canvas.toDataURL();
+    img.onload = () => { img.style.opacity = '1'; skel.style.display = 'none'; };
+  }, 200);
+})();
 </script>
 </body>
 </html>
